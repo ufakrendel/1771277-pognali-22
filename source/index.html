@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
 </head>
-<body class="page_body">
-  <header class="page-header">
-    <nav class="page-header-navigation navigation">
+
+<body class="page__body">
+  <header class="page__header">
+    <nav class="page__header-navigation navigation">
       <p class="navigation__title">Погнали?</p>
       <a class="navigation__logo logo">
-        <img class="logo-img" alt="Погнали?">
+        <img class="logo__img" alt="Погнали?">
       </a>
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
           меню</span></button>
-      <ul class="navigation__site site-list">
-        <li class="site-list__item">
-          <a href="#about">
+      <ul class="navigation__ref-list navigation-list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">
             О сервисе
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#directions">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">
             Направления
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#companions">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">
             Попутчики
           </a>
         </li>
@@ -35,28 +37,28 @@
       <a class="navigation__login-button login-button" href="#">Авторизация</button>
         <ul class="navigation__contacts contact-list">
           <li class="contact-list__item">
-            <a>8 800 555-86-28</a>
+            <a class="contact-list__link">8 800 555-86-28</a>
           </li>
           <li class="contact-list__item">
-            <a>mail@htmlacademy.ru</a>
+            <a class="contact-list__link">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <ul class="navigation__socials socials-list">
           <li class="socials-list__item">
-            <a href="#">facebook</a>
+            <a class="socials-list__link" href="#">facebook</a>
           </li>
           <li class="socials-list__item">
-            <a href="#">vk</a>
+            <a class="socials-list__link" href="#">vk</a>
           </li>
           <li class="socials-list__item">
-            <a href="#">instagramm</a>
+            <a class="socials-list__link" href="#">instagramm</a>
           </li>
         </ul>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page__main main">
     <h1 class="visually-hidden">В путешествие с попутчиками это просто!</h1>
-    <section class="promo">
+    <section class="main__promo promo">
       <h2 class="promo__slogan">
         В путешествие с крутыми попутчиками!
       </h2>
@@ -65,29 +67,30 @@
       </div>
       <blockquote class="promo__quote">
         «Лучшее приложение, что я видел в жизни!»
-        <footer lass="promo__quote-author">
-          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        <footer class="promo__quote-author">
+          <cite class="promo__quote-author-cite">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </footer>
       </blockquote>
-      <nav class="promo__nav navigation">
-        <a class="navigation__logo">
-          <img class="navigation_logo-img" alt="Погнали?">
+      <nav class="promo__navigation navigation">
+        <p class="navigation__title">Погнали?</p>
+        <a class="navigation__logo logo">
+          <img class="logo__img" alt="Погнали?">
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
             меню</span></button>
-        <ul class="navigation__site site-list">
-          <li class="site-list__item">
-            <a href="#">
+        <ul class="navigation__ref-list navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">
               О сервисе
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">
               Направления
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">
               Попутчики
             </a>
           </li>
@@ -115,7 +118,7 @@
         </li>
       </ul>
     </section>
-    <section class="about">
+    <section class="main__about about">
       <h2 class="about__title">О сервисе</h2>
       <p class="about__text">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
@@ -125,11 +128,11 @@
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
       <a class="about__button-more big-button" href="#">Подробнее</a>
-      <div class="about__img">
-        <img src="img/img_back.svg" alt="Позвать!">
+      <div class="about__img-wrapper">
+        <img class="about__img" alt="Позвать!">
       </div>
     </section>
-    <section class="directions">
+    <section class="main__directions directions">
       <h2 class="directions__title">Направления</h2>
       <p class="directions__text">
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
@@ -143,10 +146,10 @@
           <p class="directions__list-item-description">
             Джунгли зовут!
           </p>
-          <p class="directions__list-item-count">
+          <p class="directions__list-users-count">
             18321
           </p>
-          <img class="directions__list-flag" src="img/Thailand 1.svg" alt="Флаг тайланда" />
+          <img class="directions__list-flag" src="img/thai-flag.png" alt="Флаг тайланда" />
           <img class="directions__list-view" alt="Виды тайланда" />
         </li>
         <li class="directions__list-item">
@@ -156,10 +159,10 @@
           <p class="directions__list-item-description">
             Трэ бьен, манифик!
           </p>
-          <p class="directions__list-item-count">
+          <p class="directions__list-users-count">
             12518
           </p>
-          <img class="directions__list-flag" src="img/France 1.svg" alt="Флаг франции" />
+          <img class="directions__list-flag" src="img/france-flag.png" alt="Флаг франции" />
           <img class="directions__list-view" alt="Виды франции" />
         </li>
         <li class="directions__list-item">
@@ -169,16 +172,16 @@
           <p class="directions__list-item-description">
             Закоулки старой Европы
           </p>
-          <p class="directions__list-item-count">
+          <p class="directions__list-users-count">
             5326
           </p>
-          <img class="directions__list-flag" src="img/Czech 1.svg" alt="Флаг чехии" />
+          <img class="directions__list-flag" src="img/czech-flag.png" alt="Флаг чехии" />
           <img class="directions__list-view" alt="Виды чехии" />
         </li>
         </div>
-        <a class="directions__button-more big-button" href="form.html">Показать все</button>
+        <a class="directions__button-more big-button" href="form.html">Показать все</a>
     </section>
-    <section class="companions">
+    <section class="main__companions companions">
       <h2 class="companions__title">Попутчики</h2>
       <p class="companions__text">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
@@ -196,13 +199,13 @@
           <img class="companion__img" alt="Фото попутчика" />
           <ul class="companion__flag-list">
             <li class="companion__flag-list-item">
-              <img alt="Флаг Шри-Ланка" />
+              <img class="companion__flag-list-item-img" alt="Флаг Шри-Ланка" />
             </li>
             <li class="companion__flag-list-item">
-              <img alt="Флаг Тайланда" />
+              <img class="companion__flag-list-item-img" alt="Флаг Тайланда" />
             </li>
             <li class="companion__flag-list-item">
-              <img alt="Флаг Сейшеллы" />
+              <img class="companion__flag-list-item-img" alt="Флаг Сейшеллы" />
             </li>
           </ul>
           <div class="companion__description">
@@ -210,16 +213,16 @@
             <p class="companion__description-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <ul class="companion__movement-icons movement-list">
               <li class="movement-list__item--active">
-                <img alt="Самолет" />
+                <img class="companion__flag-list-item-img" alt="Самолет" />
               </li>
               <li class="movement-list__item">
-                <img alt="Автобус" />
+                <img class="companion__flag-list-item-img" alt="Автобус" />
               </li>
               <li class="movement-list__item">
-                <img alt="Велосипед" />
+                <img class="companion__flag-list-item-img" alt="Велосипед" />
               </li>
               <li class="movement-list__item">
-                <img alt="Бег" />
+                <img class="companion__flag-list-item-img" alt="Бег" />
               </li>
             </ul>
           </div>
@@ -260,9 +263,11 @@
       </ul>
       <a class="companions__show-all big-button" href="catalog.html">Показать все</a>
     </section>
-    <section class="price">
+    <section class="main__price price">
       <h2 class="price__title">Добавьте свой профиль</h2>
-      <img class="price__title-img" />
+      <div class="price__title-img-wrapper">
+        <img class="price__title-img" />
+      </div>
       <ul class="price__list">
         <li class="price__list-item price-item">
           <p class="price-item__number">1</p>
@@ -279,13 +284,9 @@
           <p class="price-item__description>">Кастомный цвет карточки</p>
           <p class="price-item__price">59 руб./мес</p>
         </li>
-        <li class="price__list-item--business price-item">
-          <p class="price-item__number--business"></p>
-          <p class="price-item__description--business>">Показать тарифы для бизнеса</p>
-          <p class="price-item__price"></p>
-        </li>
+        <button class="price__business-tax-btn" type="button">Показать тарифы для бизнеса</button>
       </ul>
-      <div class="business-tariffs-wrapper business-prices">
+      <div class="price__business business-prices">
         <h2 class="business-prices__title">Бизнес-тарифы</h2>
         <ul class="business-prices__list">
           <li class="business-prices__list-item">
@@ -305,51 +306,49 @@
             <p class="business-prices__list-item-price">Индивидуально</p>
           </li>
         </ul>
-        <a class="business-prices__close big-button" href="#">Закрыть окно</a>
+        <button class="business-prices__close big-button" href="#">Закрыть окно</button>
       </div>
     </section>
-    <section class="feedback">
+    <section class="main__feedback feedback">
       <h2 class="feedback__title">Заинтересовались?</h2>
-      <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
+      <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
         Тогда скорее <a class="feedback__login-link">авторизуйтесь</a>.</p>
-      <form class="feedback__form">
+      <form class="feedback__form" name="feedback-form">
         <input class="feedback__form-email-input" type="email" />
         <input class="feedback__form-email-submit big-button" type="submit">
       </form>
-      <p class="feedback__text">Остались вопросы? Мы с радостью на них ответим!</p>
-      <div class="feddback__contacts">
-        <ul class="contact-list">
-          <li class="contact-list__item">
-            <a>8 800 555-86-28</a>
-          </li>
-          <li class="contact-list__item">
-            <a>mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-      </div>
+      <p class="feedback__question">Остались вопросы? Мы с радостью на них ответим!</p>
+      <ul class="feddback__contacts contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link">8 800 555-86-28</a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
     </section>
-    <section class="adress">
-      <h2 class="visually-hidden">Адрес</h2>
+    <section class="main__adress adress">
+      <h2 class="visually-hidden">Наш адрес</h2>
       <div class="adress__text-content">
         <p class="adress__text">ул. Большая Конюшенная, 19/8</p>
         <a class="adress__route-button big-button" href="#">Проложить маршрут</a>
       </div>
-      <img alt="Расположение" />
+      <img class="adress__map-img" alt="Расположение" />
     </section>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <p class="page-footer__title">Погнали?</p>
       <a class="page-footer__logo logo">
-        <img class="logo-img" alt="Погнали?">
+        <img class="logo__img" alt="Погнали?">
       </a>
       <ul class="page-footer__socials socials-list">
         <li class="socials-list__item">
-          <a href="#">facebook</a>
+          <a class="socials-list__link" href="#">facebook</a>
         </li>
         <li class="socials-list__item">
-          <a href="#">vk</a>
+          <a class="socials-list__link" href="#">vk</a>
         </li>
         <li class="socials-list__item">
-          <a href="#">instagramm</a>
+          <a class="socials-list__link" href="#">instagramm</a>
         </li>
       </ul>
       <div class="page-footer__created-by">
