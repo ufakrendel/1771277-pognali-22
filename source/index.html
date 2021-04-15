@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page__header">
     <nav class="page__header-navigation navigation">
-      <p class="navigation__title">Погнали?</p>
+      <p class="navigation__title visually-hidden">Погнали?</p>
       <a class="navigation__logo logo">
         <img class="logo__img" alt="Погнали?">
       </a>
@@ -34,26 +35,26 @@
       </ul>
       <button class="navigation__phone-button phone-button" type="button">Phone</button>
       <button class="navigation__mail-button mail-button" type="button">Email</button>
-      <a class="navigation__login-button login-button" href="#">Авторизация</button>
-        <ul class="navigation__contacts contact-list">
-          <li class="contact-list__item">
-            <a class="contact-list__link">8 800 555-86-28</a>
-          </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="navigation__socials socials-list">
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="#">facebook</a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="#">vk</a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="#">instagramm</a>
-          </li>
-        </ul>
+      <a class="navigation__login-button login-button" href="#">Авторизация</a>
+      <ul class="navigation__contacts contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link">8 800 555-86-28</a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="navigation__socials socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">facebook</a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">vk</a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">instagramm</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page__main main">
@@ -62,9 +63,6 @@
       <h2 class="promo__slogan">
         В путешествие с крутыми попутчиками!
       </h2>
-      <div class="promo__image-wrapper">
-        <img class="promo__image" alt="Мурат Эльтазин"> </img>
-      </div>
       <blockquote class="promo__quote">
         «Лучшее приложение, что я видел в жизни!»
         <footer class="promo__quote-author">
@@ -72,7 +70,6 @@
         </footer>
       </blockquote>
       <nav class="promo__navigation navigation">
-        <p class="navigation__title">Погнали?</p>
         <a class="navigation__logo logo">
           <img class="logo__img" alt="Погнали?">
         </a>
@@ -97,7 +94,7 @@
         </ul>
         <button class="navigation__phone-button phone-button" type="button">Phone</button>
         <button class="navigation__mail-button mail-button" type="button">Email</button>
-        <a class="navigation__login-button login-button" href="#">Авторизация</button>
+        <a class="navigation__login-button login-button" href="#">Авторизация</a>
       </nav>
       <ul class="promo__steps step-list">
         <li class="step-list__item">
@@ -135,7 +132,7 @@
     <section class="main__directions directions">
       <h2 class="directions__title">Направления</h2>
       <p class="directions__text">
-        Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+        Мы не продаем туры<br>и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться<br> и чем можно
         там заняться.
       </p>
       <ul class="directions__list">
@@ -235,7 +232,7 @@
           <img class="companion__img" alt="Фото попутчика" />
           <ul class="companion__flag-list">
             <li class="companion__flag-list-item">
-              <img class="companion__flag-img"  alt="Флаг Германии" />
+              <img class="companion__flag-img" alt="Флаг Германии" />
             </li>
             <li class="companion__flag-list-item">
               <img class="companion__flag-img" alt="Флаг Чехии" />
@@ -271,21 +268,21 @@
       <ul class="price__list">
         <li class="price__list-item price-item">
           <p class="price-item__number">1</p>
-          <p class="price-item__description>">Базовое размещение</p>
+          <p class="price-item__description">Базовое размещение</p>
           <p class="price-item__price">Бесплатно</p>
         </li>
         <li class="price__list-item price-item">
           <p class="price-item__number">2</p>
-          <p class="price-item__description>">Вывод на первых позициях</p>
+          <p class="price-item__description">Вывод на первых позициях</p>
           <p class="price-item__price">99 руб./мес</p>
         </li>
         <li class="price__list-item price-item">
           <p class="price-item__number">3</p>
-          <p class="price-item__description>">Кастомный цвет карточки</p>
+          <p class="price-item__description">Кастомный цвет карточки</p>
           <p class="price-item__price">59 руб./мес</p>
         </li>
-        <button class="price__business-tax-btn" type="button">Показать тарифы для бизнеса</button>
       </ul>
+      <button class="price__business-tax-btn" type="button">Показать тарифы для бизнеса</button>
       <div class="price__business business-prices">
         <h2 class="business-prices__title">Бизнес-тарифы</h2>
         <ul class="business-prices__list">
@@ -311,13 +308,13 @@
     </section>
     <section class="main__feedback feedback">
       <h2 class="feedback__title">Заинтересовались?</h2>
-      <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
+      <p class="feedback__text">Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы?
         Тогда скорее <a class="feedback__login-link">авторизуйтесь</a>.</p>
       <form class="feedback__form" name="feedback-form">
         <input class="feedback__form-email-input" type="email" />
         <input class="feedback__form-email-submit big-button" type="submit">
       </form>
-      <p class="feedback__question">Остались вопросы? Мы с радостью на них ответим!</p>
+      <p class="feedback__question">Остались вопросы?<br> Мы с радостью на них ответим!</p>
       <ul class="feddback__contacts contact-list">
         <li class="contact-list__item">
           <a class="contact-list__link">8 800 555-86-28</a>
@@ -330,10 +327,12 @@
     <section class="main__adress adress">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="adress__text-content">
-        <p class="adress__text">ул. Большая Конюшенная, 19/8</p>
+        <p class="adress__text">ул. Большая<br> Конюшенная, 19/8</p>
         <a class="adress__route-button big-button" href="#">Проложить маршрут</a>
       </div>
-      <img class="adress__map-img" alt="Расположение" />
+    </section>
+    <section class="main__map">
+      <img class="map__img" alt="Расположение" />
     </section>
     <footer class="page__footer page-footer">
       <p class="page-footer__title">Погнали?</p>
@@ -358,4 +357,5 @@
     </footer>
   </main>
 </body>
+
 </html>
