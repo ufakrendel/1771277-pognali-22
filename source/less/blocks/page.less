@@ -1,5 +1,6 @@
 .page {
   font-family: "Blogger Sans", "Arial", sans-serif;
+  height: 100%;
   line-height: 22px;
   font-size: 16px;
   font-weight: normal;
@@ -11,12 +12,20 @@
 .page__header {
   position: relative;
   height: 73px;
+  background-color: @header-background-color;
   background-image: url("../../img/globe-back-mobile-header.png");
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__header-navigation {
+  position: absolute;
 }
 
 .page__body {
   background-color: @basic-white;
+  min-height: 100%;
 }
 
 
@@ -28,3 +37,5 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+
+
