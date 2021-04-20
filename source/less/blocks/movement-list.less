@@ -1,0 +1,20 @@
+.movement-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.movement-list__item {
+  .movement-list__item-img {
+    padding: 0 7px 0;
+    fill: @basic-blue-light;
+    opacity: 0.15;
+  }
+
+  &--active {
+    .movement-list__item-img {
+      opacity: 1;
+    }
+  }
+}

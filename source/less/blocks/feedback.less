@@ -1,33 +1,86 @@
 .feedback {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 0 30px 30px;
   color: @basic-white;
   background-color: @main-section-dark-bgcolor;
+  .container-round-bottom();
 }
 
 .feedback__title {
-  padding: 105px 0 0 55px;
-  font-weight: 700;
-  color: @section-title-color;
-  line-height: 24px;
-  font-size: 24px;
+  padding: 70px 0 0 55px;
 }
 
 .feedback__text {
   display: block;
   text-align: center;
-  padding: 19px 55px 0;
   font-weight: 300;
+  padding: 19px 52px 30px;
   color: @basic-white;
 }
 
 .feedback__question {
   display: block;
   text-align: center;
-  padding: 19px 52px 0;
-  font-weight: 300;
+  padding: 30px 52px 0;
   color: @basic-white;
+}
+
+.feedback__login-link {
+  text-decoration: underline;
+  color: @basic-yellow;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 270px;
+  height: 62px;
+  margin-left: 25px;
+  background-color: @basic-white;
+}
+
+.feedback__form-email-input {
+  color: @special-grey;
+  outline: none;
+  width: 200px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  opacity: 0.3;
+
+  &::placeholder {
+    padding-left: 25px;
+  }
+}
+
+.feedback__form-email-submit {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: @basic-yellow;
+  text-align: center;
+  border-radius: 10px;
+  width: 60px;
+  height: 62px;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active * {
+    opacity: 0.5;
+  }
+
+  * {
+    color: @main-section-dark-bgcolor;
+  }
+}
+
+.feddback__contacts {
+  padding-top: 15px;
+  margin-left: 25px;
+}
+
+.feddback__contacts-link {
+  color: @basic-yellow;
 }

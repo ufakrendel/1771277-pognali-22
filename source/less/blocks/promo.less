@@ -26,7 +26,6 @@
   padding-bottom: 113px;
   font-weight: 300;
   color: @basic-white;
-
 }
 
 .promo__quote-author-cite {
@@ -40,5 +39,47 @@
 }
 
 .promo__navigation {
+  position: relative;
+  justify-content: center;
+  top: -305px;
+  display: flex;
+  flex-direction: row;
+}
+
+.promo__navigation-logo,
+.promo__navigation-toggle,
+.promo__navigation-list {
+  display: none;
+}
+
+.promo__navigation-phone-btn {
+  background-color: @special-orange;
+  .promo-button();
+
+  &:hover {
+    background-color: @special-orange--hovered;
+  }
+}
+
+.promo__navigation-mail-btn {
+  background-color: @special-yellow-dark;
+  .promo-button();
+
+  &:hover {
+    background-color: @special-orange;
+  }
+}
+
+.promo__navigation-login-btn {
   display: block;
+  width: 190px;
+  height: 40px;
+  line-height: 40px;
+  .login-button();
+}
+
+.promo__steps {
+  position: relative;
+  padding-left: 25px;
+  top: -120px;
 }
