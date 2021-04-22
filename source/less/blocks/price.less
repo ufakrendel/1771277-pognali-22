@@ -10,19 +10,20 @@
   .container-round-bottom();
 }
 
+.price__container {
+  margin-left: 52px;
+}
+
 .price__title {
-  width: 107px;
+  width: 108px;
   height: 72px;
-  padding-top: 53px;
-  padding-left: 50px;
+  padding-top: 52px;
 }
 
 .price__list {
   width: 200px;
-  height: 198px;
-  padding-left: 50px;
-  padding-top: 30px;
-  list-style-type: none;
+  height: 200px;
+  margin-top: 30px;
 }
 
 .price__item {
@@ -39,14 +40,12 @@
 
 .price__item-number {
   color: @basic-white;
-  display: flex;
-  position: relative;
-  top: -10px;
-  font-weight: 400;
   width: 34px;
   height: 34px;
-  justify-content: center;
-  align-items: center;
+  top: -10px;
+  position: relative;
+  font-weight: 400;
+  .align-center();
   border-radius: 17px;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -86,8 +85,7 @@
 }
 
 .price__business-tax-btn {
-  padding-top: 25px;
-  padding-left: 50px;
+  margin-top: 24px;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;

@@ -4,22 +4,32 @@
   .container-round-bottom();
 }
 
+.feedback__container {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .feedback__title {
-  padding: 70px 0 0 55px;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 .feedback__text {
   display: block;
   text-align: center;
   font-weight: 300;
-  padding: 19px 52px 30px;
+  width: 210px;
+  margin-bottom: 30px;
   color: @basic-white;
 }
 
 .feedback__question {
   display: block;
   text-align: center;
-  padding: 30px 52px 0;
+  margin-top: 32px;
   color: @basic-white;
 }
 
@@ -35,7 +45,7 @@
   border-radius: 10px;
   width: 270px;
   height: 62px;
-  margin-left: 25px;
+  margin-left: 24px;
   background-color: @basic-white;
 }
 
@@ -77,10 +87,11 @@
 }
 
 .feddback__contacts {
-  padding-top: 15px;
-  margin-left: 25px;
+  margin: 15px 0 24px 24px;
 }
 
 .feddback__contacts-link {
-  color: @basic-yellow;
+  .contact-list__text {
+    color: @basic-yellow;
+  }
 }

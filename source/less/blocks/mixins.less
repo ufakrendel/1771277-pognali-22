@@ -4,13 +4,16 @@
   border-radius: 0 0 30px 30px;
 }
 
-.login-button {
+.login-button(@width, @height) {
   font-size: 17px;
   font-weight: 700;
   background-color: @basic-yellow;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: @height / 2;
+  height: @height;
+  width: @width;
+  line-height: @height;
 
   &:hover {
     background-color: @special-yellow-dark;
@@ -25,11 +28,11 @@
   }
 }
 
-.promo-button {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+.buttons(@width, @height) {
+  .align-center();
+  height: @height;
+  width: @width;
+  border-radius: @height / 2;
 
   &:focus {
     outline: none;

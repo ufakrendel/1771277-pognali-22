@@ -1,13 +1,17 @@
 .business-prices {
   width: 270px;
-  height: 443px;
+  height: 444px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: @basic-white;
   border-radius: 20px;
 }
 
 .business-prices__title {
-  padding: 35px 0 25px 51px;
+  display: inline-block;
+  padding-top: 34px;
   font-weight: 700;
   color: @section-title-color;
   line-height: 24px;
@@ -15,8 +19,8 @@
 }
 
 .business-prices__list {
-  padding-left: 25px;
-  width: 219px;
+  padding-top: 28px;
+  width: 220px;
 }
 
 .business-prices__list-item {
@@ -34,13 +38,12 @@
 }
 
 .business-prices__list-item-text {
-  padding-top: 12px;
-  padding-bottom: 6px;
+  padding: 12px 0 6px;
   font-size: 16px;
 }
 
 .business-prices__list-item-price {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .business-prices__close {

@@ -5,62 +5,81 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="Shortcut icon" href="img/favicon.svg" type="image/svg">
 </head>
 
 <body class="page__body">
-  <header class="page__header header">
-    <nav class="header__navigation header__navigation navigation">
-      <p class="header__title navigation__title visually-hidden">Погнали?</p>
-      <a class="header__logo navigation__logo logo">
-        <img class="header__img navigation__logo-img logo__img" alt="Погнали?">
+  <header class="page__header  header">
+    <nav class="header__navigation header__navigation--open header__navigation--nojs">
+      <p class="visually-hidden">Погнали?</p>
+      <a class="header__logo">
+        <picture class="header__logo--open">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+          <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" alt="Лого">
+        </picture>
+        <picture class="header__logo--close">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white-x1.png, img/logo-desktop-white-x2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white-x1.png, img/logo-tablet-white-x2.png 2x">
+          <img src="img/logo-mobile-white-x1.png" srcset="img/logo-mobile-white-x2.png 2x" alt="Лого">
+        </picture>
       </a>
-      <button class="header__toggle navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
-          меню</span></button>
-      <ul class="header__references navigation__ref-list navigation-list">
-        <li class="header__references-item navigation-list__item">
-          <a class="header__references-link navigation-list__link" href="#">
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+        <div class="header__toggle-open">
+          <img src="img/icon-menu-open.png" alt="Закрыть">
+        </div>
+        <div class="header__toggle-close">
+          <img src="img/icon-menu-close.png" alt="Открыть">
+        </div>
+      </button>
+      <ul class="header__references navigation-list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="index.html">
             О сервисе
           </a>
         </li>
-        <li class="header__references-item navigation-list__item">
-          <a class="header__references-link navigation-list__link" href="#">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="form.html">
             Направления
           </a>
         </li>
-        <li class="header__references-item navigation-list__item">
-          <a class="header__references-link navigation-list__link" href="#">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="catalog.html">
             Попутчики
           </a>
         </li>
       </ul>
-      <button class="header__phone navigation__phone-button phone-button" type="button">Phone</button>
-      <button class="header__mail navigation__mail-button mail-button" type="button">Email</button>
-      <a class="header__login navigation__login-button login-button" href="#"><span>Авторизация<span></a>
-      <ul class="header__contacts navigation__contacts contact-list">
-        <li class="header__contacts-item contact-list__item">
-          <img src="/img/contacts-phone-icon.svg" class="header__contacts-img contact-list__item-img"
-            alt="Иконка телефона">
-          <a class="header__contacts-link contact-list__link">8 800 555-86-28</a>
+      <a class="header__phone phone-button">Phone</a>
+      <a class="header__mail mail-button">Email</a>
+      <a class="header__login" href="#"><span>Авторизация<span></a>
+      <ul class="header__contacts contact-list">
+        <li class="contact-list__item">
+          <a class="header__contacts-link contact-list__link" href="tel:8 800 555-86-28">
+            <img src="/img/contacts-phone-icon.svg" class="contact-list__item-img" alt="Иконка телефона">
+            <span class="contact-list__text">8 800 555-86-28</span>
+          </a>
         </li>
-        <li class="header__contacts-item contact-list__item">
-          <img src="/img/contacts-mail-icon.svg" class="header__contacts-img contact-list__item-img"
-            alt="Иконка телефона">
-          <a class="header__contacts-link contact-list__link">mail@htmlacademy.ru</a>
+        <li class="contact-list__item">
+          <a class="header__contacts-link contact-list__link" href="mailto:mail@htmlacademy.ru">
+            <img src="/img/contacts-mail-icon.svg" class="contact-list__item-img" alt="Иконка email">
+            <span class="contact-list__text">mail@htmlacademy.ru</span>
+          </a>
         </li>
       </ul>
-      <ul class="header__socials navigation__socials socials-list">
-        <li class="header__socials-item socials-list__item">
-          <a class="header__socials-link socials-list__link" href="#">
+      <ul class="header__socials socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">
             <img src="/img/icon-facebook.svg" height="21" width="11" alt="facebook" />
           </a>
         </li>
-        <li class="header__socials-item socials-list__item">
-          <a class="header__socials-link  socials-list__link" href="#">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">
             <img src="/img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
           </a>
         </li>
-        <li class="header__socials-item socials-list__item">
-          <a class="header__socials-link  socials-list__link" href="#">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">
             <img src="/img/icon-instagram.svg" height="18" width="18" alt="instagram" />
           </a>
         </li>
@@ -83,39 +102,43 @@
             </footer>
           </blockquote>
         </div>
-        <nav class="promo__navigation navigation">
-          <a class="promo__navigation-logo navigation__logo logo">
-            <img class="logo__img" alt="Погнали?">
+        <nav class="promo__navigation">
+          <a class="promo__navigation-logo">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+              <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" alt="Лого">
+            </picture>
           </a>
-          <button class="promo__navigation-toggle navigation__toggle" type="button"><span
+          <!-- <button class="promo__navigation-toggle navigation__toggle" type="button"><span
               class="visually-hidden">Открыть/закрыть
-              меню</span></button>
-          <ul class="promo__navigation-list navigation__ref-list navigation-list">
-            <li class="promo__navigation-list-item navigation-list__item">
-              <a class="promo__navigation-list-link navigation-list__link" href="#">
+              меню</span></button> -->
+          <ul class="promo__navigation-list navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="index.html">
                 О сервисе
               </a>
             </li>
-            <li class="promo__navigation-list-item navigation-list__item">
-              <a class="promo__navigation-list-link  navigation-list__link" href="#">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="form.html">
                 Направления
               </a>
             </li>
-            <li class="promo__navigation-list-item navigation-list__item">
-              <a class="promo__navigation-list-link  navigation-list__link" href="#">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="catalog.html">
                 Попутчики
               </a>
             </li>
           </ul>
-          <button class="promo__navigation-phone-btn navigation__phone-button phone-button" type="button">
+          <a class="promo__navigation-phone-btn phone-button" href="tel:8 800 555-86-28">
             <span class="visually-hidden">Телефон</span>
             <img src="img/icon-call.svg" width="18" height="18" alt="Телефон">
-          </button>
-          <button class="promo__navigation-mail-btn navigation__mail-button mail-button" type="button">
+          </a>
+          <a class="promo__navigation-mail-btn navigation__mail-button mail-button" href="mailto:mail@htmlacademy.ru">
             <span class="visually-hidden">Email</span>
-            <img src="img/icon-mail.svg" width="18" height="16" alt="Email"></button>
-          <a class="promo__navigation-login-btn navigation__login-button login-button"
-            href="#"><span>Авторизация<span></a>
+            <img src="img/icon-mail.svg" width="18" height="16" alt="Email"></a>
+          <a class="promo__navigation-login-btn" href="#"><span>Авторизация<span></a>
         </nav>
         <ul class="promo__steps step-list">
           <li class="step-list__item step-list__item--1">
@@ -139,17 +162,19 @@
     </section>
     <section class="main__about">
       <div class="about">
-        <h2 class="about__title title title--level-1">О сервисе</h2>
-        <p class="about__text">
-          Любое путешествие веселее<br> с попутчиками, которые на одной волне с тобой!
-          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
-        </p>
-        <p class="about__clarification">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-        </p>
-        <a class="about__button-more" href="#">Подробнее</a>
-        <div class="about__img-wrapper">
-          <img class="about__img" alt="Позвать!">
+        <div class="about__container">
+          <h2 class="about__title title title--level-1">О сервисе</h2>
+          <p class="about__text">
+            Любое путешествие веселее<br> с попутчиками, которые на<br> одной волне с тобой!
+            Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+          <p class="about__clarification">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+          <a class="about__button-more" href="#">Подробнее</a>
+          <div class="about__img-wrapper">
+            <img class="about__img" alt="Позвать!">
+          </div>
         </div>
       </div>
     </section>
@@ -176,14 +201,10 @@
               </p>
             </div>
             <picture class="directions__flag-picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
               <img class="directions__flag-image" src="img/thai-flag.png" width="35px" height="24px"
                 alt="Флаг тайланда">
             </picture>
             <picture class="directions__view-picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
               <img class="directions__view-image" src="img/thai-mobile.png" width="270px" height="110px"
                 alt="Виды тайланда">
             </picture>
@@ -202,14 +223,10 @@
               </p>
             </div>
             <picture class="directions__flag-picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
               <img class="directions__flag-image" src="img/france-flag.png" width="35px" height="24px"
                 alt="Флаг франции">
             </picture>
             <picture class="directions__view-picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
               <img class="directions__view-image" src="img/france-mobile.png" width="270px" height="110px"
                 alt="Виды франции">
             </picture>
@@ -220,7 +237,7 @@
                 Чехия
               </p>
               <p class="directions__list-item-description">
-                Закоулки старой Европы
+                Закоулки старой<br> Европы
               </p>
               <p class="directions__list-users-count">
                 <img src="/img/icon-user.svg" class="directions__list-icon" alt="Иконка">
@@ -228,19 +245,15 @@
               </p>
             </div>
             <picture class="directions__flag-picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
               <img class="directions__flag-image" src="img/czech-flag.png" width="35px" height="24px" alt="Флаг чехии">
             </picture>
             <picture class="directions__view-picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
               <img class="directions__view-image" src="img/checz-mobile.png" width="270px" height="110px"
                 alt="Виды чехии">
             </picture>
           </li>
         </ul>
-        <a class="directions__button-more ref-button" href="form.html">
+        <a class="directions__button-more ref-button" href="catalog.html">
           <span class="ref-button__title">Показать все</span>
           <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
         </a>
@@ -248,25 +261,28 @@
     </section>
     <section class="main__companions">
       <div class="companions">
-        <h2 class="companions__title title title--level-1">Попутчики</h2>
-        <p class="companions__text">
-          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
-          маршрут
-          для хайкинга.
-        </p>
-        <p class="companions__clarification">
-          Теперь можно легко найти единомышленников!
-        </p>
+        <div class="companions__text-container">
+          <h2 class="companions__title title title--level-1">Попутчики</h2>
+          <p class="companions__text">
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
+            маршрут
+            для хайкинга.
+          </p>
+          <p class="companions__clarification">
+            Теперь можно легко найти единомышленников!
+          </p>
+        </div>
         <ul class="companions__list">
           <li class="companions__list-item companion">
-            <div class="companion__counter counter">
-              <div class="counter__number">99</div>
-              <div class="counter__level">level</div>
+            <div class="companion__counter">
+              <img src="img/firsova-mark.png" width="60px" width="60px" alt="Рейтинг">
             </div>
             <picture class="companion__picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
-              <img class="companion__img" src="img/firsova-mobile.png" width="auto" height="270px" alt="Фото попутчика">
+              <picture class="companion__picture">
+                <source media="(min-width: 768px)" srcset="img/firsova-tablet.png, mg/firsova-tablet-2x.png 2x">
+                <img class="companion__img" src="img/firsova-mobile.png" srcset="img/firsova-mobile-2x.png 2x"
+                  width="270px" height="270px" alt="Фото попутчика">
+              </picture>
             </picture>
             <ul class="companion__flag-list">
               <li class="companion__flag-list-item">
@@ -314,13 +330,12 @@
           </li>
           <li class="companions__list-item companion">
             <div class="companion__counter counter">
-              <div class="counter__number">80</div>
-              <div class="counter__level">level</div>
+              <img src="img/demin-mark.png" width="60px" width="60px" alt="Рейтинг">
             </div>
             <picture class="companion__picture">
-              <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
-              <img class="companion__img" src="img/demin-mobile.png" width="270px" height="270px" alt="Фото попутчика">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet.png, img/demin-tablet-2x.png 2x">
+              <img class="companion__img" src="img/demin-mobile.png" srcset="img/demin-mobile-2x.png 2x" width="270px"
+                height="270px" alt="Фото попутчика">
             </picture>
             <ul class="companion__flag-list">
               <li class="companion__flag-list-item">
@@ -371,29 +386,31 @@
     </section>
     <section class="main__price">
       <div class="price">
-        <h2 class="price__title title title--level-1">Добавьте свой профиль</h2>
-        <div class="price__title-img-wrapper">
-          <img class="price__title-img" />
+        <div class="price__container">
+          <h2 class="price__title title title--level-1">Добавьте свой профиль</h2>
+          <div class="price__title-img-wrapper">
+            <img class="price__title-img" />
+          </div>
+          <ul class="price__list">
+            <li class="price__item">
+              <p class="price__item-number price__item-number--1">1</p>
+              <p class="price__item-description">Базовое размещение</p>
+              <p class="price__item-price">Бесплатно</p>
+            </li>
+            <li class="price__item">
+              <p class="price__item-number price__item-number--2">2</p>
+              <p class="price__item-description">Вывод на первых позициях</p>
+              <p class="price__item-price">99 руб./мес</p>
+            </li>
+            <li class="price__item">
+              <p class="price__item-number price__item-number--3">3</p>
+              <p class="price__item-description">Кастомный цвет карточки</p>
+              <p class="price__item-price">59 руб./мес</p>
+            </li>
+          </ul>
+          <a class="price__business-tax-btn" href="business-tarifs.html">Показать тарифы для бизнеса</a>
         </div>
-        <ul class="price__list">
-          <li class="price__item">
-            <p class="price__item-number price__item-number--1">1</p>
-            <p class="price__item-description">Базовое размещение</p>
-            <p class="price__item-price">Бесплатно</p>
-          </li>
-          <li class="price__item">
-            <p class="price__item-number price__item-number--2">2</p>
-            <p class="price__item-description">Вывод на первых позициях</p>
-            <p class="price__item-price">99 руб./мес</p>
-          </li>
-          <li class="price__item">
-            <p class="price__item-number price__item-number--3">3</p>
-            <p class="price__item-description">Кастомный цвет карточки</p>
-            <p class="price__item-price">59 руб./мес</p>
-          </li>
-        </ul>
-        <button class="price__business-tax-btn" type="button">Показать тарифы для бизнеса</button>
-        <div class="price__business price__business--hide">
+        <div class="price__business price__business--hide ">
           <div class="business-prices">
             <h2 class="business-prices__title title title--level-1">Бизнес-тарифы</h2>
             <ul class="business-prices__list">
@@ -414,33 +431,42 @@
                 <p class="business-prices__list-item-price">Индивидуально</p>
               </li>
             </ul>
-            <button class="business-prices__close" href="#">Закрыть окно</button>
+            <button class="business-prices__close">Закрыть окно</button>
           </div>
         </div>
       </div>
     </section>
     <section class="main__feedback">
       <div class="feedback">
-        <h2 class="feedback__title title title--level-1">Заинтересовались?</h2>
-        <p class="feedback__text">Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы?
-          Тогда скорее <a class="feedback__login-link">авторизуйтесь</a>.</p>
-        <form class="feedback__form" name="feedback-form">
-          <input class="feedback__form-email-input" placeholder="E-mail" type="email" />
-          <button class="feedback__form-email-submit" type="submit">
-            <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
-          </button>
-        </form>
-        <p class="feedback__question">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+        <div class="feedback__container">
+          <h2 class="feedback__title title title--level-1">Заинтересовались?</h2>
+          <p class="feedback__text">Зарегистрируйтесь,
+            <br> это быстро и бесплатно!
+            <br> Уже зарегистрированы?
+            Тогда скорее
+            <a class="feedback__login-link" href="login.html">авторизуйтесь</a>
+            .
+          </p>
+          <form class="feedback__form" name="feedback-form">
+            <input class="feedback__form-email-input" placeholder="E-mail" type="email" />
+            <button class="feedback__form-email-submit" type="submit">
+              <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
+            </button>
+          </form>
+          <p class="feedback__question">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+        </div>
         <ul class="feddback__contacts contact-list">
-          <li class="feddback__contacts-item contact-list__item">
-            <img src="/img/contacts-phone-icon.svg" class="header__contacts-img contact-list__item-img"
-              alt="Иконка телефона">
-            <a class="feddback__contacts-link contact-list__link">8 800 555-86-28</a>
+          <li class="contact-list__item">
+            <a class="feddback__contacts-link contact-list__link" href="tel:8 800 555-86-28">
+              <img src="/img/contacts-phone-icon.svg" class="contact-list__item-img" alt="Иконка телефона">
+              <span class="contact-list__text">8 800 555-86-28</span>
+            </a>
           </li>
-          <li class="feddback__contacts-item contact-list__item">
-            <img src="/img/contacts-mail-icon.svg" class="header__contacts-img contact-list__item-img"
-              alt="Иконка телефона">
-            <a class="feddback__contacts-link contact-list__link">mail@htmlacademy.ru</a>
+          <li class="contact-list__item">
+            <a class="feddback__contacts-link contact-list__link" href="mailto:mail@htmlacademy.ru">
+              <img src="/img/contacts-mail-icon.svg" class="contact-list__item-img" alt="Иконка email">
+              <span class="contact-list__text">mail@htmlacademy.ru</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -466,10 +492,13 @@
     <footer class="page__footer">
       <div class="page__footer-container">
         <a class="page-footer__logo logo">
-          <picture class="page-footer__picture logo__picture">
-            <!-- <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-          <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x"> -->
-            <img class="logo__pic" src="img/logo-text-black.png" width="96px" height="15px" alt="Logo">
+          <picture class="page-footer__picture">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+              <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" alt="Лого">
+            </picture>
           </picture>
         </a>
         <ul class="page-footer__socials navigation__socials socials-list">
@@ -492,16 +521,45 @@
         <div class="page-footer__created-container">
           <span class="page-footer__created-by-text">Разработано<span>
         </div>
-        <div class="page-footer__picture-container">
+        <a class="page-footer__picture-container" href="https://up.htmlacademy.ru/adaptive/22">
           <svg class="page-footer__created-by-pic created-by" viewBox="0 0 45 45" fill="black" width="45px"
             height="45px">
             <use xlink:href="img/logo-html.svg#logo"></use>
           </svg>
-        </div>
+        </a>
       </div>
       </div>
     </footer>
   </main>
+  <script>
+    var navMain = document.querySelector('.header__navigation');
+    var navToggle = document.querySelector('.header__toggle');
+
+    navMain.classList.remove('header__navigation--nojs');
+    navMain.classList.remove('header__navigation--open');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('header__navigation--open')) {
+        navMain.classList.remove('header__navigation--open');
+      } else {
+        navMain.classList.add('header__navigation--open');
+      }
+    });
+
+    var businessPrice = document.querySelector('.price__business');
+    var businessPriceBtnOpen = document.querySelector('.price__business-tax-btn');
+    var businessPriceBtnClose = document.querySelector('.business-prices__close');
+
+    businessPriceBtnOpen.addEventListener('click', function (e) {
+      e.preventDefault();
+      businessPrice.classList.remove('price__business--hide')
+    })
+
+    businessPriceBtnClose.addEventListener('click', function (e) {
+      businessPrice.classList.add('price__business--hide')
+      e.preventDefault()
+    })
+  </script>
 </body>
 
 </html>
