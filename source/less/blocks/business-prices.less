@@ -5,21 +5,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @basic-white;
+  background-color: @light-background;
   border-radius: 20px;
 }
 
 .business-prices__title {
+  margin-top: 34px;
   display: inline-block;
-  padding-top: 34px;
-  font-weight: 700;
-  color: @section-title-color;
-  line-height: 24px;
-  font-size: 24px;
+  color: @special-orange;
 }
 
 .business-prices__list {
-  padding-top: 28px;
   width: 220px;
 }
 
@@ -38,8 +34,7 @@
 }
 
 .business-prices__list-item-text {
-  padding: 12px 0 6px;
-  font-size: 16px;
+  margin-top: 12px;
 }
 
 .business-prices__list-item-price {
@@ -47,20 +42,12 @@
 }
 
 .business-prices__close {
-  display: block;
   position: absolute;
   bottom: 0;
-  background-color: #f3f4f8;
-  border: none;
-  outline: none;
+  background-color: @price-gray-light;
   color: @basic-blue-light;
-  text-align: center;
-  text-decoration: none;
-  font-family: "Blogger Sans", sans-serif;
-  font-weight: 700;
-  line-height: 24px;
-  font-size: 16px;
   text-transform: uppercase;
+  .set-font(16px, 22px, 700);
   width: 100%;
   height: 60px;
   border-radius: 0 0 20px 20px;

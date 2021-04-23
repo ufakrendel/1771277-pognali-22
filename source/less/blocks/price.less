@@ -1,40 +1,31 @@
 .price {
   position: relative;
-  background-color: #e6e8f1;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
+  background-color: @price-background;
   background-image: url("../../img/rates.png");
   background-repeat: no-repeat;
   background-position: right 25px top 40px;
   .container-round-bottom();
-}
-
-.price__container {
-  margin-left: 52px;
+  box-sizing: border-box;
+  padding: 44px 25px 16px 50px;
 }
 
 .price__title {
   width: 108px;
   height: 72px;
-  padding-top: 52px;
-}
-
-.price__list {
-  width: 200px;
-  height: 200px;
-  margin-top: 30px;
+  color: @special-orange;
 }
 
 .price__item {
   display: grid;
   grid-template-columns: 200px 50px;
   grid-template-rows: auto auto;
-  padding: 14px 0 14px;
-  border-top: solid 1px #e1e3e9;
+  font-weight: 300;
+  padding: 14px 0 12px;
+
+  border-top: solid 1px @price-gray-dark;
 
   &:last-child {
-    border-bottom: solid 1px #e1e3e9;
+    border-bottom: solid 1px @price-gray-dark;
   }
 }
 
@@ -42,7 +33,7 @@
   color: @basic-white;
   width: 34px;
   height: 34px;
-  top: -10px;
+  top: -6px;
   position: relative;
   font-weight: 400;
   .align-center();
@@ -69,7 +60,6 @@
 .price__item-description {
   color: @special-grey;
   position: relative;
-  top: -6px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -85,19 +75,15 @@
 }
 
 .price__business-tax-btn {
-  margin-top: 24px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  font-family: "Blogger Sans", sans-serif;
-  color: #132576;
+  display: block;
+  margin-top: 14px;
+  color: @basic-blue-medium;
   border: none;
-  text-align: center;
 }
 
 .price__business {
   position: absolute;
-  top: calc(50% - 25px);
+  top: calc(50% - 16px);
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
