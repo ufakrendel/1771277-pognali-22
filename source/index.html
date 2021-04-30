@@ -9,10 +9,10 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header  header">
-    <nav class="header__navigation header__navigation--open header__navigation--nojs">
+  <header class="page__header header">
+    <nav class="header__navigation index__header header__navigation--open header__navigation--nojs">
       <p class="visually-hidden">Погнали?</p>
-      <a class="header__logo">
+      <a href="index.html" class="header__logo">
         <picture class="header__logo--open">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
@@ -27,13 +27,17 @@
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
         <div class="header__toggle-open">
-          <img src="img/icon-menu-open.png" alt="Закрыть">
+          <svg class="contact-list__item-img" viewbox="0 0 25 11" fill="white" width="25px" height="11px">
+            <use xlink:href="img/sign.svg#icon-open-toggle"></use>
+          </svg>
         </div>
         <div class="header__toggle-close">
-          <img src="img/icon-menu-close.png" alt="Открыть">
+          <svg class="contact-list__item-img" viewbox="0 0 9 9" stroke="#cccccc" width="20px" height="20px">
+            <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+          </svg>
         </div>
       </button>
-      <ul class="header__references navigation-list font__title-2">
+      <ul class="header__references navigation-list font-title-m-2">
         <li class="navigation-list__item">
           <a class="navigation-list__link" href="index.html">
             О сервисе
@@ -52,17 +56,21 @@
       </ul>
       <a class="header__phone phone-button">Phone</a>
       <a class="header__mail mail-button">Email</a>
-      <a class="header__login" href="#"><span>Авторизация<span></a>
+      <a class="header__login" href="login.html"><span class="font-subtitle-b-2">Авторизация<span></a>
       <ul class="header__contacts contact-list">
         <li class="contact-list__item">
-          <a class="header__contacts-link contact-list__link font__subtitle-bold-2" href="tel:8 800 555-86-28">
-            <img src="/img/contacts-phone-icon.svg" class="contact-list__item-img" alt="Иконка телефона">
+          <a class="header__contacts-link contact-list__link font-subtitle-b-2" href="tel:8 800 555-86-28">
+            <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+              <use xlink:href="img/contacts-icon.svg#contact-phone"></use>
+            </svg>
             <span class="contact-list__text">8 800 555-86-28</span>
           </a>
         </li>
         <li class="contact-list__item">
-          <a class="header__contacts-link contact-list__link font__subtitle-bold-2" href="mailto:mail@htmlacademy.ru">
-            <img src="/img/contacts-mail-icon.svg" class="contact-list__item-img" alt="Иконка email">
+          <a class="header__contacts-link contact-list__link font-subtitle-b-2" href="mailto:mail@htmlacademy.ru">
+            <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+              <use xlink:href="img/contacts-icon.svg#contact-mail"></use>
+            </svg>
             <span class="contact-list__text">mail@htmlacademy.ru</span>
           </a>
         </li>
@@ -85,20 +93,19 @@
         </li>
       </ul>
     </nav>
-    </div>
   </header>
   <main class="page__main main">
     <h1 class="visually-hidden">В путешествие с попутчиками это просто!</h1>
     <section class="main__promo">
       <div class="promo">
-        <h2 class="promo__slogan font__title-1">
-          В путешествие с крутыми попутчиками!
+        <h2 class="promo__slogan font-title-b-1">
+          В путешествие<br> с крутыми попутчиками!
         </h2>
         <div class="promo__slogan-container">
           <blockquote class="promo__quote">
-            <div class="font__text">«Лучшее приложение, что я видел в жизни!»</div>
+            <div class="font-text-l">«Лучшее приложение, что я видел в жизни!»</div>
             <footer class="promo__quote-author">
-              <cite class="promo__quote-author-cite font__text-bold">Мурат Эльтазин главный редактор газеты
+              <cite class="promo__quote-author-cite font-text-b">Мурат Эльтазин главный редактор газеты
                 «гаджетлайф»</cite>
             </footer>
           </blockquote>
@@ -139,22 +146,22 @@
           <a class="promo__navigation-mail-btn navigation__mail-button mail-button" href="mailto:mail@htmlacademy.ru">
             <span class="visually-hidden">Email</span>
             <img src="img/icon-mail.svg" width="18" height="16" alt="Email"></a>
-          <a class="promo__navigation-login-btn" href="#"><span>Авторизация<span></a>
+          <a class="promo__navigation-login-btn" href="login.html"><span class="font-subtitle-b-2">Авторизация<span></a>
         </nav>
         <ul class="promo__steps step-list">
-          <li class="step-list__item font__subtitle-bold-1 step-list__item--1">
+          <li class="step-list__item font-subtitle-b-1 step-list__item--1">
             <div class="step-list__item-text">Выберите<br> направление</div>
             <div class="step-list__item-number">1</div>
           </li>
-          <li class="step-list__item font__subtitle-bold-1 step-list__item--2">
+          <li class="step-list__item font-subtitle-b-1 step-list__item--2">
             <div class="step-list__item-text">Изучите идеи<br> путешественников</div>
             <div class="step-list__item-number">2</div>
           </li>
-          <li class="step-list__item font__subtitle-bold-1 step-list__item--3">
+          <li class="step-list__item font-subtitle-b-1 step-list__item--3">
             <div class="step-list__item-text">Находите тех,<br> кто похож на вас</div>
             <div class="step-list__item-number">3</div>
           </li>
-          <li class="step-list__item font__subtitle-bold-1 step-list__item--4">
+          <li class="step-list__item font-subtitle-b-1 step-list__item--4">
             <div class="step-list__item-text">Путешествуйте<br> вместе!</div>
             <div class="step-list__item-number">4</div>
           </li>
@@ -163,12 +170,12 @@
     </section>
     <section class="main__about">
       <div class="about">
-        <h2 class="about__title title font__title-3">О сервисе</h2>
-        <p class="about__text font__text">
+        <h2 class="about__title title font-title-b-3">О сервисе</h2>
+        <p class="about__text font-text-l">
           Любое путешествие веселее<br> с попутчиками, которые на<br> одной волне с тобой!
           Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <p class="about__clarification font__text-bold">
+        <p class="about__clarification font-text-b">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
         <a class="about__button-more" href="#">Подробнее</a>
@@ -179,8 +186,8 @@
     </section>
     <section class="main__directions ">
       <div class="directions">
-        <h2 class="directions__title font__title-3">Направления</h2>
-        <p class="directions__text font__text">
+        <h2 class="directions__title font-title-b-3">Направления</h2>
+        <p class="directions__text font-text-l">
           Мы не продаем туры<br>и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться<br> и чем
           можно
           там заняться.
@@ -188,19 +195,19 @@
         <ul class="directions__list">
           <li class="directions__list-item">
             <div class="directions__list-text">
-              <p class="diretions__list-item-title font__title-4">
+              <p class="diretions__list-item-title font-title-b-4">
                 Тайланд
               </p>
-              <p class="directions__list-item-description font__subtitle-2">
+              <p class="directions__list-item-description font-subtitle-m-2">
                 Джунгли зовут!
               </p>
-              <p class="directions__list-users-count font__subtitle-2">
+              <p class="directions__list-users-count font-subtitle-m-2">
                 <img src="/img/icon-user.svg" class="directions__list-icon" alt="Иконка">
                 <span class="directions__list-count">18321</span>
               </p>
             </div>
             <picture class="directions__flag-picture">
-              <img class="directions__flag-image" src="img/thai-flag.png" width="35px" height="24px"
+              <img class="directions__flag-image" src="img/flags/Thailand.png" width="35px" height="24px"
                 alt="Флаг тайланда">
             </picture>
             <picture class="directions__view-picture">
@@ -210,19 +217,19 @@
           </li>
           <li class="directions__list-item">
             <div class="directions__list-text">
-              <p class="diretions__list-item-title font__title-4">
+              <p class="diretions__list-item-title font-title-b-4">
                 Франция
               </p>
-              <p class="directions__list-item-description font__subtitle-2">
+              <p class="directions__list-item-description font-subtitle-m-2">
                 Трэ бьен, манифик!
               </p>
-              <p class="directions__list-users-count font__subtitle-2">
+              <p class="directions__list-users-count font-subtitle-m-2">
                 <img src="/img/icon-user.svg" class="directions__list-icon" alt="Иконка">
                 <span class="directions__list-count">12518</span>
               </p>
             </div>
             <picture class="directions__flag-picture">
-              <img class="directions__flag-image" src="img/france-flag.png" width="35px" height="24px"
+              <img class="directions__flag-image" src="img/flags/France.png" width="35px" height="24px"
                 alt="Флаг франции">
             </picture>
             <picture class="directions__view-picture">
@@ -232,19 +239,20 @@
           </li>
           <li class="directions__list-item">
             <div class="directions__list-text">
-              <p class="diretions__list-item-title font__title-4">
+              <p class="diretions__list-item-title font-title-b-4">
                 Чехия
               </p>
-              <p class="directions__list-item-description font__subtitle-2">
+              <p class="directions__list-item-description font-subtitle-m-2">
                 Закоулки старой<br> Европы
               </p>
-              <p class="directions__list-users-count font__subtitle-2">
+              <p class="directions__list-users-count font-subtitle-m-2">
                 <img src="/img/icon-user.svg" class="directions__list-icon" alt="Иконка">
                 <span class="directions__list-count">5326</span>
               </p>
             </div>
             <picture class="directions__flag-picture">
-              <img class="directions__flag-image" src="img/czech-flag.png" width="35px" height="24px" alt="Флаг чехии">
+              <img class="directions__flag-image" src="img/flags/Czechia.png" width="35px" height="24px"
+                alt="Флаг чехии">
             </picture>
             <picture class="directions__view-picture">
               <img class="directions__view-image" src="img/checz-mobile.png" width="270px" height="110px"
@@ -252,8 +260,8 @@
             </picture>
           </li>
         </ul>
-        <a class="directions__button-more ref-button" href="catalog.html">
-          <span class="ref-button__title">Показать все</span>
+        <a class="directions__button-more ref-button" href="form.html">
+          <span class="ref-button__title font-subtitle-b-1">Показать все</span>
           <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
         </a>
       </div>
@@ -261,13 +269,13 @@
     <section class="main__companions">
       <div class="companions">
         <div class="companions__text-container">
-          <h2 class="companions__title font__title-3">Попутчики</h2>
-          <p class="companions__text font__text">
+          <h2 class="companions__title font-title-b-3">Попутчики</h2>
+          <p class="companions__text font-text-l">
             Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
             маршрут
             для хайкинга.
           </p>
-          <p class="companions__clarification font__text-bold">
+          <p class="companions__clarification font-text-b">
             Теперь можно легко найти единомышленников!
           </p>
         </div>
@@ -277,30 +285,28 @@
               <img src="img/firsova-mark.png" width="60px" width="60px" alt="Рейтинг">
             </div>
             <picture class="companion__picture">
-              <picture class="companion__picture">
-                <source media="(min-width: 768px)" srcset="img/firsova-tablet.png, mg/firsova-tablet-2x.png 2x">
-                <img class="companion__img" src="img/firsova-mobile.png" srcset="img/firsova-mobile-2x.png 2x"
-                  width="270px" height="270px" alt="Фото попутчика">
-              </picture>
+              <source media="(min-width: 768px)" srcset="img/firsova-tablet.png, img/firsova-tablet-2x.png 2x">
+              <img class="companion__img" src="img/firsova-mobile.png" srcset="img/firsova-mobile-2x.png 2x"
+                width="270px" height="270px" alt="Фото попутчика">
             </picture>
             <ul class="companion__flag-list">
               <li class="companion__flag-list-item">
-                <img class="companion__flag-img" src="img/comp-sri-lanka-flag.png" width="35px" height="25px"
+                <img class="companion__flag-img" src="img/flags/Sri Lanka.png" width="35px" height="25px"
                   alt="Флаг Шри-Ланка" />
               </li>
               <li class="companion__flag-list-item">
-                <img class="companion__flag-img" src="img/comp-hailand-flag.png" width="35px" height="25px"
+                <img class="companion__flag-img" src="img/flags/Thailand.png" width="35px" height="25px"
                   alt="Флаг Тайланда" />
               </li>
               <li class="companion__flag-list-item">
-                <img class="companion__flag-img" src="img/comp-seychelles-flag.png" width="35px" height="25px"
+                <img class="companion__flag-img" src="img/flags/Seychelles.png" width="35px" height="25px"
                   alt="Флаг Сейшеллы" />
               </li>
             </ul>
             <div class="companion__description">
               <div class="companion__title">
                 <div class="companion__status"></div>
-                <p class="companion__description-fio font__title-4">Таня Фирсова</p>
+                <p class="companion__description-fio font-title-b-4">Таня Фирсова</p>
               </div>
               <p class="companion__description-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="companion__movement-icons movement-list">
@@ -338,18 +344,18 @@
             </picture>
             <ul class="companion__flag-list">
               <li class="companion__flag-list-item">
-                <img class="companion__flag-img" src="img/comp-belgium-flag.png" width="35px" height="25px"
+                <img class="companion__flag-img" src="img/flags/Belgium.png" width="35px" height="25px"
                   alt="Флаг Бельгии" />
               </li>
               <li class="companion__flag-list-item">
-                <img class="companion__flag-img" src="img/comp-czech-flag.png" width="35px" height="25px"
+                <img class="companion__flag-img" src="img/flags/Czechia.png" width="35px" height="25px"
                   alt="Флаг Чехии" />
               </li>
             </ul>
             <div class="companion__description">
               <div class="companion__title">
                 <div class="companion__status companion__status--online"></div>
-                <p class="companion__description-fio font__title-4">Петя Демин</p>
+                <p class="companion__description-fio font-title-b-4">Петя Демин</p>
               </div>
               <p class="companion__description-tags">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="companion__movement-icons movement-list">
@@ -378,7 +384,7 @@
           </li>
         </ul>
         <a class="companions__show-all ref-button" href="catalog.html">
-          <span class="ref-button__title">Показать всех</span>
+          <span class="ref-button__title font-subtitle-b-1">Показать всех</span>
           <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
         </a>
       </div>
@@ -386,12 +392,12 @@
     <section class="main__price">
       <div class="price">
         <div class="price__container">
-          <h2 class="price__title font__title-3">Добавьте свой профиль</h2>
+          <h2 class="price__title font-title-b-3">Добавьте свой профиль</h2>
           <div class="price__title-img-wrapper">
             <img class="price__title-img" />
           </div>
           <ul class="price__list">
-            <li class="price__item">
+            <li class="price__item ">
               <p class="price__item-number price__item-number--1">1</p>
               <p class="price__item-description">Базовое размещение</p>
               <p class="price__item-price">Бесплатно</p>
@@ -407,11 +413,11 @@
               <p class="price__item-price">59 руб./мес</p>
             </li>
           </ul>
-          <a class="price__business-tax-btn font__text-bold" href="business-tarifs.html">Показать тарифы для бизнеса</a>
+          <a class="price__business-tax-btn font-text-b" href="business-tarifs.html">Показать тарифы для бизнеса</a>
         </div>
         <div class="price__business price__business--hide ">
           <div class="business-prices">
-            <h2 class="business-prices__title font__title-3">Бизнес-тарифы</h2>
+            <h2 class="business-prices__title font-title-b-3">Бизнес-тарифы</h2>
             <ul class="business-prices__list">
               <li class="business-prices__list-item">
                 <p class="business-prices__list-item-text">Реклама у блоггера</p>
@@ -430,7 +436,7 @@
                 <p class="business-prices__list-item-price">Индивидуально</p>
               </li>
             </ul>
-            <button class="business-prices__close">Закрыть окно</button>
+            <button class="business-prices__close font-subtitle-b-2">Закрыть окно</button>
           </div>
         </div>
       </div>
@@ -438,32 +444,37 @@
     <section class="main__feedback">
       <div class="feedback">
         <div class="feedback__container">
-          <h2 class="feedback__title title font__title-3">Заинтересовались?</h2>
-          <p class="feedback__text font__text">Зарегистрируйтесь,
+          <h2 class="feedback__title title font-title-b-3">Заинтересовались?</h2>
+          <p class="feedback__text font-text-l">Зарегистрируйтесь,
             <br> это быстро и бесплатно!
             <br> Уже зарегистрированы?
             Тогда скорее
             <a class="feedback__login-link" href="login.html">авторизуйтесь</a>
             .
           </p>
-          <form class="feedback__form" name="feedback-form">
-            <input class="feedback__form-email-input font__subtitle-bold-1" placeholder="E-mail" type="email" />
+          <form class="feedback__form" name="feedback-form" method="POST">
+            <input class="feedback__form-email-input font-subtitle-bold-1" name="email" placeholder="E-mail"
+              type="email" />
             <button class="feedback__form-email-submit" type="submit">
               <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
             </button>
           </form>
-          <p class="feedback__question font__text">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+          <p class="feedback__question font-text-l">Остались вопросы?<br> Мы с радостью на них ответим!</p>
         </div>
         <ul class="feddback__contacts contact-list">
           <li class="contact-list__item">
             <a class="feddback__contacts-link contact-list__link" href="tel:8 800 555-86-28">
-              <img src="/img/contacts-phone-icon.svg" class="contact-list__item-img" alt="Иконка телефона">
+              <svg cclass="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+                <use xlink:href="img/contacts-icon.svg#contact-phone"></use>
+              </svg>
               <span class="contact-list__text">8 800 555-86-28</span>
             </a>
           </li>
           <li class="contact-list__item">
-            <a class="feddback__contacts-link contact-list__link" href="mailto:mail@htmlacademy.ru">
-              <img src="/img/contacts-mail-icon.svg" class="contact-list__item-img" alt="Иконка email">
+            <a class="feddback__contacts-link contact-list__link " href="mailto:mail@htmlacademy.ru">
+              <svg cclass="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+                <use xlink:href="img/contacts-icon.svg#contact-mail"></use>
+              </svg>
               <span class="contact-list__text">mail@htmlacademy.ru</span>
             </a>
           </li>
@@ -477,10 +488,10 @@
           <svg class="address__map-mark" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
             <use xlink:href="img/map-mark.svg#map-mark"></use>
           </svg>
-          <p class="adress__text font__text-bold">ул. Большая<br> Конюшенная, 19/8</p>
+          <p class="adress__text font-text-b">ул. Большая<br> Конюшенная, 19/8</p>
         </div>
         <a class="adress__route-button ref-button" href="#">
-          <span class="ref-button__title">Проложить маршрут</span>
+          <span class="ref-button__title font-subtitle-b-1">Проложить маршрут</span>
           <img class="ref-button__arrow" src="img/arrow-next.svg" width="13px" height="13px" alt="arrow" />
         </a>
       </div>
@@ -490,7 +501,7 @@
     </section>
     <footer class="page__footer">
       <div class="page__footer-container">
-        <a class="page-footer__logo logo">
+        <a class="page-footer__logo logo" href="index.html">
           <picture class="page-footer__picture">
             <picture>
               <source media="(min-width: 1440px)"
@@ -520,13 +531,11 @@
         <div class="page-footer__created-container">
           <span class="page-footer__created-by-text">Разработано<span>
         </div>
-        <a class="page-footer__picture-container" href="https://up.htmlacademy.ru/adaptive/22">
-          <svg class="page-footer__created-by-pic created-by" viewBox="0 0 45 45" fill="black" width="45px"
-            height="45px">
+        <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
             <use xlink:href="img/logo-html.svg#logo"></use>
           </svg>
         </a>
-      </div>
       </div>
     </footer>
   </main>

@@ -1,0 +1,44 @@
+.plan-list__item {
+  box-sizing: border-box;
+  padding: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: @light-background;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  color: @basic-blue-light;
+
+  * {
+    color: @basic-blue-light;
+  }
+}
+
+.plan-list__number {
+  display: inline-block;
+}
+
+.plan-list__title {
+  display: inline-block;
+}
+
+.plan-list__description,
+.plan-list__dates {
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 4px;
+}
+
+.plan-list__button-change {
+  padding-top: 25px;
+  text-transform: uppercase;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

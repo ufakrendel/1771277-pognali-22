@@ -1,14 +1,31 @@
+.header__title {
+  display: inline-block;
+  padding-top: 44px;
+  padding-bottom: 10px;
+  color: @basic-white;
+}
+
+.header__title-line {
+  position: relative;
+  top: 2px;
+  background-color: @special-orange;
+  border: 2px solid @special-orange;
+  height: 1px;
+  border-radius: 4px;
+}
+
 .header__navigation {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
   display: flex;
   padding: 20px 25px 0;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 35px;
-  background-color: @main-background;
-  width: calc(100% - 50px);
+  align-items: flex-start;
+  background-color: @header-background;
+  .container-round-bottom();
 
   .header__references,
   .header__phone,
@@ -23,6 +40,10 @@
 
   .header__logo--close {
     display: block;
+  }
+
+  .header__login {
+    .login-button(190px, 40px);
   }
 }
 
@@ -39,14 +60,19 @@
 }
 
 .header__navigation--open {
+  box-sizing: border-box;
   position: absolute;
   z-index: 10;
-  height: 548px;
+  height: 568px;
   flex-direction: column;
+  align-items: center;
+  background-image: none;
   background-color: @light-background;
+  border-radius: 0;
 
   .header__toggle-open,
-  .header__logo--close {
+  .header__logo--close,
+  .header__title-container {
     display: none;
   }
 
@@ -59,19 +85,17 @@
     position: absolute;
     display: block;
     left: 24px;
-    top: 28px;
+    top: 20px;
   }
 
   .header__img {
-    max-width: 100%;
-    max-height: 100%;
     content: url("../../img/logo-text-black.png");
   }
 
   .header__toggle {
     position: absolute;
-    right: 28px;
-    top: 24px;
+    right: 24px;
+    top: 20px;
   }
 
   .header__references,
@@ -84,24 +108,28 @@
   .header__socials {
     display: flex;
     order: 4;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    .socials-list__item {
+      .opacity-action();
+    }
   }
 
   .header__references {
     order: 1;
     text-align: center;
-    padding: 120px 0 52px;
+    padding: 86px 0 52px;
   }
 
   .header__login {
     order: 2;
-    .login-button(190px, 40px);
+    .login-button(270px, 50px);
   }
 
   .header__contacts {
     order: 3;
     width: 100%;
-    margin: 48px 0 40px;
+    margin: 40px 0 20px;
   }
 
   .header__contacts-link {

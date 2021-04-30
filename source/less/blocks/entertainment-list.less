@@ -1,0 +1,55 @@
+.entertainment-list__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-bottom: 12px;
+}
+
+.entertainment-list__title {
+  padding-left: 16px;
+  color: @basic-blue-light;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    right: 65px;
+    content: "";
+    width: 30px;
+    height: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+  }
+}
+
+.entertainment-list__flag {
+  width: 36px;
+  height: 24px;
+}
+
+.entertainment-list__text {
+  box-sizing: border-box;
+  margin-top: 12px;
+  width: 100%;
+  resize: none;
+  height: 220px;
+  border: 1px solid @form-fieldset-color;
+  border-radius: 4px;
+  color: @special-grey;
+  padding: 10px;
+  .set-font(16px, 22px, 400);
+
+
+  &:focus {
+    border: 1px solid @form-fieldset-color;
+    border-radius: 4px;
+  }
+
+  &::placeholder {
+    color: @special-grey;
+    .set-font(16px, 22px, 300);
+    opacity: 0.5;
+  }
+}

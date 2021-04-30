@@ -35,6 +35,15 @@
 .feedback__login-link {
   text-decoration: underline;
   color: @basic-yellow;
+
+  &:hover {
+    color: @special-yellow-dark;
+  }
+
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .feedback__form {
@@ -51,7 +60,8 @@
   color: @special-grey;
   outline: none;
   width: 200px;
-
+  font-size: 18px;
+  padding-left: 10px;
 
   &::placeholder {
     padding-left: 25px;
@@ -68,17 +78,14 @@
   border-radius: 10px;
   width: 60px;
   height: 62px;
+  color: @main-section-dark-bgcolor;
 
   &:hover {
     background-color: @button-background-hovered;
   }
 
-  &:active * {
+  &:active .ref-button__arrow {
     opacity: 0.5;
-  }
-
-  * {
-    color: @main-section-dark-bgcolor;
   }
 }
 
@@ -87,7 +94,10 @@
 }
 
 .feddback__contacts-link {
+  padding-bottom: 0;
+
   .contact-list__text {
+    .set-font(16px, 22px, 700);
     color: @basic-yellow;
   }
 }

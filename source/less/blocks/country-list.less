@@ -1,0 +1,112 @@
+.country-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 42px;
+  padding-bottom: 20px;
+
+  &--unselected {
+    .country-list__splitter {
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px solid @form-fieldset-color;
+    }
+
+    .country-list__img-container {
+      display: none;
+    }
+
+    .country-list__title {
+      width: 220px;
+    }
+
+    .country-list__dropdown {
+      position: absolute;
+      background: none;
+      left: 176px;
+    }
+  }
+
+  &--add {
+    .country-list__title {
+      width: 220px;
+      background-color: @form-background-color;
+      border: none;
+    }
+
+    .country-list__splitter {
+      background-color: @form-fieldset-color;
+    }
+
+    .country-list__img-plus {
+      position: absolute;
+      top: 14px;
+      left: 190px;
+    }
+  }
+}
+
+.country-list__title {
+  display: inline-flex;
+  align-items: center;
+  color: @basic-blue-light;
+  padding-left: 10px;
+  text-transform: uppercase;
+  border: solid 1px @form-fieldset-color;
+  width: 168px;
+  border-radius: 4px;
+}
+
+.country-list__splitter {
+  position: absolute;
+  left: 165px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background-color: @basic-blue-light;
+  border-radius: 4px;
+}
+
+.country-list__delete {
+  position: absolute;
+  top: -11px;
+  left: 210px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: @form-background-color;
+}
+
+.country-list__img-container {
+  .align-center();
+  width: 52px;
+  height: 40px;
+  border: solid 1px @form-fieldset-color;
+  border-radius: 4px;
+}
+
+.country-list__img {
+  width: 36px;
+  height: 24px;
+}
+
+.country-list__img-arrow {
+  position: absolute;
+  left: 166px;
+  top: 44px;
+  opacity: 0.3;
+}
+
+.country-list__dropdown {
+  position: absolute;
+  left: 120px;
+  top: 2px;
+  width: 40px;
+  height: 38px;
+  .align-center();
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+}
+
+.country-list__img-dropdown {
+  opacity: 0.3;
+}

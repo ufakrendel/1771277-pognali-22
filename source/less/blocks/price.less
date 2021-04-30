@@ -1,12 +1,12 @@
 .price {
+  box-sizing: border-box;
   position: relative;
   background-color: @price-background;
   background-image: url("../../img/rates.png");
   background-repeat: no-repeat;
   background-position: right 25px top 40px;
   .container-round-bottom();
-  box-sizing: border-box;
-  padding: 44px 25px 16px 50px;
+  padding: 50px 25px 16px 50px;
 }
 
 .price__title {
@@ -18,13 +18,9 @@
 .price__item {
   display: grid;
   grid-template-columns: 200px 50px;
-  grid-template-rows: auto auto;
-  font-weight: 300;
-  padding: 14px 0 12px;
+  grid-template-rows: 32px 32px;
 
-  border-top: solid 1px @price-gray-dark;
-
-  &:last-child {
+  &:last-child .price__item-price {
     border-bottom: solid 1px @price-gray-dark;
   }
 }
@@ -33,16 +29,15 @@
   color: @basic-white;
   width: 34px;
   height: 34px;
-  top: -6px;
-  position: relative;
-  font-weight: 400;
-  .align-center();
+  justify-self: center;
   border-radius: 17px;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  margin-left: 10px;
+  margin-top: 4px;
+  .align-center();
+
 
   &--1 {
     background-color: @special-orange;
@@ -58,12 +53,17 @@
 }
 
 .price__item-description {
+  display: table-cell;
+  vertical-align: bottom;
+  border-top: solid 1px @price-gray-dark;
   color: @special-grey;
   position: relative;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  align-self: flex-end;
+  padding-top: 6px;
 }
 
 .price__item-price {
@@ -72,6 +72,7 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  height: 100%;
 }
 
 .price__business-tax-btn {
@@ -79,6 +80,7 @@
   margin-top: 14px;
   color: @basic-blue-medium;
   border: none;
+  .opacity-action();
 }
 
 .price__business {

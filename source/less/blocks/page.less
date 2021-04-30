@@ -4,28 +4,32 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  background-color: @basic;
 }
 
 .page__header {
+  background-color: @main-background;
   position: relative;
   height: 73px;
-  background-color: @header-background-color;
-  background-image: url("../../img/globe-back-mobile-header.png");
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
 }
 
 .page__body {
-  background-color: @basic-white;
   min-height: 100%;
 }
 
 .page__footer {
+  position: relative;
+  z-index: 3;
   line-height: 16px;
   font-size: 16px;
   height: 239px;
   background-color: @basic-white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+
+
+.page__catalog-container {
+  box-sizing: border-box;
+  padding: 100px 25px 0;
 }

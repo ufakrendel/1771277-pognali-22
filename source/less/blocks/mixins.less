@@ -1,12 +1,12 @@
 .container-round-bottom {
-  width: 100%;
-  height: 100%;
   border-radius: 0 0 30px 30px;
 }
 
+.container-round-top {
+  border-radius: 30px 30px 0 0;
+}
+
 .login-button(@width, @height) {
-  font-size: 17px;
-  font-weight: 700;
   background-color: @basic-yellow;
   text-align: center;
   text-transform: uppercase;
@@ -14,6 +14,7 @@
   height: @height;
   width: @width;
   line-height: @height;
+  color: @main-section-dark-bgcolor;
 
   &:hover {
     background-color: @special-yellow-dark;
@@ -22,36 +23,32 @@
   &:active * {
     opacity: 0.5;
   }
-
-  * {
-    color: @main-section-dark-bgcolor;
-  }
 }
 
 .buttons(@width, @height) {
+  display: block;
   .align-center();
   height: @height;
   width: @width;
   border-radius: @height / 2;
-
-  &:focus {
-    outline: none;
-  }
 
   &:active * {
     opacity: 0.5;
   }
 }
 
-.big-button {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-}
-
 .align-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.opacity-action {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
