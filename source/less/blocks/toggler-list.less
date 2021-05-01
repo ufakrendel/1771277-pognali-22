@@ -1,0 +1,17 @@
+.toggler-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.toggler-list__item {
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  opacity: 0.3;
+  background-color: @basic-blue-light;
+
+  &--active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,43 @@
+.movement-btn__input {
+  position: absolute;
+  left: -9999px;
+}
+
+.movement-btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.movement-btn__label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: @light-background;
+
+  &:hover {
+    box-shadow: 0 2px 6px 0 #161c3517;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: @form-fieldset-color;
+  }
+}
+
+.movement-btn__input:checked + label > svg {
+  fill: @basic-blue-light;
+  opacity: 1;
+}
+
+.movement-btn__input + label > svg {
+  width: 21px;
+  height: 21px;
+  fill: black;
+  opacity: 0.3;
+}

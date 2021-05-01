@@ -1,0 +1,40 @@
+.step-list__item {
+  box-sizing: border-box;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: -40px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 22px 24px 0;
+  .set-font(18px, 18px, 700);
+
+  &--1 {
+    background-color: @special-orange;
+  }
+
+  &--2 {
+    background-color: @special-orange-2;
+  }
+
+  &--3 {
+    background-color: @special-yellow-dark;
+  }
+
+  &--4 {
+    height: 80px;
+    background-color: @basic-yellow;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.step-list__item-text {
+  color: @basic-blue;
+}
+
+.step-list__item-number {
+  color: @basic-white;
+}

@@ -1,0 +1,147 @@
+.header__title {
+  display: inline-block;
+  padding-top: 44px;
+  padding-bottom: 10px;
+  color: @basic-white;
+  .set-font(36px, 40px, 700);
+}
+
+.header__title-line {
+  position: relative;
+  top: 2px;
+  background-color: @special-orange;
+  border: 2px solid @special-orange;
+  height: 1px;
+  border-radius: 4px;
+}
+
+.header__img {
+  width: 100px;
+  height: 15px;
+}
+
+.header__navigation {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px 25px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: @basic-blue;
+  .container-round-bottom();
+
+  .header__references,
+  .header__phone,
+  .header__mail,
+  .header__login,
+  .header__contacts,
+  .header__socials,
+  .header__toggle-close,
+  .header__img--open {
+    display: none;
+  }
+
+  .header__logo--close {
+    display: block;
+  }
+
+  .header__login {
+    .login-button(190px, 40px);
+    .set-font(16px, 18px, 700);
+  }
+}
+
+.header__navigation--nojs {
+  .header__toggle {
+    display: none;
+  }
+}
+
+.header__toggle {
+  width: 24px;
+  height: 12px;
+  outline: none;
+}
+
+.header__navigation--open {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  height: 568px;
+  flex-direction: column;
+  align-items: center;
+  background-image: none;
+  background-color: @light-background;
+  border-radius: 0;
+
+  .header__toggle-open,
+  .header__img--close,
+  .header__title-container {
+    display: none;
+  }
+
+  .header__toggle-close,
+  .header__img--open {
+    display: block;
+  }
+
+  .header__logo {
+    position: absolute;
+    display: block;
+    left: 24px;
+    top: 20px;
+  }
+
+  .header__img {
+    content: url("../../img/logo-text-black.png");
+  }
+
+  .header__toggle {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+  }
+
+  .header__references,
+  .header__login,
+  .header__contacts {
+    display: block;
+    color: @basic-blue;
+  }
+
+  .header__socials {
+    display: flex;
+    order: 4;
+    margin-bottom: 40px;
+
+    .socials-list__item {
+      .opacity-action();
+    }
+  }
+
+  .header__references {
+    order: 1;
+    text-align: center;
+    padding: 86px 0 52px;
+  }
+
+  .header__login {
+    order: 2;
+    .login-button(270px, 50px);
+  }
+
+  .header__contacts {
+    order: 3;
+    width: 100%;
+    margin: 40px 0 20px;
+  }
+
+  .header__contacts-link {
+    .contact-list__text {
+      color: @basic-blue;
+    }
+  }
+}

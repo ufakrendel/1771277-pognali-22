@@ -1,0 +1,100 @@
+.price {
+  box-sizing: border-box;
+  position: relative;
+  background-color: @price-background;
+  background-image: url("../../img/rates.png");
+  background-repeat: no-repeat;
+  background-position: right 25px top 38px;
+  .container-round-bottom();
+  padding: 50px 25px 16px 50px;
+}
+
+.price__title {
+  width: 108px;
+  height: 72px;
+  color: @special-orange;
+  .set-font(24px, 24px, 700);
+  margin-bottom: 42px;
+}
+
+.price__item {
+  display: grid;
+  grid-template-columns: 200px 50px;
+  grid-template-rows: 32px 32px;
+
+  &:last-child .price__item-price {
+    border-bottom: solid 1px @price-gray-dark;
+  }
+}
+
+.price__item-number {
+  color: @basic-white;
+  width: 34px;
+  height: 34px;
+  justify-self: center;
+  border-radius: 17px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-top: 4px;
+  .align-center();
+
+
+  &--1 {
+    background-color: @special-orange;
+  }
+
+  &--2 {
+    background-color: @special-yellow-dark;
+  }
+
+  &--3 {
+    background-color: @basic-yellow;
+  }
+}
+
+.price__item-description {
+  display: table-cell;
+  vertical-align: bottom;
+  border-top: solid 1px @price-gray-dark;
+  color: @special-grey;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: flex-end;
+  padding-top: 6px;
+}
+
+.price__item-price {
+  color: @special-grey;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 100%;
+}
+
+.price__business-tax-btn {
+  display: block;
+  margin-top: 32px;
+  color: @basic-blue-medium;
+  border: none;
+  .opacity-action();
+  .set-font(16px, 22px, 700);
+  margin-bottom: 20px;
+}
+
+.price__business {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  &--hide {
+    display: none;
+  }
+}

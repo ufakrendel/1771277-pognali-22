@@ -1,0 +1,37 @@
+.calendar {
+  border-collapse: collapse;
+  .set-font(14px, 12px, 400);
+}
+
+.calendar__header {
+  color: @special-grey;
+  padding-bottom: 10px;
+
+  &--weekend {
+    color: @special-red;
+  }
+}
+
+.calendar__day {
+  color: @special-grey;
+  height: 30px;
+  width: 32px;
+  border: solid 1px @form-fieldset-color;
+  vertical-align: middle;
+  text-align: center;
+  background-color: @form-background-color;
+
+  &&--selected {
+    color: @basic-white;
+    background-color: @basic-blue-light;
+  }
+
+  &--not-active {
+    opacity: 0.3;
+    background-color: unset;
+  }
+
+  &--today {
+    border: solid red 2px;
+  }
+}

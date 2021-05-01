@@ -4,110 +4,171 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="Shortcut icon" href="img/favicon.svg" type="image/svg">
 </head>
 
 <body class="page__body">
-  <header class="page__header">
-    <nav class="page__header-navigation navigation">
-      <p class="navigation__title">Погнали?</p>
-      <a class="navigation__logo logo">
-        <img class="logo__img" alt="Погнали?">
+  <header class="page__header header">
+    <nav class="header__navigation header__navigation--open header__navigation--nojs">
+      <p class="visually-hidden">Погнали?</p>
+      <a href="index.html" class="header__logo">
+        <picture class="header__img header__img--open">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+          <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="100" height="15" alt="Лого">
+        </picture>
+        <picture class="header__img header__img--close">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white-x1.png, img/logo-desktop-white-x2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white-x1.png, img/logo-tablet-white-x2.png 2x">
+          <img src="img/logo-mobile-white-x1.png" srcset="img/logo-mobile-white-x2.png 2x" width="100" height="15" alt="Лого">
+        </picture>
       </a>
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
-          меню</span></button>
-      <ul class="navigation__ref-list navigation-list">
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+        <svg class="header__toggle-open" viewbox="0 0 25 11" fill="white" width="25px" height="11px">
+          <use xlink:href="img/sign.svg#icon-open-toggle"></use>
+        </svg>
+        <svg class="header__toggle-close" viewbox="0 0 9 9" stroke="#cccccc" width="20px" height="20px">
+          <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+        </svg>
+      </button>
+      <ul class="header__references navigation-list">
         <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">
+          <a class="navigation-list__link" href="index.html">
             О сервисе
           </a>
         </li>
         <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">
+          <a class="navigation-list__link" href="form.html">
             Направления
           </a>
         </li>
         <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">
+          <a class="navigation-list__link" href="catalog.html">
             Попутчики
           </a>
         </li>
       </ul>
-      <button class="navigation__phone-button phone-button" type="button">Phone</button>
-      <button class="navigation__mail-button mail-button" type="button">Email</button>
-      <a class="navigation__login-button login-button" href="#">Авторизация</button>
-        <ul class="navigation__contacts contact-list">
-          <li class="contact-list__item">
-            <a class="contact-list__link">8 800 555-86-28</a>
-          </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="navigation__socials socials-list">
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="#">facebook</a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="#">vk</a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="#">instagramm</a>
-          </li>
-        </ul>
+      <a class="header__phone phone-button">Phone</a>
+      <a class="header__mail mail-button">Email</a>
+      <a class="header__login" href="login.html"><span>Авторизация</span></a>
+      <ul class="header__contacts contact-list">
+        <li class="contact-list__item">
+          <a class="header__contacts-link contact-list__link" href="tel:88005558628">
+            <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+              <use xlink:href="img/contacts-icon.svg#contact-phone"></use>
+            </svg>
+            <span class="contact-list__text">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="contact-list__item">
+          <a class="header__contacts-link contact-list__link" href="mailto:mail@htmlacademy.ru">
+            <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+              <use xlink:href="img/contacts-icon.svg#contact-mail"></use>
+            </svg>
+            <span class="contact-list__text">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="header__socials socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">
+            <img src="/img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+          </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">
+            <img src="/img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+          </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#">
+            <img src="/img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+          </a>
+        </li>
+      </ul>
+      <div class="header__title-container">
+        <p class="header__title">
+          Направления
+        </p>
+        <div class="header__title-line"></div>
+      </div>
     </nav>
-    <p class="page__header-title">
-      Направления
-    </p>
   </header>
   <main class="page__main main">
-    <h1 class="visually-hidden">Направления</h1>
-    <section class="main__user-info user-info">
-      <h2 class="visually-hidden">Персональная информация</h2>
-      <div class="user-info__counter counter">
-        <div class="counter__number">80</div>
-        <div class="counter__level">level</div>
-      </div>
-      <div class="user-info__img-wrapper">
-        <img class="user-info__img" alt="Фото пользователя">
-      </div>
-      <button class="user-info__change-img" type="button">Сменить фото</button>
-      <div class="user-info__tags-container">
-        <p class="user-info__tags">#бургер#бар#футбол#концерт#крафт</p>
-      </div>
-      <div class="user-info__movement-container">
-        <ul class="user-info__movement-icons movement-list">
-          <li class="movement-list__item movement-list__item--active">
-            <img class="movement-list__img" alt="Самолет" />
-          </li>
-          <li class="movement-list__item movement-list__item--active">
-            <img class="movement-list__img" alt="Автобус" />
-          </li>
-          <li class="movement-list__item">
-            <img class="movement-list__img" alt="Велосипед" />
-          </li>
-          <li class="movement-list__item movement-list__item--active">
-            <img class="movement-list__img" alt="Бег" />
-          </li>
-        </ul>
-      </div>
-    </section>
     <form class="main__form form" action="https://echo.htmlacademy.ru" method="POST">
+      <h1 class="visually-hidden">Направления</h1>
+      <section class="main__user-info user-info">
+        <h2 class="visually-hidden">Персональная информация</h2>
+        <div class="user-info__counter">
+          <svg class="user-info__counter-img" width="100px" height="100px">
+            <use xlink:href="img/mark-level-form.svg#form-mark-level"></use>
+          </svg>
+        </div>
+        <div class="user-info__img-wrapper">
+          <picture class="user-info__picture">
+            <source media="(min-width: 768px)" srcset="img/demin-tablet.png, img/demin-tablet-2x.png 2x">
+            <img class="user-info__img" src="img/demin-mobile.png" srcset="img/demin-mobile-2x.png 2x" width="100"
+              height="100" alt="Фото попутчика">
+          </picture>
+        </div>
+        <button class="user-info__change-img" type="button">Сменить фото</button>
+        <div class="user-info__tags-container">
+          <fieldset class="user-info__fieldset">
+            <legend class="user-info__legend">Тэги</legend>
+            <textarea name="tags"
+              class="user-info__tags">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+        </div>
+        <div class="user-info__movement-container movement-btn">
+          <fieldset class="user-info__fieldset">
+            <legend class="user-info__legend">Транспорт</legend>
+            <div class="movement-btn__container">
+              <input name="plan" type="checkbox" class="movement-btn__input" id="plan" checked />
+              <label for="plan" class="movement-btn__label">
+                <svg class="movement-btn__img" viewBox="0 0 21 23" width="21px" height="21px">
+                  <use xlink:href="img/movement-icon.svg#plan"></use>
+                </svg>
+              </label>
+              <input name="bus" type="checkbox" class="movement-btn__input" id="bus" checked />
+              <label for="bus" class="movement-btn__label">
+                <svg class="movement-btn__img" viewBox="0 0 18 21" width="21px" height="21px">
+                  <use xlink:href="img/movement-icon.svg#bus"></use>
+                </svg>
+              </label>
+              <input name="bike" type="checkbox" class="movement-btn__input" id="bike">
+              <label for="bike" class="movement-btn__label">
+                <svg class="movement-btn__img" viewBox="0 0 25 24" width="21px" height="21px">
+                  <use xlink:href="img/movement-icon.svg#bike"></use>
+                </svg>
+              </label>
+              <input name="run" type="checkbox" class="movement-btn__input" id="run" checked />
+              <label for="run" class="movement-btn__label">
+                <svg class="movement-btn__img" viewBox="0 0 21 24" width="21px" height="21px">
+                  <use xlink:href="img/movement-icon.svg#run"></use>
+                </svg>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+      </section>
       <section class="main__plans my-plans">
-        <h2 class="my-plans__header">Мои планы</h2>
+        <h2 class="my-plans__header">Мои планы:</h2>
         <ul class="main__plans-list plan-list">
           <li class="plan-list__item">
-            <p class="plan-list__number">1</p>
+            <p class="plan-list__number">1.</p>
             <p class="plan-list__title">Франция, Италия</p>
             <p class="plan-list__description">3 попутчика</p>
             <p class="plan-list__dates">26 мар - 29 мар</p>
-            <button class="plan-list__button-change" type="button">Изменить</button>
+            <a class="plan-list__button-change" href="plan_edit.html">Изменить</a>
           </li>
           <li class="plan-list__item">
-            <p class="plan-list__number">2</p>
+            <p class="plan-list__number">2.</p>
             <p class="plan-list__title">Таиланд, Индонезия</p>
             <p class="plan-list__description">1 попутчик</p>
             <p class="plan-list__dates">1 июл - 15 июл</p>
-            <button class="plan-list__button-change" type="button">Изменить</button>
+            <a class="plan-list__button-change" href="plan_edit.html">Изменить</a>
           </li>
         </ul>
       </section>
@@ -118,33 +179,62 @@
           <li class="toggler-list__item"></li>
           <li class="toggler-list__item"></li>
         </ul>
-        <section class="add-plan__step-1 step-1 step">
-          <p class="step-1__title step__title">Шаг 1. <br> Даты пребывания</p>
-          <p class="step-1__title-descr step__title-descr">Укажите предпочтительное количество попутчиков, которых вы
+        <section class="add-plan__step-1 step-1" id="step-1">
+          <h2 class="step-1__title">Шаг 1.<br> Даты пребывания</h2>
+          <p class="step-1__title-descr">Укажите предпочтительное количество попутчиков, которых вы
             хотели бы позвать в поездку, и ее преполагаемую длительность.</p>
-          <div class="step-1__companions-counter counter">
-            <label class="couter__title" for="companions-count">Ищу попутчиков:</p>
-              <p class="counter__description">чел.</p>
-              <button class="counter__minus-btn" type="button"></button>
-              <input class="counter__number-input" type="number" id="companions-count" name="companions-count" value="2" />
-              <button class="counter__plus-btn" type="button"></button>
+          <div class="step-1__companions-counter step-counter">
+            <label class="step-counter__title" for="companions-count">Ищу попутчиков:</label>
+            <p class="step-counter__description">чел.</p>
+            <div class="step-counter__btn-group">
+              <button class="step-counter__minus-btn" type="button">
+                <svg class="step-counter__plus-img" viewBox="0 0 14 14" width="14px" height="14px">
+                  <use xlink:href="img/sign.svg#minus"></use>
+                </svg>
+              </button>
+              <input class="step-counter__number-input" id="companions-count" name="companions-count"
+                value="2" />
+              <button class="step-counter__plus-btn" type="button">
+                <svg class="step-counter__plus-img" viewBox="0 0 14 14" width="14px" height="14px">
+                  <use xlink:href="img/sign.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="step-1__duration-counter counter">
-            <label class="couter__title" for="duration">Длительность:</p>
-              <p class="counter__description">дн.</p>
-              <button class="counter__minus-btn" type="button"></button>
-              <input class="counter__number-input" id="duration" name="duration" type="number" value="3"/>
-              <button class="counter__plus-btn" type="button"></button>
+          <div class="step-1__duration-counter step-counter">
+            <label class="step-counter__title" for="duration">Длительность:</label>
+            <p class="step-counter__description">дн.</p>
+            <div class="step-counter__btn-group">
+              <button class="step-counter__minus-btn" type="button">
+                <svg class="step-counter__plus-img" viewBox="0 0 14 14" width="14px" height="14px">
+                  <use xlink:href="img/sign.svg#minus"></use>
+                </svg>
+              </button>
+              <input class="step-counter__number-input" id="duration" name="duration" value="3" />
+              <button class="step-counter__plus-btn" type="button">
+                <svg class="step-counter__plus-img" viewBox="0 0 14 14" width="14px" height="14px">
+                  <use xlink:href="img/sign.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="step-1__child-checkbox">
+            <input class="step-1__child-checkbox-input custom-checkbox" id="with-childs" type="checkbox"
+              name="child-chekbox" value="yes" />
             <label class="step-1__child-checkbox-title" for="with-childs">Можно с детьми</label>
-            <input class="step-1__child-checkbox-input" id="with-childs" type="checkbox" name="child-chekbox" checked/>
-          </div>
           </div>
           <div class="step-1__dates month">
-            <button class="month__minus" type="button"></button>
-            <input class="month__input" name="month" />
-            <button class="month__plus" type="button"></button>
+            <button class="month__minus" type="button">
+              <svg class="month__plus-img" viewBox="0 0 15 21" width="14px" height="14px">
+                <use xlink:href="img/sign.svg#arrow-back-form"></use>
+              </svg>
+            </button>
+            <input class="month__input" name="month" value="Март 2019" />
+            <button class="month__plus" type="button">
+              <svg class="month__plus-img" viewBox="0 0 15 21" width="14px" height="14px">
+                <use xlink:href="img/sign.svg#arrow-next-form"></use>
+              </svg>
+            </button>
           </div>
           <div class="step-1__calendar calendar">
             <table class="calendar">
@@ -197,7 +287,7 @@
                 <td class="calendar__day calendar__day--not-active">23</td>
                 <td class="calendar__day calendar__day--not-active">24</td>
                 <td class="calendar__day calendar__day--not-active">25</td>
-                <td class="calendar__day calendar__day--selected today">26</td>
+                <td class="calendar__day calendar__day--selected calendar__day--today">26</td>
                 <td class="calendar__day calendar__day--selected">27</td>
                 <td class="calendar__day calendar__day--selected">28</td>
                 <td class="calendar__day">29</td>
@@ -213,48 +303,103 @@
               </tr>
             </table>
           </div>
-          <button class="step-1__next-btn big-button" type="button">Следующий шаг</button>
+          <a class="step-1__next-btn" href="#step-2"><span>Следующий шаг</span></a>
         </section>
-        <section class="add-plan__step-2 step-2 step">
-          <p class="step-2__title step__title">Шаг 2.<br>Маршрут</p>
-          <p class="step-2__title-descr step__title-descr">Укажите страны, которые вы хотели бы посетить. Это может быть
+        <section class="add-plan__step-2 step-2" id="step-2">
+          <h2 class="step-2__title">Шаг 2.<br>Маршрут</h2>
+          <p class="step-2__title-descr">Укажите страны, которые вы хотели бы посетить. Это
+            может быть
             одна или сразу несколько.</p>
           <ul class="step-2__country-list country-list">
             <li class="country-list__item">
-              <p class="country-list__title">Босния и герцеговина</p>
+              <input name="plan-country-1" class="country-list__title" value="Босния и герцеговина"
+                readonly />
               <div class="country-list__splitter"></div>
-              <img class="country-list__img" src="" alt="флаг страны"></img>
-              <button class="country-list__delete" type="button">Delete</button>
-              <img class="country-list__img-arrow" alt=" стрелка вниз"></img>
+              <div class="country-list__img-container">
+                <img class="country-list__img" src="img/flags/bosnia-and-herzegovina.png" alt="флаг страны"
+                  height="24" width="36"/>
+              </div>
+              <button class="country-list__delete" type="button">
+                <span class="visually-hidden">Delete</span>
+                <svg class="country-list__delete-img" width="9" height="9" opacity="0.3">
+                  <use xlink:href="img/sign.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="country-list__dropdown">
+                <svg class="country-list__img-dropdown" width="12" height="16">
+                  <use xlink:href="img/sign.svg#arrow-dropdown-form"></use>
+                </svg>
+              </div>
+              <svg class="country-list__img-arrow" width="8" height="11">
+                <use xlink:href="img/sign.svg#arrow-down-form"></use>
+              </svg>
             </li>
             <li class="country-list__item">
-              <p class="country-list__title">Чехия</p>
+              <input name="plan-country-2" class="country-list__title" value="Чехия" type="text" readonly />
               <div class="country-list__splitter"></div>
-              <img class="country-list__img" src="img/czech-flag.png" alt="флаг страны"></img>
-              <button class="country-list__delete" type="button">Delete</button>
-              <img class="country-list__img-arrow" alt="стрелка вниз"></img>
+              <div class="country-list__img-container">
+                <img class="country-list__img" src="img/flags/czechia.png" alt="флаг страны" height="24"
+                  width="36"/>
+              </div>
+              <button class="country-list__delete" type="button">
+                <span class="visually-hidden">Delete</span>
+                <svg class="country-list__delete-img" width="9px" height="9" opacity="0.3">
+                  <use xlink:href="img/sign.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="country-list__dropdown">
+                <svg class="country-list__img-dropdown" width="12" height="16">
+                  <use xlink:href="img/sign.svg#arrow-dropdown-form"></use>
+                </svg>
+              </div>
+              <svg class="country-list__img-arrow" width="8" height="11">
+                <use xlink:href="img/sign.svg#arrow-down-form"></use>
+              </svg>
             </li>
-            <li class="country-list__item">
-              <p class="country-list__title">Выберите страну</p>
-              <div class="country-list__splitter --unchecked"></div>
-              <img class="country-list__img country-list__img--select" alt="Раскрывающийся список"></img>
-              <button class="country-list__delete" type="button">Delete</button>
-              <img class="country-list__img-arrow" alt="стрелка вниз"></img>
+            <li class="country-list__item country-list__item--unselected">
+              <input class="country-list__title" value="Выберите страну"
+                readonly />
+              <div class="country-list__splitter"></div>
+              <button class="country-list__delete" type="button">
+                <span class="visually-hidden">Delete</span>
+                <svg class="country-list__delete-img" width="9" height="9" opacity="0.3">
+                  <use xlink:href="img/sign.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="country-list__dropdown">
+                <svg class="country-list__img-dropdown" width="12" height="16">
+                  <use xlink:href="img/sign.svg#arrow-dropdown-form"></use>
+                </svg>
+              </div>
+              <svg class="country-list__img-arrow" width="8" height="11">
+                <use xlink:href="img/sign.svg#arrow-down-form"></use>
+              </svg>
             </li>
-            <li class="country-list__item country-list__item--btn">
-              <p class="country-list__title">Добавить страну</p>
-              <div class="country-list__splitter country-list__splitter--unchecked"></div>
-              <img class="country-list__img country-list__img--add" alt="+"></img>
+            <li class="country-list__item country-list__item--add">
+              <input class="country-list__title" value="Добавить страну" />
+              <div class="country-list__splitter"></div>
+              <div class="country-list__plus">
+                <svg class="country-list__img-plus" width="14" height="14">
+                  <use xlink:href="img/sign.svg#plus"></use>
+                </svg>
+              </div>
             </li>
           </ul>
-          <button class="step-2__next-btn big-button" type="button">Следующий шаг</button>
-          <button class="step-2__back-btn" type="button">На шаг назад</button>
-          <div class="step-2__country-select-wrapper select-country">
+          <a class="step-2__next-btn" href="#step-3"><span>Следующий шаг</span></a>
+          <a class="step-2__back-btn" href="#step-1">На шаг назад</a>
+          <div class="step-2__country-select-wrapper select-country select-country--close">
             <table class="select-country__table alphabet-table">
-              <tr class="alphabet-table__row">
-                <th class="alphabet-table__header" colspan="5">
+              <tr class="alphabet-table__row alphabet-table__header">
+                <th class="alphabet-table__th" colspan="4">
                   <p class="alphabet-table__title">Выберите страну</p>
-                  <button class="alphabet-table__close" type="button">Закрыть</button>
+                </th>
+                <th class="alphabet-table__th">
+                  <button class="select-country__close alphabet-table__close" type="button">
+                    <span class="visually-hidden"> Закрыть </span>
+                    <svg  width="9" height="9">
+                      <use xlink:href="img/sign.svg#icon-close-w"></use>
+                    </svg>
+                  </button>
                 </th>
               </tr>
               <tr class="alphabet-table__row">
@@ -293,87 +438,134 @@
                 <td class="alphabet-table__data">Я</td>
               </tr>
             </table>
-            <select class="select-country__countries country-list" name="country">
-              <option class="country-list__item" value="Австралия">
+            <select class="select-country__countries country-select-list" size="11" name="country-select">
+              <option class="country-select-list__item" value="Австралия">
                 Австралия
               </option>
-              <option class="country-list__item" value="Австрия">
+              <option class="country-select-list__item" value="Австрия">
                 Австрия
               </option>
-              <option class="country-list__item" value="Азербайджан">
+              <option class="country-select-list__item" value="Азербайджан">
                 Азербайджан
               </option>
-              <option class="country-list__item" value="Албания">
+              <option class="country-select-list__item" value="Албания">
                 Албания
               </option>
-              <option class="country-list__item" value="Алжир">
+              <option class="country-select-list__item" value="Алжир">
                 Алжир
               </option>
-              <option class="country-list__item" value="Ангола">
+              <option class="country-select-list__item" value="Ангола">
                 Ангола
               </option>
-              <option class="country-list__item" value="Андорра">
+              <option class="country-select-list__item" value="Андорра">
                 Андорра
               </option>
-              <option class="country-list__item" value="Анигуа и Барбуда">
+              <option class="country-select-list__item" value="Анигуа и Барбуда">
                 Анигуа и Барбуда
               </option>
-              <option class="country-list__item" value="Аргентина">
+              <option class="country-select-list__item" value="Аргентина">
                 Аргентина
               </option>
-              <option class="country-list__item" value="Армения">
+              <option class="country-select-list__item" value="Армения">
                 Армения
               </option>
-              <option class="country-list__item" value="Афганистан">
+              <option class="country-select-list__item" value="Афганистан">
                 Афганистан
               </option>
             </select>
           </div>
         </section>
-        <section class="add-plan__step-3 step-3 step">
-          <p class="step-3__title step__title">Шаг 3.<br>Развлечения</p>
-          <p class="step-3__title-descr step__title-descr">Наконец, расскажите о своих планах времяпровождения. Можно
+        <section class="add-plan__step-3 step-3" >
+          <h2 class="step-3__title">Шаг 3.<br>Развлечения</h2>
+          <p class="step-3__title-descr">Наконец, расскажите о своих планах времяпровождения. Можно
             писать в свободной форме и ставить тэги.</p>
           <ul class="step-3__entertainments-list entertainment-list">
-            <il class="entertainment-list__item">
+            <li class="entertainment-list__item">
               <p class="entertainment-list__title">Босния и Герцеговина</p>
-              <img class="entertainment-list__flag" alt="флаг страны" />
-              <textarea class="entertainment-list__text" name="area-1" placeholder="План действий">
-            </textarea>
-            </il>
-            <il class="entertainment-list__item">
+              <img class="entertainment-list__flag" src="img/flags/bosnia-and-herzegovina.png" alt="флаг страны" />
+              <textarea class="entertainment-list__text" name="area-1" placeholder="План действий"></textarea>
+            </li>
+            <li class="entertainment-list__item">
               <p class="entertainment-list__title">Чехия</p>
-              <img class="entertainment-list__flag" alt="флаг страны" />
+              <img class="entertainment-list__flag" src="img/flags/czechia.png" alt="флаг страны" />
               <textarea class="entertainment-list__text" name="area-2" placeholder="План действий">
-              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
             </textarea>
-            </il>
+            </li>
           </ul>
-          <button class="step-3__submit-btn big-button" type="submit">Отправить</button>
-          <button class="step-3__back-btn" type="button">На шаг назад</button>
+          <button class="step-3__submit-btn" type="submit">Отправить</button>
+          <a class="step-3__back-btn" href="#step-2">На шаг назад</a>
         </section>
+      </section>
     </form>
-    <footer class="page__footer page-footer">
-      <p class="page-footer__title">Погнали?</p>
-      <a class="page-footer__logo logo">
-        <img class="logo__img" alt="Погнали?">
-      </a>
-      <ul class="page-footer__socials socials-list">
-        <li class="socials-list__item">
-          <a class="socials-list__link" href="#">facebook</a>
-        </li>
-        <li class="socials-list__item">
-          <a class="socials-list__link" href="#">vk</a>
-        </li>
-        <li class="socials-list__item">
-          <a class="socials-list__link" href="#">instagramm</a>
-        </li>
-      </ul>
-      <div class="page-footer__created-by">
-        <p class="page-footer__created-by-text">Разработано</p>
-        <img class="page-footer__created-by-logo" />
+    <footer class="page__footer">
+      <div class="page__footer-container page-footer">
+        <a class="page-footer__logo" href="index.html">
+          <picture class="page-footer__picture">
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+              <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="96" height="15"
+                alt="Лого">
+          </picture>
+        </a>
+        <ul class="page-footer__socials socials-list">
+          <li class="page-footer__socials-item socials-list__item">
+            <a class="page-footer__socials-link socials-list__link" href="#">
+              <img src="/img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+            </a>
+          </li>
+          <li class="page-footer__socials-item socials-list__item">
+            <a class="page-footer__socials-link  socials-list__link" href="#">
+              <img src="/img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+            </a>
+          </li>
+          <li class="page-footer__socials-item socials-list__item">
+            <a class="page-footer__socials-link  socials-list__link" href="#">
+              <img src="/img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__created-container">
+          <span class="page-footer__created-by-text">Разработано</span>
+        </div>
+        <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
+            <use xlink:href="img/logo-html.svg#logo"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </main>
+  <script>
+    var navMain = document.querySelector('.header__navigation');
+    var navToggle = document.querySelector('.header__toggle');
+
+    navMain.classList.remove('header__navigation--nojs');
+    navMain.classList.remove('header__navigation--open');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('header__navigation--open')) {
+        navMain.classList.remove('header__navigation--open');
+      } else {
+        navMain.classList.add('header__navigation--open');
+      }
+    });
+
+    var openSelectCountry = document.querySelector('.country-list__item--unselected');
+    var modalSelectCountry = document.querySelector('.step-2__country-select-wrapper');
+    var selectCountryClose = document.querySelector('.select-country__close');
+
+    openSelectCountry.addEventListener('click', function (e) {
+      modalSelectCountry.classList.remove('select-country--close');
+      e.preventDefault();
+    });
+
+    selectCountryClose.addEventListener('click', function (e) {
+      modalSelectCountry.classList.add('select-country--close');
+      e.preventDefault();
+    })
+  </script>
 </body>
+
 </html>

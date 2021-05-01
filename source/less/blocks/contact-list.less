@@ -1,0 +1,30 @@
+.contact-list__item {
+  svg {
+    fill: @basic-yellow;
+  }
+
+  &:hover {
+    .contact-list__text,
+    svg {
+      fill: @special-yellow-dark;
+      color: @special-yellow-dark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contact-list__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .set-font(16px, 18px, 700);
+}
+
+.contact-list__text {
+  display: block;
+  padding-left: 16px;
+  text-transform: uppercase;
+}

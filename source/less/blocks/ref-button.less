@@ -1,0 +1,33 @@
+.ref-button {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: @basic-yellow;
+  text-align: center;
+  border-radius: 10px;
+  height: 62px;
+  width: 270px;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active * {
+    opacity: 0.5;
+  }
+
+  * {
+    color: @basic-blue-light;
+  }
+}
+
+.ref-button__title {
+  padding-left: 24px;
+  .set-font(18px, 18px, 700);
+}
+
+.ref-button__arrow {
+  padding-right: 24px;
+}

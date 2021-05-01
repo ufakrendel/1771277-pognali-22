@@ -1,0 +1,55 @@
+.promo__slogan-container {
+  background-color: @main-background;
+  margin-top: 260px;
+  padding: 50px 100px 0 50px;
+}
+
+.promo__slogan {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: @basic-white;
+  .set-font(36px, 40px, 700);
+  margin-top: 20px;
+}
+
+.promo__quote-text {
+  display: block;
+  color: @basic-white;
+  margin-bottom: 20px;
+  .set-font(16px, 22px, 300);
+}
+
+.promo__quote-author-cite {
+  display: block;
+  color: @basic-white;
+  .set-font(16px, 22px, 700);
+  margin-bottom: 20px;
+}
+
+.promo__navigation {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: -212px;
+}
+
+.promo__navigation-logo,
+.promo__navigation-toggle,
+.promo__navigation-list {
+  display: none;
+}
+
+.promo__navigation-login-btn {
+  display: block;
+  .align-center();
+  .login-button(190px, 40px);
+  .set-font(16px, 18px, 700);
+}
+
+.promo__steps {
+  position: relative;
+  padding-left: 25px;
+  top: -27px;
+}

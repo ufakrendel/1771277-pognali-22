@@ -1,0 +1,61 @@
+.container-round-bottom {
+  border-radius: 0 0 30px 30px;
+}
+
+.container-round-top {
+  border-radius: 30px 30px 0 0;
+}
+
+.set-font(@font-size, @line-height, @font-weight) {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  line-height: @line-height;
+  font-size: @font-size;
+  font-weight: @font-weight;
+}
+
+.login-button(@width, @height) {
+  background-color: @basic-yellow;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: @height / 2;
+  height: @height;
+  width: @width;
+  line-height: @height;
+  color: @main-section-dark-bgcolor;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active * {
+    opacity: 0.5;
+  }
+}
+
+.buttons(@width, @height) {
+  display: block;
+  .align-center();
+  height: @height;
+  width: @width;
+  border-radius: @height / 2;
+
+  &:active * {
+    opacity: 0.5;
+  }
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacity-action {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
