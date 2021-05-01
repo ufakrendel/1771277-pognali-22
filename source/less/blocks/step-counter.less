@@ -1,5 +1,5 @@
 .step-counter {
-  margin-top: 20px;
+  margin-top: 8px;
   position: relative;
   text-transform: uppercase;
   color: @basic-blue-light;
@@ -13,7 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .step-counter__description {
@@ -21,6 +21,7 @@
   position: absolute;
   opacity: 0.3;
   right: 0;
+  .set-font(16px, 18px, 500);
 }
 
 .step-counter__minus-btn,
@@ -31,4 +32,9 @@
 .step-counter__number-input {
   color: @basic-blue-light;
   text-align: center;
+  .set-font(14px, 12px, 500);
+}
+
+.step_counter__title {
+  .set-font(16px, 18px, 500);
 }

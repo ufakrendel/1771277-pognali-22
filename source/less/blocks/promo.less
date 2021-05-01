@@ -9,17 +9,22 @@
   text-align: center;
   vertical-align: middle;
   color: @basic-white;
+  .set-font(36px, 40px, 700);
   margin-top: 20px;
 }
 
-.promo__quote {
+.promo__quote-text {
   display: block;
   color: @basic-white;
+  margin-bottom: 20px;
+  .set-font(16px, 22px, 300);
 }
 
 .promo__quote-author-cite {
   display: block;
   color: @basic-white;
+  .set-font(16px, 22px, 700);
+  margin-bottom: 20px;
 }
 
 .promo__navigation {
@@ -38,11 +43,13 @@
 
 .promo__navigation-login-btn {
   display: block;
+  .align-center();
   .login-button(190px, 40px);
+  .set-font(16px, 18px, 700);
 }
 
 .promo__steps {
   position: relative;
-  padding-left: 24px;
-  top: -32px;
+  padding-left: 25px;
+  top: -27px;
 }

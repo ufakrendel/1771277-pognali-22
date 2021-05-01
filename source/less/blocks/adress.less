@@ -1,11 +1,13 @@
 .adress {
+  position: relative;
   background-color: @adress-background;
   .container-round-bottom();
   box-sizing: border-box;
   padding: 30px 0 30px 25px;
+  z-index: 2;
 }
 
-.adress-container {
+.adress__container {
   display: flex;
   flex-direction: row;
 }
@@ -14,6 +16,8 @@
   color: @basic-blue-light;
   text-transform: uppercase;
   padding-left: 16px;
+  .set-font(16px, 22px, 700);
+  margin-bottom: 20px;
 }
 
 .adress__route-button {

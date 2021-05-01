@@ -1,17 +1,21 @@
 .directions {
   color: @basic-white;
   box-sizing: border-box;
-  padding: 62px 60px 0 50px;
+  padding: 68px 60px 0 50px;
   background-color: @price-background;
   .container-round-bottom();
 }
 
 .directions__title {
   color: @special-orange;
+  .set-font(24px, 24px, 700);
+  margin-bottom: 20px;
 }
 
 .directions__text {
   color: @special-grey;
+  .set-font(16px, 22px, 300);
+  margin-bottom: 20px;
 }
 
 .directions__list {
@@ -54,13 +58,15 @@
   background-color: @light-background;
 }
 
-.diretions__list-item-title {
+.directions__list-item-title {
   color: @basic-black;
+  .set-font(21px, 21px, 700);
 }
 
 .directions__list-item-description {
   color: @special-grey;
   opacity: 0.3;
+  .set-font(16px, 18px, 500);
 }
 
 .directions__list-count {
@@ -70,8 +76,9 @@
 
 .directions__list-users-count {
   position: absolute;
-  right: 10px;
-  top: 26px;
+  right: 24px;
+  top: 28px;
+  .set-font(16px, 18px, 500);
 }
 
 .directions__button-more {

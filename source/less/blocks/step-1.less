@@ -3,16 +3,19 @@
   padding: 25px;
   background-color: @light-background;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .step-1__title {
   margin-bottom: 16px;
   color: @basic-blue-light;
+  .set-font(20px, 20px, 700);
 }
 
 .step-1__title-descr {
   color: @special-grey;
+  .set-font(16px, 22px, 400);
+  margin-bottom: 20px;
 }
 
 .step-1__child-checkbox {
@@ -37,15 +40,16 @@
 }
 
 .step-1__calendar {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .step-1__next-btn {
   background-color: @basic-yellow;
   .buttons(220px, 40px);
-  margin-top: 30px;
+  margin-top: 20px;
   text-transform: uppercase;
   color: @basic-blue-light;
+  .set-font(18px, 18px, 700);
 
   &:hover {
     background-color: @special-yellow-dark;

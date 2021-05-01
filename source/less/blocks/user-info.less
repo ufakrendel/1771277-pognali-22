@@ -1,6 +1,6 @@
 .user-info {
   display: grid;
-  padding: 40px 25px 60px;
+  padding: 20px 25px 50px;
   grid-template-columns: 135px 135px;
   grid-template-rows: 100px 40px 100px 50px;
   row-gap: 20px;
@@ -37,6 +37,7 @@
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 5px;
+  .set-font(20px, 20px, 500);
   .buttons(270px, 40px);
 
   &:hover {
@@ -82,6 +83,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0 20px 0;
+  .set-font(16px, 18px, 700);
 }
 
 .user-info__tags {
@@ -90,6 +92,7 @@
   padding: 14px 0 20px;
   resize: none;
   width: 100%;
+  .set-font(16px, 18px, 400);
 
   &:focus {
     border-color: @basic-blue;

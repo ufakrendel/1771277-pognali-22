@@ -18,8 +18,8 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  justify-content: center;
-  align-self: center;
+  justify-self: center;
+  align-self: flex-end;
 }
 
 .companion-list__user {
@@ -29,6 +29,7 @@
   grid-row-end: 2;
   color: @basic-blue-light;
   align-self: flex-end;
+  .set-font(20px, 20px, 700);
 }
 
 .companion-list__distance {
@@ -89,10 +90,11 @@
   justify-self: center;
   align-self: flex-start;
   background-color: @basic-yellow;
-  .buttons(220px, 40px);
   text-transform: uppercase;
   margin-bottom: 20px;
   color: @basic-blue-light;
+  .set-font(18px, 18px, 700);
+  .buttons(220px, 40px);
   .opacity-action();
 }
 
@@ -154,4 +156,31 @@
   width: 70px;
   height: 70px;
   border-radius: 35px;
+}
+
+.companion-list__like {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #192144;
+
+  &--active {
+    fill-rule: unset;
+    clip-rule: unset;
+    fill: @special-red;
+  }
+}
+
+.companion-list__like-container {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: @form-background-color;
+  bottom: 4px;
+  right: 0;
+  .align-center();
+
+  &--active {
+    background-color: #f9eaea;
+  }
 }
