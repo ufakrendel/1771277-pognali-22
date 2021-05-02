@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header">
+  <header class="page__header header">
     <nav class="header__navigation header__navigation--open header__navigation--nojs">
       <p class="visually-hidden">Погнали?</p>
       <a href="index.html" class="header__logo">
@@ -74,17 +74,17 @@
       <ul class="header__socials socials-list">
         <li class="socials-list__item">
           <a class="socials-list__link" href="#">
-            <img src="/img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+            <img src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
           </a>
         </li>
         <li class="socials-list__item">
           <a class="socials-list__link" href="#">
-            <img src="/img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+            <img src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
           </a>
         </li>
         <li class="socials-list__item">
           <a class="socials-list__link" href="#">
-            <img src="/img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+            <img src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
           </a>
         </li>
       </ul>
@@ -98,22 +98,26 @@
   </header>
   <main class="page__main main">
     <h1 class="visually-hidden">Попутчики</h1>
-    <section class="main__countries countries">
-      <img class="countries__open-img" alt="Открыть фильтр по странам" />
-      <h2 class="countries__filter-title">Фильтрация по странам</h2>
+    <section class="main__countries countries countries--nojs">
+      <svg class="countries__filter-img" width="10px" height="8px">
+        <use xlink:href="img/filter-icon.svg#filter-icon"></use>
+      </svg>
+      <h2 class="countries__filter-title">Фильтрация по странам:</h2>
+      <svg class="countries__toggle-close" viewbox="0 0 9 9" stroke="#192144" width="16px" height="16px">
+        <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+      </svg>
+      <ul class="countries__toggle">
+        <li class="countries__toggle-item"></li>
+        <li class="countries__toggle-item"></li>
+        <li class="countries__toggle-item"></li>
+      </ul>
       <ul class="countries__regions-list regions">
-        <li class="regions__item">Европа</li>
+        <li class="regions__item regions__item--active">Европа</li>
         <li class="regions__item">Азия</li>
         <li class="regions__item">Америка</li>
         <li class="regions__item">Острова</li>
       </ul>
-      <button class="countries__show-all" type="button">Показать все</button>
-      <ul class="countries__toggle">
-        <li class="conutries__toggle-item"></li>
-        <li class="conutries__toggle-item"></li>
-        <li class="conutries__toggle-item"></li>
-      </ul>
-      <img class="countries__close-img" alt="Закрыть фильтр">
+      <a class="countries__show-all" href="countires.html">Показать все</a>
       <div class="countries__select">
         <table class="countries__alphabet-table alphabet-table">
           <tr class="alphabet-table__row">
@@ -152,121 +156,223 @@
             <td class="alphabet-table__data">Я</td>
           </tr>
         </table>
-        <select class="countries__plain-list country-list" name="country">
-          <option class="country-list__item" value="Австралия">
-            Австралия
-          </option>
-          <option class="country-list__item" value="Австрия">
-            Австрия
-          </option>
-          <option class="country-list__item" value="Азербайджан">
-            Азербайджан
-          </option>
-          <option class="country-list__item" value="Албания">
-            Албания
-          </option>
-          <option class="country-list__item" value="Алжир">
-            Алжир
-          </option>
-          <option class="country-list__item" value="Ангола">
-            Ангола
-          </option>
-          <option class="country-list__item" value="Андорра">
-            Андорра
-          </option>
-          <option class="country-list__item" value="Анигуа и Барбуда">
-            Анигуа и Барбуда
-          </option>
-          <option class="country-list__item" value="Аргентина">
-            Аргентина
-          </option>
-          <option class="country-list__item" value="Армения">
-            Армения
-          </option>
-          <option class="country-list__item" value="Афганистан">
-            Афганистан
-          </option>
-        </select>
+        <div class="countries__countries-container">
+          <div class="countries__letter-container">
+            <div class="countries__letter-name">A</div>
+            <ul class="countries__country-list">
+              <li class="countries__country-item">
+                <a class="countries__country-link" href="europe/australis">Австралия</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link" href="europe/austria">Австрия</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link" href="europe/azerbaidjan">Азербайджан</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Албания</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Алжир</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Ангола</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Андорра</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Анигуа и Барбуда</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Аргентина</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Армения</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Афганистан</a>
+              </li>
+            </ul>
+          </div>
+          <div class="countries__letter-container">
+            <div class="countries__letter-name">Б</div>
+            <ul class="countries__country-list">
+              <li class="countries__country-item">
+                <a class="countries__country-link">Багамские Острова</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Барбарос</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бахрейн</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Белоруссия</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Белиз</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бельгия</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бенин</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Болгария</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Боливия</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Босния и Герцеговина</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Ботсвана</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бразилия</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бруней</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Буркина-Фасо</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бурунди</a>
+              </li>
+              <li class="countries__country-item">
+                <a class="countries__country-link">Бутан</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <button class="countries__collapse-btn">
+        <svg class="countries__collapse-close" viewbox="0 0 9 9" stroke="#192144" width="14px" height="14px">
+          <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+        </svg>
+        <span>Свернуть</span>
+      </button>
     </section>
     <section class="main__companion-filter companions-filter">
       <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="POST">
-        <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-        <fieldset class="companions-filter__container companions-filter__container--collapsed">
+        <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+        <fieldset class="companions-filter__container">
           <legend class="companions-filter__legend">Хобби</legend>
-          <img class="companions-filter__img companions-filter__img--collapsed" alt="Выпадающий список">
-          <div class="companions-filter__inputs companions-filter__inputs--collapsed">
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="hobby-sport" checked />Спортзал</label>
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="hobby-hookah" />Кальян</label>
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="hobby-sofa" />Диван</label>
+          <svg class="companions-filter__img" width="10px" height="8px">
+            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+          </svg>
+          <div class="companions-filter__inputs">
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sport"
+              id="hobby-sport" checked />
+            <label for="hobby-sport" class="companions-filter__label">Спортзал</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-hookah"
+              id="hobby-hookah" />
+            <label for="hobby-hookah" class="companions-filter__label">Кальян</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sofa"
+              id="hobby-sofa" />
+            <label for="hobby-sofa" class="companions-filter__label">Диван</label>
           </div>
         </fieldset>
         <fieldset class="companions-filter__container">
           <legend class="companions-filter__legend">Музыка</legend>
-          <img class="companions-filter__img companions-filter__img" alt="Выпадающий список">
+          <svg class="companions-filter__img" width="10px" height="8px">
+            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+          </svg>
           <div class="companions-filter__inputs">
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="music-rock" checked />Тяжелый рок</label>
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="music-rap" />Русский рэп</label>
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="music-dance" />Евроденс</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rock" id="music-rock"
+              checked />
+            <label for="music-rock" class="companions-filter__label">Тяжелый рок</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rap" id="music-rap"
+              checked />
+            <label for="music-rap" class="companions-filter__label">Русский рэп</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-dance"
+              id="music-dance" />
+            <label for="music-dance" class="companions-filter__label">Евроденс</label>
           </div>
         </fieldset>
-        <fieldset class="companions-filter__container companions-filter__container--collapsed">
+        <fieldset class="companions-filter__container">
           <legend class="companions-filter__legend">Еда</legend>
-          <img class="companions-filter__img companions-filter__img--collapsed" alt="Выпадающий список">
-          <div class="companions-filter__inputs companions-filter__inputs--collapsed">
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="hobby-meat" checked />Мясоед</label>
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="hobby-pp" />Сидит на ПП</label>
-            <label class="companions-filter__label"><input class="companions-filter__checkbox" type="checkbox"
-                name="hobby-vegan" />Веган-сыроед</label>
+          <svg class="companions-filter__img" width="10px" height="8px">
+            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+          </svg>
+          <div class="companions-filter__inputs">
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-meat" id="hobby-meat"
+              checked />
+            <label for="hobby-meat" class="companions-filter__label">Мясоед</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-pp" id="hobby-pp" />
+            <label for="hobby-pp" class="companions-filter__label">Сидит на ПП</label>
+            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-vegan"
+              id="hobby-vegan" />
+            <label for="hobby-vegan" class="companions-filter__label">Веган-сыроед</label>
           </div>
         </fieldset>
         <fieldset class="companions-filter__container">
           <legend class="companions-filter__legend">Транспорт</legend>
-          <img class="companions-filter__img" alt="Выпадающий список">
-          <div class="companions-filter__inputs">
-            <img class="companions-filter__transport-img companions-filter__transport-img--selected" alt="Самолет" />
-            <img class="companions-filter__transport-img companions-filter__transport-img--selected" alt="Автомобиль" />
-            <img class="companions-filter__transport-img" alt="Велосипед" />
-            <img class="companions-filter__transport-img companions-filter__transport-img--selected" alt="Бег" />
+          <svg class="companions-filter__img" width="10px" height="8px">
+            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+          </svg>
+          <div class="companions-filter__inputs movement-btn">
+            <input name="plan" type="checkbox" class="movement-btn__input" id="plan" checked />
+            <label for="plan" class="movement-btn__label">
+              <svg class="movement-btn__img" viewBox="0 0 21 23" width="21px" height="21px">
+                <use xlink:href="img/movement-icon.svg#plan"></use>
+              </svg>
+            </label>
+            <input name="bus" type="checkbox" class="movement-btn__input" id="bus" checked />
+            <label for="bus" class="movement-btn__label">
+              <svg class="movement-btn__img" viewBox="0 0 18 21" width="21px" height="21px">
+                <use xlink:href="img/movement-icon.svg#bus"></use>
+              </svg>
+            </label>
+            <input name="bike" type="checkbox" class="movement-btn__input" id="bike">
+            <label for="bike" class="movement-btn__label">
+              <svg class="movement-btn__img" viewBox="0 0 25 24" width="21px" height="21px">
+                <use xlink:href="img/movement-icon.svg#bike"></use>
+              </svg>
+            </label>
+            <input name="run" type="checkbox" class="movement-btn__input" id="run" checked />
+            <label for="run" class="movement-btn__label">
+              <svg class="movement-btn__img" viewBox="0 0 21 24" width="21px" height="21px">
+                <use xlink:href="img/movement-icon.svg#run"></use>
+              </svg>
+            </label>
           </div>
         </fieldset>
         <fieldset class="companions-filter__container">
           <legend class="companions-filter__legend">Левел</legend>
-          <img class="companions-filter__img" alt="Выпадающий список">
-          <div class="companions-filter__inputs">
-            <div class="companions-filter__level-group">
-              <input class="companions-filter__level-num" name="min-level" type="number" min="1" max="100" value="30" />
-              <img class="companions-filter__level-splitter" alt="разделитель">
-              <input class="companions-filter__level-num" name="max-level" type="number" min="1" max="100"
-                value="100" />
-            </div>
-            <input class="companions-filter__level-range" name="min-level" type="range" min="1" max="100" />
+          <svg class="companions-filter__img" width="10px" height="8px">
+            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+          </svg>
+          <div class="companions-filter__inputs level-group">
+            <input class="level-group__low-range" name="low-range" value="30" />
+            <input class="level-group__high-range" name="high-range" type="text" value="100" />
+            <div class="level-group__low-range-btn"><span class="visually-hidden">low range</span></div>
+            <div class="level-group__high-range-btn"><span class="visually-hidden">high range</span></div>
           </div>
         </fieldset>
-        <button class="companions-filter__btn" type="submit">Показать</button>
+        <button class="companions-filter__btn " type="submit">Показать</button>
       </form>
     </section>
     <section class="main__companion-list">
+      <h2 class="visually-hidden">Потупчики</h2>
       <ul class="companion-list">
         <li class="companion-list__item">
           <div class="companion-list__img-container">
-            <img class="companion-list__avatar" src="img/firsova-desktop-cat-1x.png" srcset="img/firsova-desktop-cat-2x.png 2x"
-                width="70" height="70" alt="Фото попутчика">
-                <div class="companion-list__like-container companion-list__like-container--active">
-                  <svg class="companion-list__like companion-list__like--active" width="13px" height="12px" fill="pink">
-                    <use xlink:href="img/heart.svg#heart"></use>
-                  </svg>
-                </div>
+            <a href="companion.html?id=1">
+              <img class="companion-list__avatar" src="img/firsova-desktop-cat-1x.png"
+                srcset="img/firsova-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+            </a>
+            <div class="companion-list__like-container companion-list__like-container--active">
+              <svg class="companion-list__like companion-list__like--active" width="13px" height="12px" fill="pink">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </div>
           </div>
-          <p class="companion-list__user">Таня<br>Фирсова</p>
+          <a href="companion.html?id=1" class="companion-list__user">Таня<br>Фирсова</a>
           <p class="companion-list__distance">1,5 М</p>
           <div class="companion-list__online companion-list__online--not"></div>
           <p class="companion-list__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -313,24 +419,26 @@
           </ul>
           <div class="companion-list__level-group">
             <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion__level-picture">
-              <img class="companion__level-img" src="img/mark-level-cat-moblile-99.png" width="45" height="45"
+            <picture class="companion-list__level-picture">
+              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-99.png" width="45" height="45"
                 alt="Фото попутчика">
             </picture>
           </div>
-          <button class="companion-list__call-btn"><span>Позвать</span></button>
+          <a class="companion-list__call-btn" href="response.html?id=1"><span>Позвать</span></a>
         </li>
         <li class="companion-list__item">
           <div class="companion-list__img-container">
-            <img class="companion-list__avatar" src="img/demin-desktop-cat-1x.png" srcset="img/demin-desktop-cat-2x.png 2x"
-                width="70" height="70" alt="Фото попутчика">
+            <a href="companion.html?id=2">
+              <img class="companion-list__avatar" src="img/demin-desktop-cat-1x.png"
+                srcset="img/demin-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+            </a>
             <div class="companion-list__like-container">
               <svg class="companion-list__like" width="13px" height="12px" fill="pink">
                 <use xlink:href="img/heart.svg#heart"></use>
               </svg>
             </div>
           </div>
-          <p class="companion-list__user">Петя<br>Демин</p>
+          <a href="companion.html?id=2" class="companion-list__user">Петя<br>Демин</a>
           <p class="companion-list__distance">1500</p>
           <div class="companion-list__online companion-list__online--not"></div>
           <p class="companion-list__tags">#бургер #бар #футбол #концерт #крафт</p>
@@ -372,24 +480,26 @@
           </ul>
           <div class="companion-list__level-group">
             <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion__level-picture">
-              <img class="companion__level-img" src="img/mark-level-cat-moblile-80.png" width="45px" height="45px"
+            <picture class="companion-list__level-picture">
+              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-80.png" width="45" height="45"
                 alt="Фото попутчика">
             </picture>
           </div>
-          <button class="companion-list__call-btn"><span>Позвать</span></button>
+          <a class="companion-list__call-btn" href="response.html?id=2"><span>Позвать</span></a>
         </li>
         <li class="companion-list__item">
           <div class="companion-list__img-container">
-            <img class="companion-list__avatar" src="img/smolov-desktop-cat-1x.png" srcset="img/smolov-desktop-cat-2x.png 2x"
-                width="70" height="70" alt="Фото попутчика">
-                <div class="companion-list__like-container">
-                  <svg class="companion-list__like" width="13px" height="12px" fill="pink">
-                    <use xlink:href="img/heart.svg#heart"></use>
-                  </svg>
-                </div>
+            <a href="companion.html?id=3">
+              <img class="companion-list__avatar" src="img/smolov-desktop-cat-1x.png"
+                srcset="img/smolov-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+            </a>
+            <div class="companion-list__like-container">
+              <svg class="companion-list__like" width="13px" height="12px" fill="pink">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </div>
           </div>
-          <p class="companion-list__user">Марк<br>Смолов</p>
+          <a href="companion.html?id=3" class="companion-list__user">Марк<br>Смолов</a>
           <p class="companion-list__distance">1500</p>
           <div class="companion-list__online  companion-list__online--not"></div>
           <p class="companion-list__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -436,24 +546,26 @@
           </ul>
           <div class="companion-list__level-group">
             <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion__level-picture">
-              <img class="companion__level-img" src="img/mark-level-cat-moblile-25.png" width="45" height="45"
+            <picture class="companion-list__level-picture">
+              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-25.png" width="45" height="45"
                 alt="Фото попутчика">
             </picture>
           </div>
-          <button class="companion-list__call-btn"><span>Позвать</span></button>
+          <a class="companion-list__call-btn" href="response.html?id=3"><span>Позвать</span></a>
         </li>
         <li class="companion-list__item">
           <div class="companion-list__img-container">
-            <img class="companion-list__avatar" src="img/rogovaya-desktop-cat-1x.png" srcset="img/rogovaya-desktop-cat-2x.png 2x"
-                width="70" height="70" alt="Фото попутчика">
-                <div class="companion-list__like-container">
-                  <svg class="companion-list__like" width="13px" height="12px" fill="pink">
-                    <use xlink:href="img/heart.svg#heart"></use>
-                  </svg>
-                </div>
+            <a href="companion.html?id=4">
+              <img class="companion-list__avatar" src="img/rogovaya-desktop-cat-1x.png"
+                srcset="img/rogovaya-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+            </a>
+            <div class="companion-list__like-container">
+              <svg class="companion-list__like" width="13px" height="12px" fill="pink">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </div>
           </div>
-          <p class="companion-list__user">Лариса<br>Роговая</p>
+          <a class="companion-list__user" href="companion.html?id=4">Лариса<br>Роговая</a>
           <p class="companion-list__distance">23</p>
           <div class="companion-list__online"></div>
           <p class="companion-list__tags">#образование #карьера #учеба #линкедин</p>
@@ -495,62 +607,76 @@
           </ul>
           <div class="companion-list__level-group">
             <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion__level-picture">
-              <img class="companion__level-img" src="img/mark-level-cat-moblile-50.png" width="45" height="45"
+            <picture class="companion-list__level-picture">
+              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-50.png" width="45" height="45"
                 alt="Фото попутчика">
             </picture>
           </div>
-          <button class="companion-list__call-btn"><span>Позвать</span></button>
+          <a class="companion-list__call-btn" href="response.html?id=4"><span>Позвать</span></a>
         </li>
       </ul>
       <div class="pagination-container pagination">
-        <button class="pagination__button-more" type="button">
-          <img class="pagination__plus-img" alt="plus" />
-          <p class="pagination__title">Показать еще</p>
-        </button>
-        <ul class="pagination___pages pages-list">
-          <li class="pages-list__item pages-list__item--current">
-            1
-          </li>
-          <li class="pages-list__item">
-            2
-          </li>
-          <li class="pages-list__item">
-            3
-          </li>
-          <li class="pages-list__item">
-            4
-          </li>
-        </ul>
-        <button class="pagination__button-back" type="button">Назад</button>
-        <button class="pagination__button-next" type="button">Назад</button>
+        <a class="pagination__button-more" href="catalog.html?skip=4">
+          <svg class="pagination__img-plus" viewbox="0 0 14 14" stroke="#cccccc" width="16px" height="16px">
+            <use xlink:href="img/sign.svg#plus-un"></use>
+          </svg>
+          <span class="pagination__title">Показать еще</span>
+        </a>
+        <div class="pagination__list-container">
+          <ul class="pagination___pages pages-list">
+            <li class="pages-list__item pages-list__item--current">
+              1
+            </li>
+            <li class="pages-list__item">
+              2
+            </li>
+            <li class="pages-list__item">
+              3
+            </li>
+            <li class="pages-list__item">
+              4
+            </li>
+          </ul>
+          <a class="pagination__button-back" href="catalog.html?back">
+            <span class="visually-hidden">Назад</span>
+            <svg class="pagination__button-back-img" viewbox="0 0 9 9" width="16px" height="25px">
+              <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+            </svg>
+          </a>
+          <a class="pagination__button-next" href="catalog.html?next">
+            <span class="visually-hidden">Вперед</span>
+            <svg class="pagination__button-next-img" viewbox="0 0 9 9" width="16px" height="25px">
+              <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
     <footer class="page__footer">
       <div class="page__footer-container page-footer">
         <a class="page-footer__logo" href="index.html">
           <picture class="page-footer__picture">
-              <source media="(min-width: 1440px)"
-                srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
-              <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="96" height="15"
-                alt="Лого">
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+            <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="96" height="15"
+              alt="Лого">
           </picture>
         </a>
         <ul class="page-footer__socials socials-list">
           <li class="page-footer__socials-item socials-list__item">
             <a class="page-footer__socials-link socials-list__link" href="#">
-              <img src="/img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+              <img src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
             </a>
           </li>
           <li class="page-footer__socials-item socials-list__item">
             <a class="page-footer__socials-link  socials-list__link" href="#">
-              <img src="/img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+              <img src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
             </a>
           </li>
           <li class="page-footer__socials-item socials-list__item">
             <a class="page-footer__socials-link  socials-list__link" href="#">
-              <img src="/img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+              <img src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
             </a>
           </li>
         </ul>
@@ -579,6 +705,28 @@
         navMain.classList.add('header__navigation--open');
       }
     });
+
+    var countriesFilter = document.querySelector('.countries');
+    var toggleOpen = document.querySelector('.countries__toggle');
+    var countryFiltersClose = document.querySelector('.countries__toggle-close');
+    var countryFiltersCloseBtn = document.querySelector('.countries__collapse-btn');
+
+
+    countriesFilter.classList.add('countries--collapse');
+
+    toggleOpen.addEventListener('click', function () {
+      countriesFilter.classList.remove('countries--collapse')
+    });
+
+    countryFiltersClose.addEventListener('click', function () {
+      countriesFilter.classList.add('countries--collapse')
+    });
+
+    countryFiltersCloseBtn.addEventListener('click', function () {
+      countriesFilter.classList.add('countries--collapse')
+    });
+
+
   </script>
 </body>
 
