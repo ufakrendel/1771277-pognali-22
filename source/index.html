@@ -16,12 +16,14 @@
         <picture class="header__img header__img--open">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
-          <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="100" height="15" alt="Лого">
+          <img class="header__img" src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x"
+            width="100" height="15" alt="Лого">
         </picture>
         <picture class="header__img header__img--close">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-white-x1.png, img/logo-desktop-white-x2.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white-x1.png, img/logo-tablet-white-x2.png 2x">
-          <img src="img/logo-mobile-white-x1.png" srcset="img/logo-mobile-white-x2.png 2x" width="100" height="15" alt="Лого">
+          <img class="header__img" src="img/logo-mobile-white-x1.png" srcset="img/logo-mobile-white-x2.png 2x"
+            width="100" height="15" alt="Лого">
         </picture>
       </a>
       <button class="header__toggle" type="button">
@@ -50,8 +52,13 @@
           </a>
         </li>
       </ul>
-      <a class="header__phone phone-button">Phone</a>
-      <a class="header__mail mail-button">Email</a>
+      <a class="header__phone phone-button" href="tel:88005558628">
+        <span class="visually-hidden">Телефон</span>
+        <img src="img/icon-call.svg" width="18" height="18" alt="Телефон">
+      </a>
+      <a class="header__mail mail-button" href="mailto:mail@htmlacademy.ru">
+        <span class="visually-hidden">Email</span>
+        <img src="img/icon-mail.svg" width="18" height="16" alt="Email"></a>
       <a class="header__login" href="login.html"><span>Авторизация</span></a>
       <ul class="header__contacts contact-list">
         <li class="contact-list__item">
@@ -74,17 +81,17 @@
       <ul class="header__socials socials-list">
         <li class="socials-list__item">
           <a class="socials-list__link" href="#">
-            <img src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+            <img class="socials-list__img-fb" src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
           </a>
         </li>
         <li class="socials-list__item">
           <a class="socials-list__link" href="#">
-            <img src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+            <img class="socials-list__img-vk" src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
           </a>
         </li>
         <li class="socials-list__item">
           <a class="socials-list__link" href="#">
-            <img src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+            <img class="socials-list__img-inst" src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
           </a>
         </li>
       </ul>
@@ -103,8 +110,8 @@
               «Лучшее приложение, что я видел в жизни!»
             </span>
             <footer class="promo__quote-author">
-              <cite class="promo__quote-author-cite">Мурат Эльтазин главный редактор газеты
-                «гаджетлайф»</cite>
+              <cite class="promo__quote-author-cite">Мурат Эльтазин<br> главный редактор газеты<br
+                  class="mobile-hidden"> «гаджетлайф»</cite>
             </footer>
           </blockquote>
         </div>
@@ -117,10 +124,7 @@
               <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" alt="Лого">
             </picture>
           </a>
-          <!-- <button class="promo__navigation-toggle navigation__toggle" type="button"><span
-              class="visually-hidden">Открыть/закрыть
-              меню</span></button> -->
-          <ul class="promo__navigation-list navigation-list">
+          <ul class="promo__navigation-list navigation-list navigation-list--promo">
             <li class="navigation-list__item">
               <a class="navigation-list__link" href="index.html">
                 О сервисе
@@ -171,20 +175,20 @@
         <h2 class="about__title title">О сервисе</h2>
         <p class="about__text">
           Любое путешествие веселее<br> с попутчиками, которые на<br> одной волне с тобой!
-          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          Делитесь своими идеями путешествий<br class="about_br"> и черпайте вдохновение в чужих.
         </p>
         <p class="about__clarification">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
-        <a class="about__button-more" href="#">Подробнее</a>
-        <div class="about__img-wrapper">
-          <picture>
-            <source media="(min-width: 1440px)"
-              srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/about-tablet-2x.png 2x">
-            <img src="img/about-tablet.png" width="376" height="548" alt="Лого">
-          </picture>
-        </div>
+        <a class="about__button-more" href="about.html">
+          <span class="about__button-title">Подробнее</span>
+          <img class="about__button-arrow" src="img/arrow-next.svg" width="13" height="13" alt="arrow" />
+        </a>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/about-desktop.png, img/about-desktop-2x.png 2x">
+          <img class="about__img" src="img/about-tablet.png" srcset="img/about-tablet-2x.png 2x" width="376"
+            height="548" alt="Лого" />
+        </picture>
       </div>
     </section>
     <section class="main__directions ">
@@ -205,7 +209,7 @@
                 Джунгли зовут!
               </p>
               <p class="directions__list-users-count">
-                <img src="img/icon-user.svg" class="directions__list-icon" alt="Иконка">
+                <img src="img/icon-user.svg" class="directions__list-icon" width="14" height="14" alt="Иконка">
                 <span class="directions__list-count">18321</span>
               </p>
             </div>
@@ -214,6 +218,7 @@
                 alt="Флаг тайланда">
             </picture>
             <picture class="directions__view-picture">
+              <source media="(min-width: 768px)" srcset="img/thai-lanscape.png">
               <img class="directions__view-image" src="img/thai-mobile.png" width="270" height="110"
                 alt="Виды тайланда">
             </picture>
@@ -227,7 +232,7 @@
                 Трэ бьен, манифик!
               </p>
               <p class="directions__list-users-count">
-                <img src="img/icon-user.svg" class="directions__list-icon" alt="Иконка">
+                <img src="img/icon-user.svg" class="directions__list-icon" width="14" height="14" alt="Иконка">
                 <span class="directions__list-count">12518</span>
               </p>
             </div>
@@ -235,6 +240,7 @@
               <img class="directions__flag-image" src="img/flags/France.png" width="35" height="24" alt="Флаг франции">
             </picture>
             <picture class="directions__view-picture">
+              <source media="(min-width: 768px)" srcset="img/france-lanscape.png">
               <img class="directions__view-image" src="img/france-mobile.png" width="270" height="110"
                 alt="Виды франции">
             </picture>
@@ -245,10 +251,10 @@
                 Чехия
               </p>
               <p class="directions__list-item-description">
-                Закоулки старой<br> Европы
+                Закоулки<br> старой Европы
               </p>
               <p class="directions__list-users-count">
-                <img src="img/icon-user.svg" class="directions__list-icon" alt="Иконка">
+                <img src="img/icon-user.svg" class="directions__list-icon" width="14" height="14" alt="Иконка">
                 <span class="directions__list-count">5326</span>
               </p>
             </div>
@@ -256,6 +262,7 @@
               <img class="directions__flag-image" src="img/flags/Czechia.png" width="35" height="24" alt="Флаг чехии">
             </picture>
             <picture class="directions__view-picture">
+              <source media="(min-width: 768px)" srcset="img/checz-lanscape.png">
               <img class="directions__view-image" src="img/checz-mobile.png" width="270" height="110" alt="Виды чехии">
             </picture>
           </li>
@@ -271,12 +278,11 @@
         <div class="companions__text-container">
           <h2 class="companions__title">Попутчики</h2>
           <p class="companions__text">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
-            маршрут
-            для хайкинга.
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br> а другому
+            маршрут для хайкинга.
           </p>
           <p class="companions__clarification">
-            Теперь можно легко найти единомышленников!
+            Теперь можно легко<br> найти единомышленников!
           </p>
         </div>
         <ul class="companions__list">
@@ -409,7 +415,12 @@
               <p class="price__item-price">59 руб./мес</p>
             </li>
           </ul>
-          <a class="price__business-tax-btn" href="business-tarifs.html">Показать тарифы для бизнеса</a>
+          <a class="price__business-tax-btn" href="business-tarifs.html">
+            <svg class="price__business-tax-icon" viewBox="0 0 68 68" width="68px" height="68px">
+              <use xlink:href="img/business-rates-icon.svg#business-price"></use>
+            </svg>
+            <span class="price__business-tax-text">Показать тарифы для бизнеса</span>
+          </a>
         </div>
         <div class="price__business price__business--hide ">
           <div class="business-prices">
@@ -442,20 +453,19 @@
         <div class="feedback__container">
           <h2 class="feedback__title">Заинтересовались?</h2>
           <p class="feedback__text">Зарегистрируйтесь,
-            <br> это быстро и бесплатно!
+            <br class="tablet-hide"> это быстро и бесплатно!
             <br> Уже зарегистрированы?
             Тогда скорее
-            <a class="feedback__login-link" href="login.html">авторизуйтесь</a>
-            .
+            <a class="feedback__login-link" href="login.html">авторизуйтесь</a>.
           </p>
           <form class="feedback__form" name="feedback-form" method="POST">
-            <input class="feedback__form-email-input" name="email" placeholder="E-mail"
-              type="email" />
+            <input class="feedback__form-email-input" name="email" placeholder="E-mail" type="email" />
             <button class="feedback__form-email-submit" type="submit">
+              <span class="feedback__button-text">Регистрация</span>
               <img class="feedback__button-arrow" src="img/arrow-next.svg" width="13" height="13" alt="arrow" />
             </button>
           </form>
-          <p class="feedback__question">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+          <p class="feedback__question">Остались вопросы?<br class="tablet-hide"> Мы с радостью на них ответим!</p>
         </div>
         <ul class="feedback__contacts contact-list">
           <li class="feedback__contacts-item contact-list__item">
@@ -484,7 +494,7 @@
           <svg class="adress__map-mark" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
             <use xlink:href="img/map-mark.svg#map-mark"></use>
           </svg>
-          <p class="adress__text">ул. Большая<br> Конюшенная, 19/8</p>
+          <p class="adress__text">ул. Большая<br class="tablet-hide"> Конюшенная, 19/8</p>
         </div>
         <a class="adress__route-button ref-button" href="#">
           <span class="ref-button__title">Проложить маршрут</span>
@@ -504,27 +514,27 @@
       <div class="page__footer-container page-footer">
         <a class="page-footer__logo" href="index.html">
           <picture class="page-footer__picture">
-              <source media="(min-width: 1440px)"
-                srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
-              <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="96" height="15"
-                alt="Лого">
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+            <img class="page-footer__img" src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x"
+              width="96" height="15" alt="Лого">
           </picture>
         </a>
         <ul class="page-footer__socials socials-list">
           <li class="page-footer__socials-item socials-list__item">
             <a class="page-footer__socials-link socials-list__link" href="#">
-              <img src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+              <img class="socials-list__img-fb" src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
             </a>
           </li>
           <li class="page-footer__socials-item socials-list__item">
             <a class="page-footer__socials-link  socials-list__link" href="#">
-              <img src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+              <img class="socials-list__img-vk" src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
             </a>
           </li>
           <li class="page-footer__socials-item socials-list__item">
             <a class="page-footer__socials-link  socials-list__link" href="#">
-              <img src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+              <img class="socials-list__img-inst" src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
             </a>
           </li>
         </ul>

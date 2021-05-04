@@ -184,3 +184,23 @@
     background-color: #f9eaea;
   }
 }
+
+.companion-list__status {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  width: 6px;
+  height: 6px;
+  background-color: @special-red;
+  border-radius: 3px;
+
+  &--online {
+    background-color: @special-green;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+}

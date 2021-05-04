@@ -7,6 +7,17 @@
   align-items: center;
   background-color: @light-background;
   border-radius: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    height: 526px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 750px;
+    height: 526px;
+    border-radius: 30px;
+  }
 }
 
 .business-prices__title {
@@ -15,10 +26,29 @@
   color: @special-orange;
   .set-font(24px, 24px, 700);
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 54px;
+    .set-font(45px, 45px, 700);
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .business-prices__list {
   width: 220px;
+
+  @media (min-width: @tablet-width) {
+    width: 505px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
 }
 
 .business-prices__list-item {
@@ -29,14 +59,32 @@
   &:last-child {
     border-bottom: solid 1px rgba(0, 0, 0, 0.05);
   }
+
+  @media (min-width: @tablet-width) {
+    .set-font(22px, 28px, 300);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .business-prices__list-item-text {
   margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: auto;
+  }
 }
 
 .business-prices__list-item-price {
   margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
 }
 
 .business-prices__close {
@@ -49,4 +97,10 @@
   height: 60px;
   border-radius: 0 0 20px 20px;
   .set-font(16px, 18px, 700);
+
+  @media (min-width: @tablet-width) {
+    .set-font(24px, 24px, 700);
+    text-transform: unset;
+    height: 108px;
+  }
 }

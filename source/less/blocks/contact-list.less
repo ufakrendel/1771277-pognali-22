@@ -21,10 +21,33 @@
   flex-direction: row;
   align-items: center;
   .set-font(16px, 18px, 700);
+
+  @media (min-width: @tablet-width) {
+    .set-font(28px, 28px, 700);
+  }
 }
 
 .contact-list__text {
   display: block;
   padding-left: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-list__item-img {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contact-list__item-img {
+    width: 90px;
+    height: 90px;
+  }
 }
