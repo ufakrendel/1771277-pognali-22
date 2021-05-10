@@ -4,12 +4,29 @@
   box-sizing: border-box;
   padding: 24px 25px 40px;
   margin-bottom: -20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 74px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 55px 60px 40px;
+  }
 }
 
 .add-plan__header {
   color: @basic-blue-light;
   margin-bottom: 30px;
   .set-font(24px, 24px, 700);
+
+  @media (min-width: @tablet-width) {
+    .set-font(36px, 36px, 700);
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
+  }
 }
 
 .add-plan__togglers {
@@ -17,5 +34,16 @@
   right: 44px;
   top: 36px;
   width: 40px;
-  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    right: 74px;
+    top: 66px;
+    width: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: unset;
+    right: 270px;
+    top: 250px;
+  }
 }

@@ -1,3 +1,16 @@
+.pagination {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
+}
+
 .pagination__button-more {
   display: flex;
   justify-content: center;
@@ -5,50 +18,131 @@
   .set-font(17px, 17px, 700);
   .buttons(270px, 40px);
   color: @basic-blue-light;
-  margin-top: 20px;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .set-font(20px, 20px, 700);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 56px;
+    margin-bottom: 60px;
+    margin-left: -60px;
+  }
 }
 
 .pagination__img-plus {
   padding-right: 15px;
   stroke: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 .pagination___pages {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+  }
 }
 
 .pagination__button-back-img {
   fill: @basic-blue-light;
   transform: rotate(-90deg);
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .pagination__button-next-img {
   fill: @basic-blue-light;
   transform: rotate(90deg);
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .pagination__list-container {
   display: flex;
   flex-direction: row;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: @basic-white;
+    width: 100%;
+    border-radius: 20px;
+    height: 100px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .pagination__button-back,
 .pagination__button-next {
-  width: 135px;
+  width: 134px;
   height: 50px;
   background-color: @basic-white;
   border: 1px solid @basic;
   .align-center();
-  margin-top: 20px;
+  margin-top: 14px;
   margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    width: unset;
+    height: unset;
+    margin: 0;
+    border: unset;
+  }
 }
 
 .pagination__button-next {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 35px;
+    margin-left: 15px;
+  }
 }
 
 .pagination__button-back {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+    margin-left: auto;
+  }
 }

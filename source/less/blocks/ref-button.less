@@ -2,13 +2,24 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
-  font-weight: 700;
+  .set-font(18px, 18px, 700);
   background-color: @basic-yellow;
   text-align: center;
   border-radius: 10px;
   height: 62px;
   width: 270px;
+
+  @media (min-width: @tablet-width) {
+    height: 80px;
+    width: 620px;
+    border-radius: 15px;
+    .set-font(24px, 24px, 700);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+
 
   &:hover {
     background-color: @special-yellow-dark;
@@ -26,8 +37,17 @@
 .ref-button__title {
   padding-left: 24px;
   .set-font(18px, 18px, 700);
+
+  @media (min-width: @tablet-width) {
+    padding-left: 35px;
+    .set-font(24px, 24px, 700);
+  }
 }
 
 .ref-button__arrow {
   padding-right: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 35px;
+  }
 }

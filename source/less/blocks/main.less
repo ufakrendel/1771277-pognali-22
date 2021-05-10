@@ -1,20 +1,26 @@
 .main {
   background-color: @price-gray;
-  width: 320px;
+  min-width: 320px;
   position: relative;
 }
 
 .main__promo {
   height: 970px;
-  background-image: url("../../img/traveller-illustration-mobile.png"),
-    url("../../img/globe-back-mobile-header.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 80px top calc(222px - 73px), top -73px left;
   background-color: @basic-blue;
+
+  @media (min-width: @tablet-width) {
+    height: 1100px;
+    background-color: @header-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 750px;
+    background-color: @basic-blue;
+  }
 }
 
 .main__about {
-  background-color: @price-background;
+  background-color: @form-background-color;
 }
 
 .main__directions {
@@ -22,7 +28,7 @@
 }
 
 .main__companions {
-  background-color: @price-background;
+  background-color: @form-background-color;
 }
 
 .main__price {
@@ -31,23 +37,44 @@
 
 .main__feedback {
   background-color: @adress-background;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -20px;
+  }
 }
 
 .main__map {
   height: 262px;
+
+  @media (min-width: @tablet-width) {
+    height: 464px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 394px;
+  }
 }
 
 .main__form {
   position: relative;
   background-color: @form-background-color;
-  padding-top: 72px;
 }
 
 .main__map iframe {
-  width: 320px;
   height: 480px;
+  width: 100%;
   margin-top: -80px;
   z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -160px;
+    height: 730px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -150px;
+    height: 660px;
+  }
 }
 
 .main__add-plan {
@@ -55,15 +82,39 @@
   margin-top: -30px;
 }
 
-.main__countries {
-  padding: 90px 25px 20px;
-}
-
 .main__companion-filter {
-  padding: 150px 25px 0;
+  padding: 75px 25px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 185px 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .main__companion-list {
   box-sizing: border-box;
   padding: 0 25px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.main__content-container {
+  .content-container();
+}
+
+.main__catalog-content {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1010px 85px 285px;
+    grid-template-rows: auto;
+  }
 }

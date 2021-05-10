@@ -4,11 +4,37 @@
   list-style-type: none;
   justify-content: center;
   align-content: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: start;
+  }
 }
 
 .socials-list__link {
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 13px 0;
+  padding: 0 12px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 18px 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .socials-list__img-fb {
+    width: 16px;
+    height: 26px;
+  }
+
+  .socials-list__img-vk {
+    width: 28px;
+    height: 18px;
+  }
+
+  .socials-list__img-inst {
+    width: 21px;
+    height: 21px;
+  }
 }

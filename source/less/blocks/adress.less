@@ -1,15 +1,38 @@
 .adress {
   position: relative;
+  z-index: 2;
+  background-color: @adress-background;
+  .container-round-bottom();
+}
+
+.adress__container {
+  .content-container();
   background-color: @adress-background;
   .container-round-bottom();
   box-sizing: border-box;
   padding: 30px 0 30px 25px;
-  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding: 46px 0 30px 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 45px 135px 10px 283px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-.adress__container {
+.adress__mark-container {
   display: flex;
   flex-direction: row;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 
 .adress__text {
@@ -18,10 +41,49 @@
   padding-left: 16px;
   .set-font(16px, 22px, 700);
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    .set-font(28px, 28px, 700);
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    padding-left: 35px;
+  }
 }
 
 .adress__route-button {
   margin-top: 10px;
   border: 3px solid @basic-blue-light;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  br.tablet-hide {
+    display: none;
+  }
+}
+
+.adress__map-mark {
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .adress__route-button.ref-button {
+    width: 324px;
+  }
 }

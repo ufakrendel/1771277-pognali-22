@@ -16,18 +16,22 @@
 <g id="arrow-next-form" viewBox="0 0 15 21">
 <path d="M3.06949 19.3693C3.16815 19.481 3.28536 19.5695 3.41439 19.63C3.54343 19.6904 3.68176 19.7216 3.82146 19.7216C3.96117 19.7216 4.0995 19.6904 4.22853 19.63C4.35757 19.5695 4.47477 19.481 4.57344 19.3693L11.6343 11.398C11.7131 11.3092 11.7756 11.2038 11.8182 11.0878C11.8609 10.9717 11.8828 10.8473 11.8828 10.7217C11.8828 10.5961 11.8609 10.4717 11.8182 10.3556C11.7756 10.2396 11.7131 10.1342 11.6343 10.0454L4.57344 2.07408C4.15709 1.60405 3.48584 1.60405 3.06949 2.07408C2.65314 2.54411 3.32374 3.3591 3.74009 3.82913L9.82453 10.7217L3.41439 17.972C3.00654 18.4324 2.65314 18.9089 3.06949 19.3693Z" fill="black"/>
 </g>
-<g id="icon-close" viewBox="0 0 9 9" fill="none">
+<g id="icon-close" fill="none">
 <path d="M7.875 1.125L1.125 7.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1.125 1.125L7.875 7.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<g id="icon-close-w" viewBox="0 0 9 9" fill="none">
+<g id="icon-close-instroke" fill="none">
+<path d="M7.875 1.125L1.125 7.875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.125 1.125L7.875 7.875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="icon-close-w" fill="none">
 <path d="M7.875 1.125L1.125 7.875" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1.125 1.125L7.875 7.875" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g viewBox="0 0 8 11" id="arrow-down-form">
 <path d="M3.64645 10.3536C3.84171 10.5488 4.15829 10.5488 4.35355 10.3536L7.53553 7.17157C7.7308 6.97631 7.7308 6.65973 7.53553 6.46447C7.34027 6.2692 7.02369 6.2692 6.82843 6.46447L4 9.29289L1.17157 6.46447C0.976311 6.2692 0.659728 6.2692 0.464466 6.46447C0.269204 6.65973 0.269204 6.97631 0.464466 7.17157L3.64645 10.3536ZM3.5 0L3.5 10H4.5L4.5 0L3.5 0Z" fill="black"/>
 </g>
-<g id="arrow-dropdown-form" viewBox="0 0 12 16" fill="none">
+<g id="arrow-dropdown-form"  fill="none">
 <path d="M0.638485 5.09805C0.569006 5.17667 0.513881 5.27007 0.476269 5.37289C0.438657 5.47571 0.419296 5.58595 0.419296 5.69727C0.419296 5.8086 0.438657 5.91883 0.476269 6.02165C0.513881 6.12448 0.569006 6.21787 0.638485 6.29649L5.59843 11.9231C5.65365 11.9859 5.71924 12.0357 5.79144 12.0696C5.86364 12.1036 5.94105 12.1211 6.01922 12.1211C6.09739 12.1211 6.17479 12.1036 6.247 12.0696C6.3192 12.0357 6.38479 11.9859 6.44001 11.9231L11.4 6.29649C11.6924 5.96472 11.6924 5.42982 11.4 5.09805C11.1075 4.76628 10.8004 5.04112 10.5079 5.37289L7.90792 8.3364L5.99995 10.4241L1.19996 5.09079C1.19996 5.09079 0.92498 4.76628 0.638485 5.09805Z" fill="black"/>
 </g>
 <g id="icon-close-toggle" viewBox="0 0 9 9" fill="none">
@@ -43,5 +47,20 @@
 </g>
 <g id="catalog-expand-up" viewBox="0 0 10 5">
 <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z"/>
+</g>
+<g id="catalog-icon-on-main" viewBox="0 0 32 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 16H28C30.2091 16 32 14.2091 32 12V7C32 4.79086 30.2091 3 28 3H4V5H28C29.1046 5 30 5.89543 30 7V12C30 13.1046 29.1046 14 28 14H4V16Z" fill="white"/>
+<path d="M0 4L9 0.535898V7.4641L0 4Z" fill="white"/>
+</g>
+<g id="filter-icon">
+<rect x="7.17395" width="7.82609" height="2"/>
+<rect x="7.17383" y="8" width="7.82609" height="2" />
+<rect y="4" width="7.82609" height="2" />
+<rect x="3.91309" width="1.95652" height="2" />
+<rect x="3.91309" y="8" width="1.95652" height="2" />
+<rect x="9.13037" y="4" width="1.95652" height="2"/>
+<rect width="2.6087" height="2"/>
+<rect y="8" width="2.6087" height="2" />
+<rect x="12.3914" y="4" width="2.6087" height="2" />
 </g>
 </svg>

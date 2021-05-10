@@ -1,9 +1,21 @@
 .page-footer {
-  padding: 10px 25px 0;
+  padding: 0 25px 0;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 90px auto 64px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 46px 40px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 46px 60px 40px;
+  }
 }
 
 .page-footer__socials-item {
@@ -11,6 +23,12 @@
   width: 44px;
   height: 44px;
   border-radius: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+  }
 
   &:hover {
     background-color: @special-yellow-dark;
@@ -29,6 +47,14 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 369px;
+  }
 }
 
 .page-footer__socials {
@@ -39,6 +65,11 @@
   grid-row-end: 3;
   border-bottom: solid 1px #f2f2f2;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .page-footer__created-container {
@@ -48,6 +79,10 @@
   grid-row-end: 4;
   justify-self: flex-start;
   align-self: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .page-footer__picture-container {
@@ -59,21 +94,32 @@
   align-self: center;
 }
 
+.page-footer__img {
+  @media (min-width: @tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 55px;
+  }
+}
+
 .page-footer__created-by-text {
   color: @special-grey;
   .opacity-action();
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .page-footer__created-by-pic {
   fill: @basic-blue;
   .opacity-action();
-}
 
-.feedback__contacts {
-  padding-left: 25px;
-  padding-bottom: 30px;
-}
-
-.feedback__contacts-link {
-  color: @basic-yellow;
+  @media (min-width: @tablet-width) {
+    padding-left: 24px;
+  }
 }

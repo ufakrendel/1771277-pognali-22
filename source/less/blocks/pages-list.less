@@ -1,0 +1,23 @@
+.pages-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: @basic-white;
+  }
+}
+
+.pages-list__item {
+  @media (min-width: @tablet-width) {
+    color: @basic-blue-light;
+    .set-font(20px, 20px, 700);
+    width: 50px;
+    height: 50px;
+    .align-center();
+
+    &--current {
+      border-radius: 25px;
+      background-color: @basic-yellow;
+    }
+  }
+}

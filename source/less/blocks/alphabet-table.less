@@ -1,24 +1,54 @@
 .alphabet-table {
-  border-collapse: collapse;
+  border-color: @basic-white;
 
-  th:first-child {
-    border-top-left-radius: 4px;
-  }
-
-  th:last-child {
-    border-top-right-radius: 4px;
+  @media (min-width: @tablet-width) {
+    width: 370px;
   }
 }
 
-.alphabet-table__th {
+.alphabet-table__title {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 17px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: @basic-blue-light;
   height: 42px;
   color: @basic-white;
   text-transform: uppercase;
   .set-font(14px, 12px, 500);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+    height: 0;
+  }
+}
+
+.alphabet-table__word-table {
+  border-collapse: collapse;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-bottom: 33px;
+    margin-right: 80px;
+    .set-font(20px, 20px, 500);
+    width: 262px;
+    height: 346px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-collapse: unset;
+    border-spacing: 15px;
+    margin-top: 18px;
+    margin-left: 10px;
+    width: unset;
+    height: unset;
+  }
 }
 
 .alphabet-table__data {
@@ -29,8 +59,49 @@
   vertical-align: middle;
   text-align: center;
 
-  &&--selected {
+  &--selected {
     color: @basic-blue-light;
     background-color: @form-background-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 69px;
+    width: 52px;
+
+    &--selected {
+      color: @basic-white;
+      background-color: @basic-blue-light;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 70px;
+    width: 60px;
+    border-radius: 4px;
+  }
+}
+
+.alphabet-table__close svg {
+  stroke: white;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -47px;
+    left: 325px;
+    stroke: white;
+    width: 17px;
+    height: 17px;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    left: 684px;
+    top: -44px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .alphabet-table__title-text {
+    display: none;
   }
 }

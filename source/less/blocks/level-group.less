@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   width: 100%;
 
-
   &::after {
     position: absolute;
     display: block;
@@ -17,6 +16,39 @@
     right: calc(50% - 9px);
     border-top: 5px solid @basic-white;
     border-bottom: 5px solid @basic-white;
+  }
+
+  @media (min-width: @tablet-width) {
+    align-items: baseline;
+    justify-content: flex-start;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: @form-fieldset-color;
+      top: 19px;
+      width: 18px;
+      right: 76px;
+      border-top: 5px solid @basic-white;
+      border-bottom: 5px solid @basic-white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: @form-fieldset-color;
+      top: 19px;
+      width: 18px;
+      right: 100px;
+      border-top: 5px solid @basic-white;
+      border-bottom: 5px solid @basic-white;
+    }
   }
 }
 
@@ -30,6 +62,17 @@
   text-align: center;
   color: @basic-blue-light;
   .set-font(14px, 14px, 500);
+
+  @media (min-width: @tablet-width) {
+    .set-font(20px, 20px, 400);
+    width: 74px;
+    height: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(50% - 3px);
+    height: 46px;
+  }
 }
 
 .level-group__low-range {
@@ -49,6 +92,10 @@
   border-radius: 5px;
   background-color: @basic-blue-light;
   margin-top: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .level-group__low-range-btn {
@@ -75,5 +122,57 @@
     height: 2px;
     width: 160px;
     background-color: @basic-blue-light;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 110px;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: "";
+      height: 2px;
+      width: 130px;
+      background-color: @basic-blue-light;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .level-group__low-range-btn {
+    order: 1;
+  }
+
+  .level-group__high-range-btn {
+    order: 2;
+  }
+
+  .level-group__low-range {
+    order: 3;
+    margin-left: 120px;
+  }
+
+  .level-group__high-range {
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .level-group__low-range-btn {
+    order: unset;
+  }
+
+  .level-group__high-range-btn {
+    order: unset;
+  }
+
+  .level-group__high-range {
+    order: unset;
+  }
+
+  .level-group__low-range {
+    order: unset;
+    margin-left: 0;
   }
 }

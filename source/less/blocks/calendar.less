@@ -1,6 +1,10 @@
 .calendar {
   border-collapse: collapse;
   .set-font(14px, 12px, 400);
+
+  @media (min-width: @tablet-width) {
+    .set-font(18px, 18px, 400);
+  }
 }
 
 .calendar__header {
@@ -9,6 +13,22 @@
 
   &--weekend {
     color: @special-red;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    padding-left: 16px;
+  }
+
+  .calendar__header-word {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
   }
 }
 
@@ -32,6 +52,26 @@
   }
 
   &--today {
-    border: solid red 2px;
+    border: solid @calendar-border 3px;
+
+    @media (min-width: @tablet-width) {
+      border: solid @calendar-border 4px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 68px;
+    width: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    vertical-align: top;
+    text-align: left;
+    height: 70px;
+    width: 142px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-left: 14px;
+    .set-font(18px, 22px, 400);
   }
 }
