@@ -1,9 +1,34 @@
 .user-info {
   display: grid;
-  padding: 20px 25px 50px;
+  padding: 24px 25px 50px;
   grid-template-columns: 135px 135px;
-  grid-template-rows: 100px 40px 100px 50px;
+  grid-template-rows: 100px 44px 96px 50px;
   row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 75px 70px;
+    grid-template-columns: 94px 308px 94px;
+    grid-template-rows: 94px 60px 105px;
+    row-gap: 40px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 72px 60px 60px 124px;
+  }
+}
+
+.user-info__counter-img {
+  width: 100px;
+  height: 100px;
+
+  @media (min-width: @tablet-width) {
+    width: 94px;
+    height: 94px;
+  }
 }
 
 .user-info__counter {
@@ -13,6 +38,22 @@
   grid-row-end: 2;
   position: relative;
   left: 17px;
+
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -145px;
+    left: unset;
+    right: 390px;
+  }
 }
 
 .user-info__img-wrapper {
@@ -25,6 +66,24 @@
   width: 100px;
   position: relative;
   left: 17px;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-radius: 7px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -190px;
+    left: unset;
+    right: 145px;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .user-info__change-img {
@@ -35,7 +94,6 @@
   color: @basic-blue;
   background-color: @form-grey-1;
   text-transform: uppercase;
-  font-weight: 500;
   margin-bottom: 5px;
   .set-font(20px, 20px, 500);
   .buttons(270px, 40px);
@@ -48,6 +106,36 @@
     opacity: 0.3;
     background-color: @form-grey-1;
   }
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    .set-font(20px, 20px, 500, 2px);
+    .buttons(618px, 60px, 10px);
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -10px;
+    right: 155px;
+    .buttons(190px, 47px, 10px);
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    .set-font(20px, 20px, 500, 1px);
+
+    &--hide {
+      display: none;
+    }
+  }
+}
+
+.user-info__change-img-text {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .user-info__tags-container {
@@ -55,6 +143,20 @@
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    width: 733px;
+    height: 105px;
+  }
 }
 
 .user-info__movement-container {
@@ -62,6 +164,19 @@
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 82px;
+    width: 384px;
+    height: 105px;
+  }
 }
 
 .user-info__fieldset {
@@ -76,6 +191,11 @@
   &:active {
     border-color: @basic-blue;
   }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 25px 40px 10px;
+  }
 }
 
 .user-info__legend {
@@ -84,6 +204,22 @@
   text-align: center;
   padding: 0 20px 0;
   .set-font(16px, 18px, 700);
+
+  @media (min-width: @tablet-width) {
+    .set-font(20px, 20px, 500, 2px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+    background-color: @form-background-color;
+    padding: 0 15px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tag {
+      left: 60px;
+    }
+  }
 }
 
 .user-info__tags {
@@ -97,6 +233,12 @@
   &:focus {
     border-color: @basic-blue;
     opacity: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    .set-font(20px, 22px, 400);
+    padding-bottom: 0;
   }
 }
 
@@ -122,4 +264,9 @@
 .user-info__img {
   width: 100px;
   height: 100px;
+
+  @media (min-width: @desktop-width) {
+    width: 190px;
+    height: 190px;
+  }
 }

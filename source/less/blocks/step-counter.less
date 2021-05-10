@@ -3,6 +3,31 @@
   position: relative;
   text-transform: uppercase;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -26px;
+      left: 0;
+      height: 1px;
+      border-bottom: 1px solid @form-fieldset-color;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 220px 180px auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .step-counter__btn-group {
@@ -14,6 +39,20 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .step-counter__description {
@@ -22,19 +61,66 @@
   opacity: 0.3;
   right: 0;
   .set-font(16px, 18px, 500);
+
+  @media (min-width: @tablet-width) {
+    .set-font(20px, 20px, 500, 2px);
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    .set-font(20px, 20px, 500);
+    padding-left: 35px;
+  }
 }
 
 .step-counter__minus-btn,
 .step-counter__plus-btn {
   padding: 12px;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .step-counter__number-input {
   color: @basic-blue-light;
   text-align: center;
   .set-font(14px, 12px, 500);
+
+  @media (min-width: @tablet-width) {
+    .set-font(20px, 20px, 500);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40px;
+  }
 }
 
-.step_counter__title {
+.step-counter__title {
   .set-font(16px, 18px, 500);
+
+  @media (min-width: @tablet-width) {
+    .set-font(20px, 20px, 500, 2px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    .set-font(20px, 20px, 500);
+  }
 }

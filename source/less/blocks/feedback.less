@@ -1,14 +1,18 @@
 .feedback {
-  color: @basic-white;
   background-color: @main-section-dark-bgcolor;
   .container-round-bottom();
+}
+
+.feedback__container {
+  color: @basic-white;
+  .content-container();
 
   @media (min-width: @tablet-width) {
     .set-font(45px, 45px, 700);
   }
 }
 
-.feedback__container {
+.feedback__text-container {
   padding-top: 70px;
   display: flex;
   flex-direction: column;
@@ -16,11 +20,12 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
+    padding-top: 90px;
     .set-font(45px, 45px, 700);
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 100px;
+    padding-top: 125px;
   }
 }
 

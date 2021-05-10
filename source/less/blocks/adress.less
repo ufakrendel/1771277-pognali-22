@@ -1,10 +1,16 @@
 .adress {
   position: relative;
+  z-index: 2;
+  background-color: @adress-background;
+  .container-round-bottom();
+}
+
+.adress__container {
+  .content-container();
   background-color: @adress-background;
   .container-round-bottom();
   box-sizing: border-box;
-  padding: 36px 0 30px 25px;
-  z-index: 2;
+  padding: 30px 0 30px 25px;
 
   @media (min-width: @tablet-width) {
     padding: 46px 0 30px 75px;
@@ -19,7 +25,7 @@
   }
 }
 
-.adress__container {
+.adress__mark-container {
   display: flex;
   flex-direction: row;
 
@@ -40,6 +46,11 @@
     .set-font(28px, 28px, 700);
     padding-left: 25px;
     padding-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    padding-left: 35px;
   }
 }
 

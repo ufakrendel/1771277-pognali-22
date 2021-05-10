@@ -1,37 +1,30 @@
 .page {
   .set-font(16px, 22px, 400);
   height: 100%;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: @basic;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
-  }
+  background-color: @light-background;
 }
 
 .page__header {
-  background-color: @basic-blue;
   position: relative;
-  height: 73px;
+  min-height: 73px;
 
   @media (min-width: @tablet-width) {
-    height: 132px;
-    background-color: @header-color;
+    min-height: 132px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 100px;
+    min-height: 100px;
   }
 }
 
 .page__body {
   min-height: 100%;
+  min-width: 320px;
+  background-color: @form-background-color;
+}
+
+.page__content-container {
+  .content-container();
 }
 
 .page__footer {
@@ -39,7 +32,6 @@
   z-index: 3;
   line-height: 16px;
   font-size: 16px;
-  height: 239px;
   background-color: @basic-white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -47,13 +39,11 @@
   @media (min-width: @tablet-width) {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    height: 140px;
     .set-font(20px, 20px, 400);
   }
 
   @media (min-width: @desktop-width) {
     border-top-left-radius: 55px;
     border-top-right-radius: 55px;
-    height: 152px;
   }
 }

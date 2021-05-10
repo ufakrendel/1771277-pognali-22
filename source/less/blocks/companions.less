@@ -1,8 +1,14 @@
 .companions {
+  background-color: @main-section-dark-bgcolor;
+  .container-round-bottom();
+}
+
+.companions__container {
+  .content-container();
   color: @basic-white;
-  background-image: url("../../img/back-moblie.png"),
-    url("../../img/smolov-back-mobile.png"),
-    url("../../img/rogovaya-back-mobile.png");
+  background-image: url("../img/back-moblie.png"),
+    url("../img/smolov-back-mobile.png"),
+    url("../img/rogovaya-back-mobile.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left top 40px, top 40px left 152px, top 310px left;
   background-color: @main-section-dark-bgcolor;
@@ -12,9 +18,9 @@
 
   @media (min-width: @tablet-width) {
     padding: 140px 270px 0 72px;
-    background-image: url("../../img/companions-back-tablet.png"),
-      url("../../img/smolov-back-desktop.png"),
-      url("../../img/rogovaya-back-desktop.png");
+    background-image: url("../img/companions-back-tablet.png"),
+      url("../img/smolov-back-desktop.png"),
+      url("../img/rogovaya-back-desktop.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left 40px top 70px, top 430px left 40px, top 80px right 75px;
   }
@@ -76,7 +82,7 @@
 }
 
 .companions__list {
-  margin-top: 58px;
+  margin-top: 54px;
   margin-left: -25px;
 
   @media (min-width: @tablet-width) {

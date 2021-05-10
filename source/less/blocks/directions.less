@@ -1,4 +1,10 @@
 .directions {
+  background-color: @form-background-color;
+  .container-round-bottom();
+}
+
+.directions__container {
+  .content-container();
   color: @basic-white;
   box-sizing: border-box;
   padding: 68px 60px 0 50px;
@@ -6,8 +12,8 @@
   .container-round-bottom();
 
   @media (min-width: @tablet-width) {
-    padding: 65px 320px 0 72px;
-    background-image: url("../../img/flags-tablet-bg.png"), url("../../img/directions-tablet-bg.png");
+    padding: 70px 320px 0 72px;
+    background-image: url("../img/flags-tablet-bg.png"), url("../img/directions-tablet-bg.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right 40px top 80px, left 40px top 400px;
   }
@@ -17,7 +23,7 @@
     padding: 160px 0 130px 130px;
     grid-template-columns: 560px 170px 370px;
     grid-template-rows: 50px auto 80px;
-    background-image: url("../../img/flags-tablet-bg.png"), url("../../img/directions-tablet-bg.png");
+    background-image: url("../img/flags-tablet-bg.png"), url("../img/directions-tablet-bg.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right 60px top 80px, left 60px top 80px;
   }

@@ -11,690 +11,1251 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="header__navigation header__navigation--open header__navigation--nojs">
-      <p class="visually-hidden">Погнали?</p>
-      <a href="index.html" class="header__logo">
-        <picture class="header__img header__img--open">
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
-          <img src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="100" height="15" alt="Лого">
-        </picture>
-        <picture class="header__img header__img--close">
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white-x1.png, img/logo-desktop-white-x2.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-white-x1.png, img/logo-tablet-white-x2.png 2x">
-          <img src="img/logo-mobile-white-x1.png" srcset="img/logo-mobile-white-x2.png 2x" width="100" height="15" alt="Лого">
-        </picture>
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
-        <svg class="header__toggle-open" viewbox="0 0 25 11" fill="white" width="25px" height="11px">
-          <use xlink:href="img/sign.svg#icon-open-toggle"></use>
-        </svg>
-        <svg class="header__toggle-close" viewbox="0 0 9 9" stroke="#cccccc" width="20px" height="20px">
-          <use xlink:href="img/sign.svg#icon-close-toggle"></use>
-        </svg>
-      </button>
-      <ul class="header__references navigation-list">
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="index.html">
-            О сервисе
-          </a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="form.html">
-            Направления
-          </a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="catalog.html">
+      <div class="header__container">
+        <p class="visually-hidden">Погнали?</p>
+        <a href="index.html" class="header__logo">
+          <picture class="header__img header__img--open">
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+            <img class="header__img" src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x"
+              width="100" height="15" alt="Лого">
+          </picture>
+          <picture class="header__img header__img--close">
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-white-x1.png, img/logo-desktop-white-x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white-x1.png, img/logo-tablet-white-x2.png 2x">
+            <img class="header__img" src="img/logo-mobile-white-x1.png" srcset="img/logo-mobile-white-x2.png 2x"
+              width="100" height="15" alt="Лого">
+          </picture>
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+          <svg class="header__toggle-open" viewbox="0 0 25 11" fill="white" width="25px" height="11px">
+            <use xlink:href="img/sign.svg#icon-open-toggle"></use>
+          </svg>
+          <svg class="header__toggle-close" viewbox="0 0 9 9" stroke="#cccccc" width="20px" height="20px">
+            <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+          </svg>
+        </button>
+        <ul class="header__references navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="index.html">
+              О сервисе
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="form.html">
+              Направления
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="catalog.html">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <a class="header__phone phone-button" href="tel:88005558628">
+          <span class="visually-hidden">Телефон</span>
+          <img src="img/icon-call.svg" width="18" height="18" alt="Телефон">
+        </a>
+        <a class="header__mail mail-button" href="mailto:mail@htmlacademy.ru">
+          <span class="visually-hidden">Email</span>
+          <img src="img/icon-mail.svg" width="18" height="16" alt="Email"></a>
+        <a class="header__login" href="login.html"><span>Авторизация</span></a>
+        <ul class="header__contacts contact-list">
+          <li class="contact-list__item">
+            <a class="header__contacts-link contact-list__link " href="tel:88005558628">
+              <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+                <use xlink:href="img/contacts-icon.svg#contact-phone"></use>
+              </svg>
+              <span class="contact-list__text">8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="contact-list__item">
+            <a class="header__contacts-link contact-list__link" href="mailto:mail@htmlacademy.ru">
+              <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
+                <use xlink:href="img/contacts-icon.svg#contact-mail"></use>
+              </svg>
+              <span class="contact-list__text">mail@htmlacademy.ru</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="header__socials socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <img class="socials-list__img-fb" src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <img class="socials-list__img-vk" src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <img class="socials-list__img-inst" src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+        <a class="header__title-container" href="index.html">
+          <p class="header__title">
             Попутчики
-          </a>
-        </li>
-      </ul>
-      <a class="header__phone phone-button">Phone</a>
-      <a class="header__mail mail-button">Email</a>
-      <a class="header__login" href="login.html"><span>Авторизация</span></a>
-      <ul class="header__contacts contact-list">
-        <li class="contact-list__item">
-          <a class="header__contacts-link contact-list__link" href="tel:88005558628">
-            <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
-              <use xlink:href="img/contacts-icon.svg#contact-phone"></use>
+          </p>
+          <div class="header__title-line"></div>
+          <div class="header__on-main-link">
+            <svg class="header__on-main-link-icon" width="32" height="16">
+              <use xlink:href="img/sign.svg#catalog-icon-on-main"></use>
             </svg>
-            <span class="contact-list__text">8 800 555-86-28</span>
-          </a>
-        </li>
-        <li class="contact-list__item">
-          <a class="header__contacts-link contact-list__link" href="mailto:mail@htmlacademy.ru">
-            <svg class="contact-list__item-img" viewBox="0 0 45 45" fill="black" width="45px" height="45px">
-              <use xlink:href="img/contacts-icon.svg#contact-mail"></use>
-            </svg>
-            <span class="contact-list__text">mail@htmlacademy.ru</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="header__socials socials-list">
-        <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
-            <img src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
-            <img src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
-            <img src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
-          </a>
-        </li>
-      </ul>
-      <div class="header__title-container">
-        <p class="header__title">
-          Попутчики
-        </p>
-        <div class="header__title-line"></div>
+          </div>
+        </a>
       </div>
     </nav>
   </header>
   <main class="page__main main">
     <h1 class="visually-hidden">Попутчики</h1>
-    <section class="main__countries countries countries--nojs">
-      <svg class="countries__filter-img" width="10px" height="8px">
-        <use xlink:href="img/filter-icon.svg#filter-icon"></use>
-      </svg>
-      <h2 class="countries__filter-title">Фильтрация по странам:</h2>
-      <svg class="countries__toggle-close" viewbox="0 0 9 9" stroke="#192144" width="16px" height="16px">
-        <use xlink:href="img/sign.svg#icon-close-toggle"></use>
-      </svg>
-      <ul class="countries__toggle">
-        <li class="countries__toggle-item"></li>
-        <li class="countries__toggle-item"></li>
-        <li class="countries__toggle-item"></li>
-      </ul>
-      <ul class="countries__regions-list regions">
-        <li class="regions__item regions__item--active">Европа</li>
-        <li class="regions__item">Азия</li>
-        <li class="regions__item">Америка</li>
-        <li class="regions__item">Острова</li>
-      </ul>
-      <a class="countries__show-all" href="countires.html">Показать все</a>
-      <div class="countries__select">
-        <table class="countries__alphabet-table alphabet-table">
-          <tr class="alphabet-table__row">
-            <td class="alphabet-table__data alphabet-table__data--selected">А</td>
-            <td class="alphabet-table__data">Б</td>
-            <td class="alphabet-table__data">В</td>
-            <td class="alphabet-table__data">Г</td>
-            <td class="alphabet-table__data">Д</td>
-          </tr>
-          <tr class="alphabet-table__row">
-            <td class="alphabet-table__data">Е</td>
-            <td class="alphabet-table__data">З</td>
-            <td class="alphabet-table__data">И</td>
-            <td class="alphabet-table__data">К</td>
-            <td class="alphabet-table__data">Л</td>
-          </tr>
-          <tr class="alphabet-table__row">
-            <td class="alphabet-table__data">М</td>
-            <td class="alphabet-table__data">Н</td>
-            <td class="alphabet-table__data">О</td>
-            <td class="alphabet-table__data">П</td>
-            <td class="alphabet-table__data">Р</td>
-          </tr>
-          <tr class="alphabet-table__row">
-            <td class="alphabet-table__data">С</td>
-            <td class="alphabet-table__data">Т</td>
-            <td class="alphabet-table__data">У</td>
-            <td class="alphabet-table__data">Ф</td>
-            <td class="alphabet-table__data">Х</td>
-          </tr>
-          <tr class="alphabet-table__row">
-            <td class="alphabet-table__data">Ч</td>
-            <td class="alphabet-table__data">Ш</td>
-            <td class="alphabet-table__data">Э</td>
-            <td class="alphabet-table__data">Ю</td>
-            <td class="alphabet-table__data">Я</td>
-          </tr>
-        </table>
-        <div class="countries__countries-container">
-          <div class="countries__letter-container">
-            <div class="countries__letter-name">A</div>
-            <ul class="countries__country-list">
-              <li class="countries__country-item">
-                <a class="countries__country-link" href="europe/australis">Австралия</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link" href="europe/austria">Австрия</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link" href="europe/azerbaidjan">Азербайджан</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Албания</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Алжир</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Ангола</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Андорра</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Анигуа и Барбуда</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Аргентина</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Армения</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Афганистан</a>
-              </li>
-            </ul>
-          </div>
-          <div class="countries__letter-container">
-            <div class="countries__letter-name">Б</div>
-            <ul class="countries__country-list">
-              <li class="countries__country-item">
-                <a class="countries__country-link">Багамские Острова</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Барбарос</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бахрейн</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Белоруссия</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Белиз</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бельгия</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бенин</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Болгария</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Боливия</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Босния и Герцеговина</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Ботсвана</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бразилия</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бруней</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Буркина-Фасо</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бурунди</a>
-              </li>
-              <li class="countries__country-item">
-                <a class="countries__country-link">Бутан</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <button class="countries__collapse-btn">
-        <svg class="countries__collapse-close" viewbox="0 0 9 9" stroke="#192144" width="14px" height="14px">
-          <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+    <section class="main__countries countries">
+      <div class="countries__content-container countries__content-container--nojs">
+        <svg class="countries__filter-img" viewBox="0 0 15 10" width="15" height="10">
+          <use xlink:href="img/sign.svg#filter-icon"></use>
         </svg>
-        <span>Свернуть</span>
-      </button>
+        <h2 class="countries__filter-title">Фильтрация по странам:</h2>
+        <div class="countries__toggle-close">
+          <span class="countries__toggle-text">Свернуть</span>
+          <svg class="countries__toggle-close-img" viewbox="0 0 9 9" stroke="#192144" width="16px" height="16px">
+            <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+          </svg>
+        </div>
+        <ul class="countries__toggle">
+          <li class="countries__toggle-item"></li>
+          <li class="countries__toggle-item"></li>
+          <li class="countries__toggle-item"></li>
+        </ul>
+        <ul class="countries__regions-list regions">
+          <li class="regions__item regions__item--active">Европа</li>
+          <li class="regions__item">Азия</li>
+          <li class="regions__item">Америка</li>
+          <li class="regions__item">Острова</li>
+        </ul>
+        <a class="countries__show-all" href="countires.html">Показать все</a>
+        <div class="countries__select">
+          <div class="countries__alphabet-table alphabet-table">
+            <table class="alphabet-table__word-table">
+              <tr class="alphabet-table__row">
+                <td class="alphabet-table__data alphabet-table__data--selected">А</td>
+                <td class="alphabet-table__data">Б</td>
+                <td class="alphabet-table__data">В</td>
+                <td class="alphabet-table__data">Г</td>
+                <td class="alphabet-table__data">Д</td>
+              </tr>
+              <tr class="alphabet-table__row">
+                <td class="alphabet-table__data">Е</td>
+                <td class="alphabet-table__data">З</td>
+                <td class="alphabet-table__data">И</td>
+                <td class="alphabet-table__data">К</td>
+                <td class="alphabet-table__data">Л</td>
+              </tr>
+              <tr class="alphabet-table__row">
+                <td class="alphabet-table__data">М</td>
+                <td class="alphabet-table__data">Н</td>
+                <td class="alphabet-table__data">О</td>
+                <td class="alphabet-table__data">П</td>
+                <td class="alphabet-table__data">Р</td>
+              </tr>
+              <tr class="alphabet-table__row">
+                <td class="alphabet-table__data">С</td>
+                <td class="alphabet-table__data">Т</td>
+                <td class="alphabet-table__data">У</td>
+                <td class="alphabet-table__data">Ф</td>
+                <td class="alphabet-table__data">Х</td>
+              </tr>
+              <tr class="alphabet-table__row">
+                <td class="alphabet-table__data">Ч</td>
+                <td class="alphabet-table__data">Ш</td>
+                <td class="alphabet-table__data">Э</td>
+                <td class="alphabet-table__data">Ю</td>
+                <td class="alphabet-table__data">Я</td>
+              </tr>
+            </table>
+          </div>
+          <div class="countries__countries-container">
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">A</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link" href="europe/australis">Австралия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link" href="europe/austria">Австрия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link" href="europe/azerbaidjan">Азербайджан</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Албания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Алжир</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Ангола</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Андорра</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Анигуа и Барбуда</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Аргентина</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Армения</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Афганистан</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Б</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Багамские Острова</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бангладеш</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Барбарос</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бахрейн</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Белоруссия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Белиз</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бельгия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бенин</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Болгария</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Боливия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Босния и Герцеговина</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Ботсвана</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бразилия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бруней</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Буркина-Фасо</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бурунди</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Бутан</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">В</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Вануту</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Великобритания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Венгрия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Венесуэла</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Восточный тимор</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Вьетнам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Г</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Габон</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гаити</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гайна</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гамбия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гана</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гватемала</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гвинея</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гвинея-Бисау</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Германия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гондурас</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Гренада</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Греция</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Грузия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Д</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Дания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Джибути</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Доминика</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Доминикана</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Е</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Египед</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">З</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Замбия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Зимбабве</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">И</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Израиль</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Индия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Индонезия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Иордания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Ирак</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Иран</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Ирландия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Исландия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Испания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Италия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">К</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Кабо-Верде</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Казахстан</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Камбоджа</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Камерун</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Канада</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Катар</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Кения</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Кипр</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Киргизия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Кирибати</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Китай</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Колумбия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Л</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Лаос</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Латвия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Лесото</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Либерия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Ливан</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Литва</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Лихтенштейн</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Люксембург</a>
+                </li>
+                <li class="countries__country-item">
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">М</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Маврикий</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Мавритания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Мадагаскар</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Малави</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Малайзия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Мали</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Мальдивы</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Мальта</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Марокко</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Н</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Намибия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Науру</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Непал</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Нигер</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Нигерия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Нидерланды</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Никарагуа</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Новая Зеландия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Норвегия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">О</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">ОАЭ</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Оман</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">П</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Пакистан</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Палау</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Панама</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Папуа-Новая Гвинея</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Парагвай</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Перу</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Польша</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Португалия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Р</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Руанда</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Румыния</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Россия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">С</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сальвадор</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Самоа</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сан-Марино</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Саудовская Аравия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сейшелы</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сенегал</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сербия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сингапур</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Сирия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Словакия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Словения</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">США</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Т</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Таджикистан</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Таиланд</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Танзания</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Того</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Тонга</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Тринидат и Тобаго</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Тувалу</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Тунис</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Туркмения</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Турция</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">У</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Уганда</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Узбекистан</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Украина</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Уругвай</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Ф</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Фиджи</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Филиппины</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Финляндия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Франция</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Х</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Хорватия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Ч</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Чад</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Черногория</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Чехия</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Чили</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Ш</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Швейцария</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Швеция</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Шри-Ланка</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Э</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Эквадор</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Эритрея</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Эсватини</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Эстония</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Эфиопия</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Ю</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">ЮАР</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Южный Судан</a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries__letter-container">
+              <div class="countries__letter-name">Я</div>
+              <ul class="countries__country-list">
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Ямайка</a>
+                </li>
+                <li class="countries__country-item">
+                  <a class="countries__country-link">Япония</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="countries__collapse-btn">
+          <svg class="countries__collapse-close" viewbox="0 0 9 9" stroke="#192144" width="14px" height="14px">
+            <use xlink:href="img/sign.svg#icon-close-toggle"></use>
+          </svg>
+          <span>Свернуть</span>
+        </button>
+      </div>
     </section>
-    <section class="main__companion-filter companions-filter">
-      <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="POST">
-        <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
-        <fieldset class="companions-filter__container">
-          <legend class="companions-filter__legend">Хобби</legend>
-          <svg class="companions-filter__img" width="10px" height="8px">
-            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-          </svg>
-          <div class="companions-filter__inputs">
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sport"
-              id="hobby-sport" checked />
-            <label for="hobby-sport" class="companions-filter__label">Спортзал</label>
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-hookah"
-              id="hobby-hookah" />
-            <label for="hobby-hookah" class="companions-filter__label">Кальян</label>
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sofa"
-              id="hobby-sofa" />
-            <label for="hobby-sofa" class="companions-filter__label">Диван</label>
-          </div>
-        </fieldset>
-        <fieldset class="companions-filter__container">
-          <legend class="companions-filter__legend">Музыка</legend>
-          <svg class="companions-filter__img" width="10px" height="8px">
-            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-          </svg>
-          <div class="companions-filter__inputs">
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rock" id="music-rock"
-              checked />
-            <label for="music-rock" class="companions-filter__label">Тяжелый рок</label>
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rap" id="music-rap"
-              checked />
-            <label for="music-rap" class="companions-filter__label">Русский рэп</label>
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-dance"
-              id="music-dance" />
-            <label for="music-dance" class="companions-filter__label">Евроденс</label>
-          </div>
-        </fieldset>
-        <fieldset class="companions-filter__container">
-          <legend class="companions-filter__legend">Еда</legend>
-          <svg class="companions-filter__img" width="10px" height="8px">
-            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-          </svg>
-          <div class="companions-filter__inputs">
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-meat" id="hobby-meat"
-              checked />
-            <label for="hobby-meat" class="companions-filter__label">Мясоед</label>
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-pp" id="hobby-pp" />
-            <label for="hobby-pp" class="companions-filter__label">Сидит на ПП</label>
-            <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-vegan"
-              id="hobby-vegan" />
-            <label for="hobby-vegan" class="companions-filter__label">Веган-сыроед</label>
-          </div>
-        </fieldset>
-        <fieldset class="companions-filter__container">
-          <legend class="companions-filter__legend">Транспорт</legend>
-          <svg class="companions-filter__img" width="10px" height="8px">
-            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-          </svg>
-          <div class="companions-filter__inputs movement-btn">
-            <input name="plan" type="checkbox" class="movement-btn__input" id="plan" checked />
-            <label for="plan" class="movement-btn__label">
-              <svg class="movement-btn__img" viewBox="0 0 21 23" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#plan"></use>
+    <div class="main__content-container">
+      <div class="main__catalog-content">
+        <section class="main__companion-filter companions-filter">
+          <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="POST">
+            <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+            <fieldset class="companions-filter__container">
+              <legend class="companions-filter__legend">Хобби</legend>
+              <svg class="companions-filter__img" width="10px" height="8px">
+                <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
-            </label>
-            <input name="bus" type="checkbox" class="movement-btn__input" id="bus" checked />
-            <label for="bus" class="movement-btn__label">
-              <svg class="movement-btn__img" viewBox="0 0 18 21" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bus"></use>
+              <div class="companions-filter__inputs">
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sport"
+                  id="hobby-sport" checked />
+                <label for="hobby-sport" class="companions-filter__label">Спортзал</label>
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-hookah"
+                  id="hobby-hookah" />
+                <label for="hobby-hookah" class="companions-filter__label">Кальян</label>
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sofa"
+                  id="hobby-sofa" />
+                <label for="hobby-sofa" class="companions-filter__label">Диван</label>
+              </div>
+            </fieldset>
+            <fieldset class="companions-filter__container">
+              <legend class="companions-filter__legend">Музыка</legend>
+              <svg class="companions-filter__img" width="10px" height="8px">
+                <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
-            </label>
-            <input name="bike" type="checkbox" class="movement-btn__input" id="bike">
-            <label for="bike" class="movement-btn__label">
-              <svg class="movement-btn__img" viewBox="0 0 25 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bike"></use>
+              <div class="companions-filter__inputs">
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rock"
+                  id="music-rock" checked />
+                <label for="music-rock" class="companions-filter__label">Тяжелый рок</label>
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rap"
+                  id="music-rap" checked />
+                <label for="music-rap" class="companions-filter__label">Русский рэп</label>
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-dance"
+                  id="music-dance" />
+                <label for="music-dance" class="companions-filter__label">Евроденс</label>
+              </div>
+            </fieldset>
+            <fieldset class="companions-filter__container">
+              <legend class="companions-filter__legend">Еда</legend>
+              <svg class="companions-filter__img" width="10px" height="8px">
+                <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
-            </label>
-            <input name="run" type="checkbox" class="movement-btn__input" id="run" checked />
-            <label for="run" class="movement-btn__label">
-              <svg class="movement-btn__img" viewBox="0 0 21 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#run"></use>
+              <div class="companions-filter__inputs">
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-meat"
+                  id="hobby-meat" checked />
+                <label for="hobby-meat" class="companions-filter__label">Мясоед</label>
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-pp"
+                  id="hobby-pp" />
+                <label for="hobby-pp" class="companions-filter__label">Сидит на ПП</label>
+                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-vegan"
+                  id="hobby-vegan" />
+                <label for="hobby-vegan" class="companions-filter__label">Веган-сыроед</label>
+              </div>
+            </fieldset>
+            <fieldset class="companions-filter__container">
+              <legend class="companions-filter__legend">Транспорт</legend>
+              <svg class="companions-filter__img" width="10px" height="8px">
+                <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="companions-filter__container">
-          <legend class="companions-filter__legend">Левел</legend>
-          <svg class="companions-filter__img" width="10px" height="8px">
-            <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-          </svg>
-          <div class="companions-filter__inputs level-group">
-            <input class="level-group__low-range" name="low-range" value="30" />
-            <input class="level-group__high-range" name="high-range" type="text" value="100" />
-            <div class="level-group__low-range-btn"><span class="visually-hidden">low range</span></div>
-            <div class="level-group__high-range-btn"><span class="visually-hidden">high range</span></div>
-          </div>
-        </fieldset>
-        <button class="companions-filter__btn " type="submit">Показать</button>
-      </form>
-    </section>
-    <section class="main__companion-list">
-      <h2 class="visually-hidden">Потупчики</h2>
-      <ul class="companion-list">
-        <li class="companion-list__item">
-          <div class="companion-list__img-container">
-            <a href="companion.html?id=1">
-              <img class="companion-list__avatar" src="img/firsova-desktop-cat-1x.png"
-                srcset="img/firsova-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+              <div class="companions-filter__inputs movement-btn">
+                <input name="plan" type="checkbox" class="movement-btn__input" id="plan" checked />
+                <label for="plan" class="movement-btn__label">
+                  <svg class="movement-btn__img" viewBox="0 0 21 23" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#plan"></use>
+                  </svg>
+                </label>
+                <input name="bus" type="checkbox" class="movement-btn__input" id="bus" checked />
+                <label for="bus" class="movement-btn__label">
+                  <svg class="movement-btn__img" viewBox="0 0 18 21" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bus"></use>
+                  </svg>
+                </label>
+                <input name="bike" type="checkbox" class="movement-btn__input" id="bike">
+                <label for="bike" class="movement-btn__label">
+                  <svg class="movement-btn__img" viewBox="0 0 25 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bike"></use>
+                  </svg>
+                </label>
+                <input name="run" type="checkbox" class="movement-btn__input" id="run" checked />
+                <label for="run" class="movement-btn__label">
+                  <svg class="movement-btn__img" viewBox="0 0 21 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#run"></use>
+                  </svg>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="companions-filter__container">
+              <legend class="companions-filter__legend">Левел</legend>
+              <svg class="companions-filter__img" width="10px" height="8px">
+                <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+              </svg>
+              <div class="companions-filter__inputs level-group">
+                <input class="level-group__low-range" name="low-range" value="30" />
+                <input class="level-group__high-range" name="high-range" type="text" value="100" />
+                <div class="level-group__low-range-btn"><span class="visually-hidden">low range</span></div>
+                <div class="level-group__high-range-btn"><span class="visually-hidden">high range</span></div>
+              </div>
+            </fieldset>
+            <button class="companions-filter__btn " type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="main__companion-list">
+          <h2 class="visually-hidden">Потупчики</h2>
+          <ul class="companion-list">
+            <li class="companion-list__item">
+              <div class="companion-list__img-container">
+                <a href="companion.html?id=1">
+                  <img class="companion-list__avatar" src="img/firsova-desktop-cat-1x.png"
+                    srcset="img/firsova-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                </a>
+              </div>
+              <div class="companion-list__like-container companion-list__like-container--active">
+                <svg class="companion-list__like companion-list__like--active" viewBox="0 0 13 12" width="13px"
+                  height="12px" fill="pink">
+                  <use xlink:href="img/heart.svg#heart"></use>
+                </svg>
+              </div>
+              <a href="companion.html?id=1" class="companion-list__user">
+                <span>Таня<br> Фирсова</span>
+                <span class="companion-list__status"></span>
+              </a>
+              <p class="companion-list__distance">1,5 М</p>
+              <div class="companion-list__online companion-list__online--not"></div>
+              <p class="companion-list__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <p class="companion-list__plans">Хочет посетить:</p>
+              <ul class="companion-list__country-list">
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/sri-lanka.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Шри-Ланка</p>
+                </li>
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/thailand.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Таиланд</p>
+                </li>
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/seychelles.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Сейшелы</p>
+                </li>
+              </ul>
+              <p class="companion-list__movements-title">Транспорт</p>
+              <ul class="companion-list__movements movement-list">
+                <li class="movement-list__item movement-list__item--active movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#plan"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item  movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item  movement-list__item--circle">
+                  <svg class="movement-list__item-img " viewBox="0 0 25 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item  movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <div class="companion-list__level-group">
+                <p class="companion-list__level-title">Левел:</p>
+                <picture class="companion-list__level-picture">
+                  <source media="(min-width: 768px)" srcset="img/catalog-mark-level-99.svg">
+                  <img class="companion-list__level-img" src="img/mark-level-cat-moblile-99.png" width="45" height="45"
+                    alt="Фото попутчика">
+                </picture>
+              </div>
+              <a class="companion-list__call-btn" href="response.html?id=1"><span>Позвать</span></a>
+            </li>
+            <li class="companion-list__item">
+              <div class="companion-list__img-container">
+                <a href="companion.html?id=2">
+                  <img class="companion-list__avatar" src="img/demin-desktop-cat-1x.png"
+                    srcset="img/demin-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                </a>
+              </div>
+              <div class="companion-list__like-container">
+                <svg class="companion-list__like" viewBox="0 0 13 12" width="13px" height="12px" fill="pink">
+                  <use xlink:href="img/heart.svg#heart"></use>
+                </svg>
+              </div>
+              <a href="companion.html?id=2" class="companion-list__user">
+                <span>Петя<br> Демин</span>
+                <span class="companion-list__status"></span>
+              </a>
+              <p class="companion-list__distance">1500</p>
+              <div class="companion-list__online companion-list__online--not"></div>
+              <p class="companion-list__tags">#бургер #бар #футбол #концерт #крафт</p>
+              <p class="companion-list__plans">Хочет посетить:</p>
+              <ul class="companion-list__country-list">
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/Belgium.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Бельгия</p>
+                </li>
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/Czechia.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Чехия</p>
+                </li>
+              </ul>
+              <p class="companion-list__movements-title">Транспорт</p>
+              <ul class="companion-list__movements movement-list">
+                <li class="movement-list__item movement-list__item--active  movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#plan"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--active  movement-list__item--circle">
+                  <svg class="movement-list__item-img " viewBox="0 0 18 21" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle movement-list__item--active">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <div class="companion-list__level-group">
+                <p class="companion-list__level-title">Левел:</p>
+                <picture class="companion-list__level-picture">
+                  <source media="(min-width: 768px)" srcset="img/catalog-mark-level-80.svg">
+                  <img class="companion-list__level-img" src="img/mark-level-cat-moblile-80.png" width="45" height="45"
+                    alt="Фото попутчика">
+                </picture>
+              </div>
+              <a class="companion-list__call-btn" href="response.html?id=2"><span>Позвать</span></a>
+            </li>
+            <li class="companion-list__item">
+              <div class="companion-list__img-container">
+                <a href="companion.html?id=3">
+                  <img class="companion-list__avatar" src="img/smolov-desktop-cat-1x.png"
+                    srcset="img/smolov-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                </a>
+              </div>
+              <div class="companion-list__like-container">
+                <svg class="companion-list__like" viewBox="0 0 13 12" width="13px" height="12px" fill="pink">
+                  <use xlink:href="img/heart.svg#heart"></use>
+                </svg>
+              </div>
+              <a href="companion.html?id=3" class="companion-list__user">
+                <span>Марк<br> Смолов</span>
+                <span class="companion-list__status"></span>
+              </a>
+              <p class="companion-list__distance">1500</p>
+              <div class="companion-list__online  companion-list__online--not"></div>
+              <p class="companion-list__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <p class="companion-list__plans">Хочет посетить:</p>
+              <ul class="companion-list__country-list">
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/us.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">сша</p>
+                </li>
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/australia.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Австралия</p>
+                </li>
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/dominica.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Доминикана</p>
+                </li>
+              </ul>
+              <p class="companion-list__movements-title">Транспорт</p>
+              <ul class="companion-list__movements movement-list">
+                <li class="movement-list__item movement-list__item--active movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#plan"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle movement-list__item--active">
+                  <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 23 21" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <div class="companion-list__level-group">
+                <p class="companion-list__level-title">Левел:</p>
+                <picture class="companion-list__level-picture">
+                  <source media="(min-width: 768px)" srcset="img/catalog-mark-level-25.svg">
+                  <img class="companion-list__level-img" src="img/mark-level-cat-moblile-25.png" width="45" height="45"
+                    alt="Фото попутчика">
+                </picture>
+              </div>
+              <a class="companion-list__call-btn" href="response.html?id=3"><span>Позвать</span></a>
+            </li>
+            <li class="companion-list__item">
+              <div class="companion-list__img-container">
+                <a href="companion.html?id=4">
+                  <img class="companion-list__avatar" src="img/rogovaya-desktop-cat-1x.png"
+                    srcset="img/rogovaya-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                </a>
+              </div>
+              <div class="companion-list__like-container">
+                <svg class="companion-list__like" viewBox="0 0 13 12" width="13px" height="12px" fill="pink">
+                  <use xlink:href="img/heart.svg#heart"></use>
+                </svg>
+              </div>
+              <a class="companion-list__user" href="companion.html?id=4">
+                <span>Лариса<br> Роговая</span>
+                <span class="companion-list__status companion-list__status--online"></span>
+              </a>
+              <p class="companion-list__distance">23</p>
+              <div class="companion-list__online"></div>
+              <p class="companion-list__tags">#образование #карьера #учеба #линкедин</p>
+              <p class="companion-list__plans">Хочет посетить:</p>
+              <ul class="companion-list__country-list">
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/uk.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Великобритания</p>
+                </li>
+                <li class="companion-list__country-item">
+                  <img class="companion-list__country-flag" src="img/flags/germany.png" width="26" height="18"
+                    alt="флаг государства" />
+                  <p class="companion-list__country-name">Германия</p>
+                </li>
+              </ul>
+              <p class="companion-list__movements-title">Транспорт</p>
+              <ul class="companion-list__movements movement-list">
+                <li class="movement-list__item movement-list__item--active movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#plan"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle movement-list__item--active">
+                  <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="movement-list__item movement-list__item--circle">
+                  <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
+                    <use xlink:href="img/movement-icon.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <div class="companion-list__level-group">
+                <p class="companion-list__level-title">Левел:</p>
+                <picture class="companion-list__level-picture">
+                  <source media="(min-width: 768px)" srcset="img/catalog-mark-level-50.svg">
+                  <img class="companion-list__level-img" src="img/mark-level-cat-moblile-50.png" width="45" height="45"
+                    alt="Фото попутчика">
+                </picture>
+              </div>
+              <a class="companion-list__call-btn" href="response.html?id=4"><span>Позвать</span></a>
+            </li>
+          </ul>
+          <div class="pagination">
+            <a class="pagination__button-more" href="catalog.html?skip=4">
+              <svg class="pagination__img-plus" viewbox="0 0 14 14" stroke="#cccccc" width="16px" height="16px">
+                <use xlink:href="img/sign.svg#plus-un"></use>
+              </svg>
+              <span class="pagination__title">Показать еще</span>
             </a>
-            <div class="companion-list__like-container companion-list__like-container--active">
-              <svg class="companion-list__like companion-list__like--active" width="13px" height="12px" fill="pink">
-                <use xlink:href="img/heart.svg#heart"></use>
-              </svg>
+            <div class="pagination__list-container">
+              <ul class="pagination___pages pages-list">
+                <li class="pages-list__item pages-list__item--current">
+                  <span>1</span>
+                </li>
+                <li class="pages-list__item">
+                  <span>2</span>
+                </li>
+                <li class="pages-list__item">
+                  <span>3</span>
+                </li>
+                <li class="pages-list__item">
+                  <span>4</span>
+                </li>
+              </ul>
+              <a class="pagination__button-back" href="catalog.html?back">
+                <span class="visually-hidden">Назад</span>
+                <svg class="pagination__button-back-img" viewbox="0 0 9 9" width="16px" height="25px">
+                  <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+                </svg>
+              </a>
+              <a class="pagination__button-next" href="catalog.html?next">
+                <span class="visually-hidden">Вперед</span>
+                <svg class="pagination__button-next-img" viewbox="0 0 9 9" width="16px" height="25px">
+                  <use xlink:href="img/sign.svg#catalog-expand-down"></use>
+                </svg>
+              </a>
             </div>
           </div>
-          <a href="companion.html?id=1" class="companion-list__user">Таня<br>Фирсова</a>
-          <div class="companion-list__status"></div>
-          <p class="companion-list__distance">1,5 М</p>
-          <div class="companion-list__online companion-list__online--not"></div>
-          <p class="companion-list__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <p class="companion-list__plans">Хочет посетить:</p>
-          <ul class="companion-list__country-list">
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/sri-lanka.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Шри-Ланка</p>
-            </li>
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/thailand.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Таиланд</p>
-            </li>
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/seychelles.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Сейшелы</p>
-            </li>
-          </ul>
-          <p class="companion-list__movements-title">Транспорт</p>
-          <ul class="companion-list__movements movement-list">
-            <li class="movement-list__item movement-list__item--active movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#plan"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item  movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bus"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item  movement-list__item--circle">
-              <svg class="movement-list__item-img " viewBox="0 0 25 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bike"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item  movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#run"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="companion-list__level-group">
-            <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion-list__level-picture">
-              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-99.png" width="45" height="45"
-                alt="Фото попутчика">
-            </picture>
-          </div>
-          <a class="companion-list__call-btn" href="response.html?id=1"><span>Позвать</span></a>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="page__footer">
+    <div class="page__footer-container page-footer content-container">
+      <a class="page-footer__logo" href="index.html">
+        <picture class="page-footer__picture">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
+          <img class="page-footer__img" src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x"
+            width="96" height="15" alt="Лого">
+        </picture>
+      </a>
+      <ul class="page-footer__socials socials-list">
+        <li class="page-footer__socials-item socials-list__item">
+          <a class="page-footer__socials-link socials-list__link" href="#">
+            <img class="socials-list__img-fb" src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+          </a>
         </li>
-        <li class="companion-list__item">
-          <div class="companion-list__img-container">
-            <a href="companion.html?id=2">
-              <img class="companion-list__avatar" src="img/demin-desktop-cat-1x.png"
-                srcset="img/demin-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
-            </a>
-            <div class="companion-list__like-container">
-              <svg class="companion-list__like" width="13px" height="12px" fill="pink">
-                <use xlink:href="img/heart.svg#heart"></use>
-              </svg>
-            </div>
-          </div>
-          <a href="companion.html?id=2" class="companion-list__user">Петя<br>Демин</a>
-          <div class="companion-list__status"></div>
-          <p class="companion-list__distance">1500</p>
-          <div class="companion-list__online companion-list__online--not"></div>
-          <p class="companion-list__tags">#бургер #бар #футбол #концерт #крафт</p>
-          <p class="companion-list__plans">Хочет посетить:</p>
-          <ul class="companion-list__country-list">
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/Belgium.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Бельгия</p>
-            </li>
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/Czechia.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Чехия</p>
-            </li>
-          </ul>
-          <p class="companion-list__movements-title">Транспорт</p>
-          <ul class="companion-list__movements movement-list">
-            <li class="movement-list__item movement-list__item--active  movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#plan"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--active  movement-list__item--circle">
-              <svg class="movement-list__item-img " viewBox="0 0 18 21" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bus"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bike"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle movement-list__item--active">
-              <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#run"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="companion-list__level-group">
-            <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion-list__level-picture">
-              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-80.png" width="45" height="45"
-                alt="Фото попутчика">
-            </picture>
-          </div>
-          <a class="companion-list__call-btn" href="response.html?id=2"><span>Позвать</span></a>
+        <li class="page-footer__socials-item socials-list__item">
+          <a class="page-footer__socials-link  socials-list__link" href="#">
+            <img class="socials-list__img-vk" src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+          </a>
         </li>
-        <li class="companion-list__item">
-          <div class="companion-list__img-container">
-            <a href="companion.html?id=3">
-              <img class="companion-list__avatar" src="img/smolov-desktop-cat-1x.png"
-                srcset="img/smolov-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
-            </a>
-            <div class="companion-list__like-container">
-              <svg class="companion-list__like" width="13px" height="12px" fill="pink">
-                <use xlink:href="img/heart.svg#heart"></use>
-              </svg>
-            </div>
-          </div>
-          <a href="companion.html?id=3" class="companion-list__user">Марк<br>Смолов</a>
-          <div class="companion-list__status"></div>
-          <p class="companion-list__distance">1500</p>
-          <div class="companion-list__online  companion-list__online--not"></div>
-          <p class="companion-list__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          <p class="companion-list__plans">Хочет посетить:</p>
-          <ul class="companion-list__country-list">
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/us.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">сша</p>
-            </li>
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/australia.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Австралия</p>
-            </li>
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/dominica.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Доминикана</p>
-            </li>
-          </ul>
-          <p class="companion-list__movements-title">Транспорт</p>
-          <ul class="companion-list__movements movement-list">
-            <li class="movement-list__item movement-list__item--active movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#plan"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bus"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle movement-list__item--active">
-              <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bike"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#run"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="companion-list__level-group">
-            <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion-list__level-picture">
-              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-25.png" width="45" height="45"
-                alt="Фото попутчика">
-            </picture>
-          </div>
-          <a class="companion-list__call-btn" href="response.html?id=3"><span>Позвать</span></a>
-        </li>
-        <li class="companion-list__item">
-          <div class="companion-list__img-container">
-            <a href="companion.html?id=4">
-              <img class="companion-list__avatar" src="img/rogovaya-desktop-cat-1x.png"
-                srcset="img/rogovaya-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
-            </a>
-            <div class="companion-list__like-container">
-              <svg class="companion-list__like" width="13px" height="12px" fill="pink">
-                <use xlink:href="img/heart.svg#heart"></use>
-              </svg>
-            </div>
-          </div>
-          <a class="companion-list__user" href="companion.html?id=4">Лариса<br>Роговая</a>
-          <div class="companion-list__status companion-list__status--online"></div>
-          <p class="companion-list__distance">23</p>
-          <div class="companion-list__online"></div>
-          <p class="companion-list__tags">#образование #карьера #учеба #линкедин</p>
-          <p class="companion-list__plans">Хочет посетить:</p>
-          <ul class="companion-list__country-list">
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/uk.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Великобритания</p>
-            </li>
-            <li class="companion-list__country-item">
-              <img class="companion-list__country-flag" src="img/flags/germany.png" width="26" height="18"
-                alt="флаг государства" />
-              <p class="companion-list__country-name">Германия</p>
-            </li>
-          </ul>
-          <p class="companion-list__movements-title">Транспорт</p>
-          <ul class="companion-list__movements movement-list">
-            <li class="movement-list__item movement-list__item--active movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#plan"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle movement-list__item--active">
-              <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bus"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#bike"></use>
-              </svg>
-            </li>
-            <li class="movement-list__item movement-list__item--circle">
-              <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
-                <use xlink:href="img/movement-icon.svg#run"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="companion-list__level-group">
-            <p class="companion-list__level-title">Левел:</p>
-            <picture class="companion-list__level-picture">
-              <img class="companion-list__level-img" src="img/mark-level-cat-moblile-50.png" width="45" height="45"
-                alt="Фото попутчика">
-            </picture>
-          </div>
-          <a class="companion-list__call-btn" href="response.html?id=4"><span>Позвать</span></a>
+        <li class="page-footer__socials-item socials-list__item">
+          <a class="page-footer__socials-link  socials-list__link" href="#">
+            <img class="socials-list__img-inst" src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+          </a>
         </li>
       </ul>
-      <div class="pagination-container pagination">
-        <a class="pagination__button-more" href="catalog.html?skip=4">
-          <svg class="pagination__img-plus" viewbox="0 0 14 14" stroke="#cccccc" width="16px" height="16px">
-            <use xlink:href="img/sign.svg#plus-un"></use>
-          </svg>
-          <span class="pagination__title">Показать еще</span>
-        </a>
-        <div class="pagination__list-container">
-          <ul class="pagination___pages pages-list">
-            <li class="pages-list__item pages-list__item--current">
-              1
-            </li>
-            <li class="pages-list__item">
-              2
-            </li>
-            <li class="pages-list__item">
-              3
-            </li>
-            <li class="pages-list__item">
-              4
-            </li>
-          </ul>
-          <a class="pagination__button-back" href="catalog.html?back">
-            <span class="visually-hidden">Назад</span>
-            <svg class="pagination__button-back-img" viewbox="0 0 9 9" width="16px" height="25px">
-              <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-            </svg>
-          </a>
-          <a class="pagination__button-next" href="catalog.html?next">
-            <span class="visually-hidden">Вперед</span>
-            <svg class="pagination__button-next-img" viewbox="0 0 9 9" width="16px" height="25px">
-              <use xlink:href="img/sign.svg#catalog-expand-down"></use>
-            </svg>
-          </a>
-        </div>
+      <div class="page-footer__created-container">
+        <span class="page-footer__created-by-text">Разработано</span>
       </div>
-    </section>
-    <footer class="page__footer">
-      <div class="page__footer-container page-footer">
-        <a class="page-footer__logo" href="index.html">
-          <picture class="page-footer__picture">
-              <source media="(min-width: 1440px)"
-                srcset="img/logo-desktop-black-x1.png, img/logo-desktop-black-x2.png 2x">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-black-x1.png, img/logo-tablet-black-x2.png 2x">
-              <img class="page-footer__img"  src="img/logo-mobile-black-x1.png" srcset="img/logo-mobile-black-x2.png 2x" width="96" height="15"
-                alt="Лого">
-          </picture>
-        </a>
-        <ul class="page-footer__socials socials-list">
-          <li class="page-footer__socials-item socials-list__item">
-            <a class="page-footer__socials-link socials-list__link" href="#">
-              <img class="page-footer__socials-fb" src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
-            </a>
-          </li>
-          <li class="page-footer__socials-item socials-list__item">
-            <a class="page-footer__socials-link  socials-list__link" href="#">
-              <img class="page-footer__socials-vk"  src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
-            </a>
-          </li>
-          <li class="page-footer__socials-item socials-list__item">
-            <a class="page-footer__socials-link  socials-list__link" href="#">
-              <img class="page-footer__socials-inst"  src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer__created-container">
-          <span class="page-footer__created-by-text">Разработано</span>
-        </div>
-        <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
-            <use xlink:href="img/logo-html.svg#logo"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
-  </main>
+      <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
+          <use xlink:href="img/logo-html.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
   <script>
     var navMain = document.querySelector('.header__navigation');
     var navToggle = document.querySelector('.header__toggle');
@@ -710,24 +1271,25 @@
       }
     });
 
-    var countriesFilter = document.querySelector('.countries');
+    var countriesFilter = document.querySelector('.countries__content-container');
     var toggleOpen = document.querySelector('.countries__toggle');
     var countryFiltersClose = document.querySelector('.countries__toggle-close');
     var countryFiltersCloseBtn = document.querySelector('.countries__collapse-btn');
 
 
-    countriesFilter.classList.add('countries--collapse');
+    countriesFilter.classList.remove("countries__content-container--nojs");
+    countriesFilter.classList.add('countries__content-container--collapse');
 
     toggleOpen.addEventListener('click', function () {
-      countriesFilter.classList.remove('countries--collapse')
+      countriesFilter.classList.remove('countries__content-container--collapse')
     });
 
     countryFiltersClose.addEventListener('click', function () {
-      countriesFilter.classList.add('countries--collapse')
+      countriesFilter.classList.add('countries__content-container--collapse')
     });
 
     countryFiltersCloseBtn.addEventListener('click', function () {
-      countriesFilter.classList.add('countries--collapse')
+      countriesFilter.classList.add('countries__content-container--collapse')
     });
 
 

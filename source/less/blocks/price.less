@@ -1,22 +1,27 @@
 .price {
-  box-sizing: border-box;
   position: relative;
   background-color: @form-background-color;
-  background-image: url("../../img/rates.png");
+  .container-round-bottom();
+}
+
+.price__container {
+  .content-container();
+  box-sizing: border-box;
+  background-color: @form-background-color;
+  background-image: url("../img/rates.png");
   background-repeat: no-repeat;
   background-position: right 25px top 38px;
-  .container-round-bottom();
   padding: 50px 25px 16px 50px;
 
   @media (min-width: @tablet-width) {
     padding: 70px 75px 40px 40px;
-    background-image: url("../../img/rates.png"), url("../../img/price-tablet-bg.png");
+    background-image: url("../img/rates.png"), url("../img/price-tablet-bg.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right 85px top 410px, right 40px top 150px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/rates-desktop.png"), url("../../img/price-desktop-bg.png");
+    background-image: url("../img/rates-desktop.png"), url("../img/price-desktop-bg.png");
     background-position: right 140px top 290px, right 250px top 240px;
     padding: 106px 405px 145px 130px;
   }

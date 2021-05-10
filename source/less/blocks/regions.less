@@ -1,5 +1,12 @@
 .regions {
   .set-font(16px, 18px, 700);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .set-font(20px, 20px, 700);
+  }
 }
 
 .regions__item {
@@ -7,6 +14,16 @@
   opacity: 0.3;
   text-transform: uppercase;
   padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding: 0;
+    margin-right: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 32px;
+  }
 
   &--active {
     opacity: 1;

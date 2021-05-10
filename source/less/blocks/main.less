@@ -1,40 +1,20 @@
 .main {
   background-color: @price-gray;
-  width: 320px;
+  min-width: 320px;
   position: relative;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
-  }
 }
 
 .main__promo {
   height: 970px;
-  background-image: url("../../img/traveller-illustration-mobile.png"),
-    url("../../img/globe-back-mobile-header.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 80px top calc(222px - 73px), top -73px left;
   background-color: @basic-blue;
 
   @media (min-width: @tablet-width) {
     height: 1100px;
-    background-image: url("../../img/traveller-illustration-tablet.png"),
-      url("../../img/globe-back-tablet.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 280px top 275px, top 260px left;
     background-color: @header-color;
   }
 
   @media (min-width: @desktop-width) {
     height: 750px;
-    background-image: url("../../img/traveller-illustration-desktop.png"),
-      url("../../img/globe-back-desktop.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 405px top 10px, top -95px left;
     background-color: @basic-blue;
   }
 }
@@ -78,25 +58,22 @@
 .main__form {
   position: relative;
   background-color: @form-background-color;
-  padding-top: 72px;
 }
 
 .main__map iframe {
-  width: 320px;
   height: 480px;
+  width: 100%;
   margin-top: -80px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
     margin-top: -160px;
     height: 730px;
-    width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: -150px;
     height: 660px;
-    width: @desktop-width;
   }
 }
 
@@ -105,15 +82,39 @@
   margin-top: -30px;
 }
 
-.main__countries {
-  padding: 90px 25px 20px;
-}
-
 .main__companion-filter {
-  padding: 150px 25px 0;
+  padding: 75px 25px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 185px 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .main__companion-list {
   box-sizing: border-box;
   padding: 0 25px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.main__content-container {
+  .content-container();
+}
+
+.main__catalog-content {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1010px 85px 285px;
+    grid-template-rows: auto;
+  }
 }

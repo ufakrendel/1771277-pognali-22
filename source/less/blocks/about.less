@@ -1,21 +1,35 @@
 .about {
+  background-color: @main-background;
+  .container-round-bottom();
+
+  @media (min-width: @tablet-width) {
+    background: @header-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @header-color;
+  }
+}
+
+.about__content {
   position: relative;
+  .content-container();
   box-sizing: border-box;
   padding: 30px 60px 66px 50px;
   color: @basic-white;
-  background: @main-background url("../../img/about-mobile.png") no-repeat;
+  background: @main-background url("../img/about-mobile.png") no-repeat;
   background-position: left 20px bottom;
   .container-round-bottom();
 
   @media (min-width: @tablet-width) {
     padding: 36px 391px 0 75px;
-    background: @header-color url("../../img/about-table-bg.png") no-repeat;
+    background: @header-color url("../img/about-table-bg.png") no-repeat;
     background-position: left 40px top;
   }
 
   @media (min-width: @desktop-width) {
     padding: 30px 391px 6px 130px;
-    background: @header-color url("../../img/about-back-desktop.png") no-repeat;
+    background: @header-color url("../img/about-back-desktop.png") no-repeat;
     background-position: left 60px top -20px;
   }
 }
@@ -50,7 +64,7 @@
 
   @media (min-width: @tablet-width) {
     .set-font(28px, 33px, 300);
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 
     br {
       display: none;
@@ -97,7 +111,7 @@ br.about_br {
 @media (min-width: @tablet-width) {
   .about__button-more {
     margin-top: 42px;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     height: 80px;
     width: 276px;
     border-radius: 15px;

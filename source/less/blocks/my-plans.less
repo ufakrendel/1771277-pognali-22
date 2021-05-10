@@ -3,10 +3,27 @@
   background-color: @form-section-2-background;
   box-sizing: border-box;
   padding: 28px 25px 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 75px 95px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 48px 60px 74px 124px;
+  }
 }
 
 .my-plans__header {
   color: @basic-blue-light;
   margin-bottom: 28px;
   .set-font(24px, 24px, 700);
+
+  @media (min-width: @tablet-width) {
+    .set-font(36px, 36px, 700);
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 10px;
+  }
 }
