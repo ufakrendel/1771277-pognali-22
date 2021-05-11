@@ -16,6 +16,11 @@
     background-image: url("../img/flags-tablet-bg.png"), url("../img/directions-tablet-bg.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right 40px top 80px, left 40px top 400px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/flags-tablet-bg-2x.png"), url("../img/directions-tablet-bg-2x.png");
+      background-size: 288px auto, 141px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -23,8 +28,8 @@
     padding: 160px 0 130px 130px;
     grid-template-columns: 560px 170px 370px;
     grid-template-rows: 50px auto 80px;
-    background-image: url("../img/flags-tablet-bg.png"), url("../img/directions-tablet-bg.png");
-    background-repeat: no-repeat, no-repeat;
+    // background-image: url("../img/flags-tablet-bg.png"), url("../img/directions-tablet-bg.png");
+    // background-repeat: no-repeat, no-repeat;
     background-position: right 60px top 80px, left 60px top 80px;
   }
 }

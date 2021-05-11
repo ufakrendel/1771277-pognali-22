@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="Shortcut icon" href="img/favicon.svg" type="image/svg">
+  <link rel="Shortcut icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
@@ -910,8 +911,12 @@
             <li class="companion-list__item">
               <div class="companion-list__img-container">
                 <a href="companion.html?id=1">
-                  <img class="companion-list__avatar" src="img/firsova-desktop-cat-1x.png"
-                    srcset="img/firsova-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop-cat-1x.png, img/firsova-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat-firsova-tablet.png, img/cat-firsova-tablet-2x.png 2x">
+                    <img class="companion-list__avatar" src="img/cat-firsova-mobile.png"
+                  srcset="img/cat-firsova-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  </picture>
                 </a>
               </div>
               <div class="companion-list__like-container companion-list__like-container--active">
@@ -981,8 +986,12 @@
             <li class="companion-list__item">
               <div class="companion-list__img-container">
                 <a href="companion.html?id=2">
-                  <img class="companion-list__avatar" src="img/demin-desktop-cat-1x.png"
-                    srcset="img/demin-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/demin-desktop-cat-1x.png, img/demin-desktop-cat-2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/cat-demin-tablet.png, img/cat-demin-tablet-2x.png 2x">
+                      <img class="companion-list__avatar" src="img/cat-demin-mobile.png"
+                    srcset="img/cat-demin-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                    </picture>
                 </a>
               </div>
               <div class="companion-list__like-container">
@@ -1046,8 +1055,12 @@
             <li class="companion-list__item">
               <div class="companion-list__img-container">
                 <a href="companion.html?id=3">
-                  <img class="companion-list__avatar" src="img/smolov-desktop-cat-1x.png"
-                    srcset="img/smolov-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop-cat-1x.png, img/smolov-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat-smolov-tablet.png, img/cat-smolov-tablet-2x.png 2x">
+                    <img class="companion-list__avatar" src="img/cat-smolov-mobile.png"
+                  srcset="img/cat-smolov-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  </picture>
                 </a>
               </div>
               <div class="companion-list__like-container">
@@ -1116,8 +1129,12 @@
             <li class="companion-list__item">
               <div class="companion-list__img-container">
                 <a href="companion.html?id=4">
-                  <img class="companion-list__avatar" src="img/rogovaya-desktop-cat-1x.png"
-                    srcset="img/rogovaya-desktop-cat-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop-cat-1x.png, img/rogovaya-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat-rogovaya-tablet.png, img/cat-rogovaya-tablet-2x.png 2x">
+                    <img class="companion-list__avatar" src="img/cat-rogovaya-mobile.png"
+                  srcset="img/cat-rogovaya-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  </picture>
                 </a>
               </div>
               <div class="companion-list__like-container">
