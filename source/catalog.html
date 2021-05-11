@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="Shortcut icon" href="favicon.ico">
 </head>
 
@@ -1273,41 +1273,41 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.header__navigation');
-    var navToggle = document.querySelector('.header__toggle');
+  <script src="js/script.min.js">
+    // var navMain = document.querySelector('.header__navigation');
+    // var navToggle = document.querySelector('.header__toggle');
 
-    navMain.classList.remove('header__navigation--nojs');
-    navMain.classList.remove('header__navigation--open');
+    // navMain.classList.remove('header__navigation--nojs');
+    // navMain.classList.remove('header__navigation--open');
 
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('header__navigation--open')) {
-        navMain.classList.remove('header__navigation--open');
-      } else {
-        navMain.classList.add('header__navigation--open');
-      }
-    });
+    // navToggle.addEventListener('click', function () {
+    //   if (navMain.classList.contains('header__navigation--open')) {
+    //     navMain.classList.remove('header__navigation--open');
+    //   } else {
+    //     navMain.classList.add('header__navigation--open');
+    //   }
+    // });
 
-    var countriesFilter = document.querySelector('.countries__content-container');
-    var toggleOpen = document.querySelector('.countries__toggle');
-    var countryFiltersClose = document.querySelector('.countries__toggle-close');
-    var countryFiltersCloseBtn = document.querySelector('.countries__collapse-btn');
+    // var countriesFilter = document.querySelector('.countries__content-container');
+    // var toggleOpen = document.querySelector('.countries__toggle');
+    // var countryFiltersClose = document.querySelector('.countries__toggle-close');
+    // var countryFiltersCloseBtn = document.querySelector('.countries__collapse-btn');
 
 
-    countriesFilter.classList.remove("countries__content-container--nojs");
-    countriesFilter.classList.add('countries__content-container--collapse');
+    // countriesFilter.classList.remove("countries__content-container--nojs");
+    // countriesFilter.classList.add('countries__content-container--collapse');
 
-    toggleOpen.addEventListener('click', function () {
-      countriesFilter.classList.remove('countries__content-container--collapse')
-    });
+    // toggleOpen.addEventListener('click', function () {
+    //   countriesFilter.classList.remove('countries__content-container--collapse')
+    // });
 
-    countryFiltersClose.addEventListener('click', function () {
-      countriesFilter.classList.add('countries__content-container--collapse')
-    });
+    // countryFiltersClose.addEventListener('click', function () {
+    //   countriesFilter.classList.add('countries__content-container--collapse')
+    // });
 
-    countryFiltersCloseBtn.addEventListener('click', function () {
-      countriesFilter.classList.add('countries__content-container--collapse')
-    });
+    // countryFiltersCloseBtn.addEventListener('click', function () {
+    //   countriesFilter.classList.add('countries__content-container--collapse')
+    // });
 
 
   </script>

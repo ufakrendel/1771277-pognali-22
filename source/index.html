@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://platform.linkedin.com ">
   <title>HTML Academy: Погнали</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="Shortcut icon" href="favicon.ico" >
 </head>
 
@@ -568,34 +569,34 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.header__navigation');
-    var navToggle = document.querySelector('.header__toggle');
+  <script src="js/script.min.js">
+    // var navMain = document.querySelector('.header__navigation');
+    // var navToggle = document.querySelector('.header__toggle');
 
-    navMain.classList.remove('header__navigation--nojs');
-    navMain.classList.remove('header__navigation--open');
+    // navMain.classList.remove('header__navigation--nojs');
+    // navMain.classList.remove('header__navigation--open');
 
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('header__navigation--open')) {
-        navMain.classList.remove('header__navigation--open');
-      } else {
-        navMain.classList.add('header__navigation--open');
-      }
-    });
+    // navToggle.addEventListener('click', function () {
+    //   if (navMain.classList.contains('header__navigation--open')) {
+    //     navMain.classList.remove('header__navigation--open');
+    //   } else {
+    //     navMain.classList.add('header__navigation--open');
+    //   }
+    // });
 
-    var businessPrice = document.querySelector('.price__business');
-    var businessPriceBtnOpen = document.querySelector('.price__business-tax-btn');
-    var businessPriceBtnClose = document.querySelector('.business-prices__close');
+    // var businessPrice = document.querySelector('.price__business');
+    // var businessPriceBtnOpen = document.querySelector('.price__business-tax-btn');
+    // var businessPriceBtnClose = document.querySelector('.business-prices__close');
 
-    businessPriceBtnOpen.addEventListener('click', function (e) {
-      e.preventDefault();
-      businessPrice.classList.remove('price__business--hide')
-    })
+    // businessPriceBtnOpen.addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   businessPrice.classList.remove('price__business--hide')
+    // })
 
-    businessPriceBtnClose.addEventListener('click', function (e) {
-      businessPrice.classList.add('price__business--hide')
-      e.preventDefault()
-    })
+    // businessPriceBtnClose.addEventListener('click', function (e) {
+    //   businessPrice.classList.add('price__business--hide')
+    //   e.preventDefault()
+    // })
 
     // var map;
 
