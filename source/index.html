@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://platform.linkedin.com ">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+      script-src 'unsafe-inline';">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="Shortcut icon" href="favicon.ico" >
@@ -332,23 +333,23 @@
                 <p class="companion__description-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                 <ul class="companion__movement-icons movement-list">
                   <li class="movement-list__item movement-list__item--active">
-                    <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#plan"></use>
+                    <svg class="movement-list__item-img"  width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#plan"></use>
                     </svg>
                   </li>
                   <li class="movement-list__item">
-                    <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#bus"></use>
+                    <svg class="movement-list__item-img" width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </li>
                   <li class="movement-list__item">
-                    <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#bike"></use>
+                    <svg class="movement-list__item-img"  width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </li>
                   <li class="movement-list__item">
-                    <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#run"></use>
+                    <svg class="movement-list__item-img"  width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </li>
                 </ul>
@@ -381,23 +382,23 @@
                 <p class="companion__description-tags">#бургер #бар #футбол #концерт #крафт</p>
                 <ul class="companion__movement-icons movement-list">
                   <li class="movement-list__item movement-list__item--active">
-                    <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#plan"></use>
+                    <svg class="movement-list__item-img" width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#plan"></use>
                     </svg>
                   </li>
                   <li class="movement-list__item movement-list__item--active">
-                    <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#bus"></use>
+                    <svg class="movement-list__item-img" width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </li>
                   <li class="movement-list__item">
-                    <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#bike"></use>
+                    <svg class="movement-list__item-img" width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </li>
                   <li class="movement-list__item movement-list__item--active">
-                    <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
-                      <use xlink:href="img/movement-icon.svg#run"></use>
+                    <svg class="movement-list__item-img"  width="21px" height="21px">
+                      <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </li>
                 </ul>
@@ -545,17 +546,23 @@
       <ul class="page-footer__socials socials-list">
         <li class="page-footer__socials-item socials-list__item">
           <a class="page-footer__socials-link socials-list__link" href="#">
-            <img class="socials-list__img-fb" src="img/icon-facebook.svg" height="21" width="11" alt="facebook" />
+            <svg class="socials-list__img-fb" height="21" width="11">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
           </a>
         </li>
         <li class="page-footer__socials-item socials-list__item">
           <a class="page-footer__socials-link  socials-list__link" href="#">
-            <img class="socials-list__img-vk" src="img/icon-vkontakte.svg" height="12" width="23" alt="VK" />
+            <svg class="socials-list__img-vk"  height="12" width="23">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="page-footer__socials-item socials-list__item">
           <a class="page-footer__socials-link  socials-list__link" href="#">
-            <img class="socials-list__img-inst" src="img/icon-instagram.svg" height="18" width="18" alt="instagram" />
+            <svg class="socials-list__img-inst"  height="18" width="18">
+              <use xlink:href="img/sprite.svg#insta"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -564,12 +571,12 @@
       </div>
       <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
-          <use xlink:href="img/logo-html.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
     </div>
   </footer>
-  <script src="js/script.min.js">
+  <script type="text/javascript" src="js/script.min.js">
     // var navMain = document.querySelector('.header__navigation');
     // var navToggle = document.querySelector('.header__toggle');
 

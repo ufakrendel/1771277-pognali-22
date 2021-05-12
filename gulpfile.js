@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
 const csso = require("postcss-csso");
+var cheerio = require('gulp-cheerio');
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
@@ -60,8 +61,8 @@ exports.scripts = scripts;
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
@@ -80,11 +81,31 @@ exports.images = copyImages;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
+
+//sprites
+
+const sprite = () => {
+  return gulp.src("source/img/icon/*.svg")
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[opacity]').removeAttr('opacity');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.sprite = sprite;
 
 // Copy
 
@@ -149,7 +170,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-    // sprite,
+    sprite,
     createWebp
   ),
 );
@@ -167,6 +188,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
+    sprite,
     createWebp
   ),
   gulp.series(
