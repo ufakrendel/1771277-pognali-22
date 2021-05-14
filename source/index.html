@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-      script-src 'unsafe-inline';">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="Shortcut icon" href="favicon.ico" >
@@ -517,7 +515,7 @@
             </svg>
             <p class="adress__text">ул. Большая<br class="tablet-hide"> Конюшенная, 19/8</p>
           </div>
-          <a class="adress__route-button ref-button" href="#">
+          <a class="adress__route-button ref-button" href="https://goo.gl/maps/egEcqWfiRzVUJ1b87">
             <span class="ref-button__title">Проложить маршрут</span>
             <img class="ref-button__arrow" src="img/arrow-next.svg" width="13" height="13" alt="arrow" />
           </a>
@@ -576,52 +574,7 @@
       </a>
     </div>
   </footer>
-  <script type="text/javascript" src="js/script.min.js">
-    // var navMain = document.querySelector('.header__navigation');
-    // var navToggle = document.querySelector('.header__toggle');
-
-    // navMain.classList.remove('header__navigation--nojs');
-    // navMain.classList.remove('header__navigation--open');
-
-    // navToggle.addEventListener('click', function () {
-    //   if (navMain.classList.contains('header__navigation--open')) {
-    //     navMain.classList.remove('header__navigation--open');
-    //   } else {
-    //     navMain.classList.add('header__navigation--open');
-    //   }
-    // });
-
-    // var businessPrice = document.querySelector('.price__business');
-    // var businessPriceBtnOpen = document.querySelector('.price__business-tax-btn');
-    // var businessPriceBtnClose = document.querySelector('.business-prices__close');
-
-    // businessPriceBtnOpen.addEventListener('click', function (e) {
-    //   e.preventDefault();
-    //   businessPrice.classList.remove('price__business--hide')
-    // })
-
-    // businessPriceBtnClose.addEventListener('click', function (e) {
-    //   businessPrice.classList.add('price__business--hide')
-    //   e.preventDefault()
-    // })
-
-    // var map;
-
-    //     // Функция initMap которая отрисует карту на странице
-    //     function initMap() {
-
-    //         // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
-    //         map = new google.maps.Map(document.getElementById('map'), {
-    //             // При создании объекта карты необходимо указать его свойства
-    //             // center - определяем точку на которой карта будет центрироваться
-    //             center: {lat: -34.397, lng: 150.644},
-    //             // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
-    //             zoom: 8
-    //         });
-    //     }
-
-  </script>
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
+  <script type="text/javascript" src="js/script.min.js"></script>
 </body>
 
 </html>
