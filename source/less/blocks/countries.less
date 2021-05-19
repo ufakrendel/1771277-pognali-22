@@ -15,7 +15,7 @@
 .countries__content-container {
   .content-container();
   box-sizing: border-box;
-  padding: 20px 30px 20px 25px;
+  padding: 10px 30px 20px 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,7 +39,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 60px 120px 50px 80px;
+      padding: 54px 120px 130px 80px;
+      margin-bottom: 16px;
       position: relative;
 
       .countries__filter-title,
@@ -65,14 +66,20 @@
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
     }
+    padding-top: 14px;
 
     @media (min-width: @tablet-width) {
       flex-wrap: nowrap;
+      padding: 55px 75px 50px;
 
-      .countries__regions-list,
-      .countries__show-all {
+      .countries__regions-list {
         display: flex;
         margin-right: auto;
+      }
+
+      .countries__show-all {
+        display: inline;
+        margin-right: 10px;
       }
 
       .countries__filter-img,
@@ -87,19 +94,30 @@
         display: block;
       }
 
-
       .countries__show-all {
-        margin-right: 20px;
+        margin-right: 24px;
       }
     }
 
-    .countries__toggle {
+    .countries__expand-btn {
       order: 3;
       display: flex;
       flex-direction: row;
+      align-items: center;
       margin-left: 15px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      width: 17px;
+      height: 3px;
+
+
+      @media (min-width: @tablet-width) {
+        width: 30px;
+        height: 6px;
+
+        svg {
+          width: 30px;
+          height: 6px;
+        }
+      }
 
       @media (min-width: @desktop-width) {
         margin-left: 0;
@@ -109,7 +127,7 @@
 }
 
 .countries__regions-list {
-  padding-top: 24px;
+  padding-top: 14px;
   margin-left: 20px;
   width: 100%;
   margin-bottom: 20px;
@@ -123,7 +141,7 @@
   }
 }
 
-.countries__toggle {
+.countries__expand-btn {
   display: none;
 }
 
@@ -150,21 +168,6 @@
       width: 23px;
       height: 15px;
     }
-  }
-}
-
-.countries__toggle-item {
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: @basic-blue-light;
-  margin-left: 3px;
-
-  @media (min-width: @tablet-width) {
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    margin-left: 6px;
   }
 }
 
@@ -223,61 +226,24 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
     .buttons(1320px, 100px, 20px);
     margin-top: 20px;
+    margin-left: -20px;
+    margin-right: -60px;
   }
 }
 
 
-.countries__alphabet-table.alphabet-table {
+.countries__alphabet-table {
   width: 100%;
   margin-bottom: 10px;
   .set-font(14px, 14px, 500);
   background-color: @light-background;
 
-  .alphabet-table__title {
-    display: none;
-  }
-
-
-  .alphabet-table__data {
-    width: 43px;
-    height: 40px;
-  }
-
-  .alphabet-table__data--selected {
-    background-color: @basic-blue-light;
-    color: @basic-white;
-  }
-
   @media (min-width: @tablet-width) {
     width: unset;
     background-color: @main-background-color;
-
-    .alphabet-table__word-table {
-      margin: 0;
-      margin-top: 55px;
-      margin-left: -40px;
-      width: 378px;
-      height: 410px;
-      background-color: @main-background-color;
-    }
-
-    .alphabet-table__data {
-      border: none;
-      .set-font(60px, 60px, 700);
-      color: @main-section-dark-bgcolor;
-      opacity: 0.3;
-
-      &--selected {
-        opacity: 1;
-        background-color: @main-background-color;
-      }
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }
 
@@ -288,7 +254,7 @@
     display: block;
     color: @basic-blue;
     .set-font(60px, 60px, 700);
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -334,7 +300,7 @@
 
 .countries__countries-container {
   @media (min-width: @tablet-width) {
-    margin-top: 60px;
+    margin-top: 46px;
     margin-left: 85px;
   }
 
@@ -359,5 +325,11 @@
 .countries__country-list {
   @media (min-width: @desktop-width) {
     margin-bottom: 50px;
+  }
+}
+
+.countries__country-item {
+  @media (min-width: @desktop-width) {
+    min-height: 30px;
   }
 }

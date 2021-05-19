@@ -40,18 +40,18 @@
           </svg>
         </button>
         <ul class="header__references navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="index.html">
+          <li class="navigation-list__item header__references-item">
+            <a class="navigation-list__link header__references-link" href="index.html">
               О сервисе
             </a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">
+          <li class="navigation-list__item header__references-item">
+            <a class="navigation-list__link header__references-link" href="form.html">
               Направления
             </a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">
+          <li class="navigation-list__item header__references-item">
+            <a class="navigation-list__link header__references-link" href="catalog.html">
               Попутчики
             </a>
           </li>
@@ -137,8 +137,8 @@
               <textarea name="tags" class="user-info__tags">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
           </div>
-          <div class="user-info__movement-container movement-btn">
-            <fieldset class="user-info__fieldset">
+          <div class="user-info__movement-container">
+            <fieldset class="user-info__fieldset movement-btn">
               <legend class="user-info__legend">Транспорт</legend>
               <div class="movement-btn__container">
                 <input name="plan" type="checkbox" class="movement-btn__input" id="plan" checked />
@@ -202,9 +202,9 @@
             </li>
           </ul>
           <section class="add-plan__step-1 step-1" id="step-1">
-            <h2 class="step-1__title">Шаг 1.<br> Даты пребывания</h2>
+            <h2 class="step-1__title">Шаг 1.<br>&#32;Даты пребывания</h2>
             <p class="step-1__title-descr">Укажите предпочтительное количество попутчиков, которых<br
-                class="desktop-visible"> вы
+                class="br-desktop-visible">&#32; вы
               хотели бы позвать в поездку, и ее преполагаемую длительность.</p>
             <div class="step-1__companions-counter step-counter">
               <label class="step-counter__title" for="companions-count">Ищу попутчиков:</label>
@@ -251,7 +251,7 @@
                   <use xlink:href="img/sign.svg#arrow-back-form"></use>
                 </svg>
               </button>
-              <input class="month__input" name="month" value="Март 2019" />
+              <input class="month__input" name="month" value="Март 2019" type="text" readonly />
               <button class="month__plus" type="button">
                 <svg class="month__plus-img" viewBox="0 0 15 21" width="14px" height="14px">
                   <use xlink:href="img/sign.svg#arrow-next-form"></use>
@@ -335,7 +335,7 @@
             </a>
           </section>
           <section class="add-plan__step-2 step-2" id="step-2">
-            <h2 class="step-2__title">Шаг 2.<br> Маршрут</h2>
+            <h2 class="step-2__title">Шаг 2.<br>&#32;Маршрут</h2>
             <p class="step-2__title-descr">Укажите страны, которые вы хотели бы посетить. Это
               может быть
               одна или сразу несколько.</p>
@@ -519,7 +519,7 @@
             </div>
           </section>
           <section class="add-plan__step-3 step-3">
-            <h2 class="step-3__title">Шаг 3.<br> Развлечения</h2>
+            <h2 class="step-3__title">Шаг 3.<br>&#32;Развлечения</h2>
             <p class="step-3__title-descr">Наконец, расскажите о своих планах времяпровождения. Можно
               писать в свободной форме и ставить тэги.</p>
               <div class="step-3__togglers">
@@ -600,8 +600,8 @@
         <span class="page-footer__created-by-text">Разработано</span>
       </div>
       <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
-          <use xlink:href="img/sprite.svg#logo"></use>
+        <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 34">
+          <use xlink:href="img/logo-html.svg#logo"></use>
         </svg>
       </a>
     </div>

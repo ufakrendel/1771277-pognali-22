@@ -23,6 +23,7 @@
 }
 
 .login-button(@width, @height) {
+  font-family: "Blogger Sans", "Arial", sans-serif;
   background-color: @basic-yellow;
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +43,8 @@
 }
 
 .buttons(@width, @height, @radius:@height/2) {
-  display: block;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  display: flex;
   .align-center();
   height: @height;
   width: @width;
@@ -69,10 +71,3 @@
   }
 }
 
-.desktop-visible {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: inline;
-  }
-}

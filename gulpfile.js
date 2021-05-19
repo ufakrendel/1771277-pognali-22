@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
 const csso = require("postcss-csso");
-var cheerio = require('gulp-cheerio');
+var cheerio = require("gulp-cheerio");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
@@ -93,8 +93,8 @@ const sprite = () => {
   return gulp.src("source/img/icon/*.svg")
     .pipe(cheerio({
       run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[opacity]').removeAttr('opacity');
+        $("[fill]").removeAttr("fill");
+        $("[opacity]").removeAttr("opacity");
       },
       parserOptions: { xmlMode: true }
     }))

@@ -40,18 +40,18 @@
           </svg>
         </button>
         <ul class="header__references navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="index.html">
+          <li class="navigation-list__item header__references-item">
+            <a class="navigation-list__link header__references-link" href="index.html">
               О сервисе
             </a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">
+          <li class="navigation-list__item header__references-item">
+            <a class="navigation-list__link header__references-link" href="form.html">
               Направления
             </a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">
+          <li class="navigation-list__item header__references-item">
+            <a class="navigation-list__link header__references-link" href="catalog.html">
               Попутчики
             </a>
           </li>
@@ -127,55 +127,64 @@
             <use xlink:href="img/sign.svg#icon-close-toggle"></use>
           </svg>
         </div>
-        <ul class="countries__toggle">
-          <li class="countries__toggle-item"></li>
-          <li class="countries__toggle-item"></li>
-          <li class="countries__toggle-item"></li>
-        </ul>
+        <button class="countries__expand-btn">
+          <span class="visually-hidden">Развернуть</span>
+          <svg class="countries__expand-btn-img" viewBox="0 0 17 3">
+            <use xlink:href="img/catalog-expand.svg#expand"></use>
+          </svg>
+        </button>
         <ul class="countries__regions-list regions">
-          <li class="regions__item regions__item--active">Европа</li>
-          <li class="regions__item">Азия</li>
-          <li class="regions__item">Америка</li>
-          <li class="regions__item">Острова</li>
+          <li class="regions__item regions__item--active">
+            <a class="regions__item-link" href="region/europe.html">Европа </a>
+          </li>
+          <li class="regions__item">
+            <a class="regions__item-link" href="region/asia.html">Азия</a>
+          </li>
+          <li class="regions__item">
+            <a class="regions__item-link" href="region/america.html">Америка</a>
+          </li>
+          <li class="regions__item">
+            <a class="regions__item-link" href="region/islands.html">Острова</a>
+          </li>
         </ul>
         <a class="countries__show-all" href="countires.html">Показать все</a>
         <div class="countries__select">
-          <div class="countries__alphabet-table alphabet-table">
-            <table class="alphabet-table__word-table">
-              <tr class="alphabet-table__row">
-                <td class="alphabet-table__data alphabet-table__data--selected">А</td>
-                <td class="alphabet-table__data">Б</td>
-                <td class="alphabet-table__data">В</td>
-                <td class="alphabet-table__data">Г</td>
-                <td class="alphabet-table__data">Д</td>
+          <div class="countries__alphabet-table alphabet-table alphabet-table--catalog">
+            <table class="alphabet-table__word-table alphabet-table__word-table--cat">
+              <tr class="alphabet-table__row alphabet-table__row--cat">
+                <td class="alphabet-table__data alphabet-table__data--catalog alphabet-table__data--catalog-selected">А</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Б</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">В</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Г</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Д</td>
               </tr>
-              <tr class="alphabet-table__row">
-                <td class="alphabet-table__data">Е</td>
-                <td class="alphabet-table__data">З</td>
-                <td class="alphabet-table__data">И</td>
-                <td class="alphabet-table__data">К</td>
-                <td class="alphabet-table__data">Л</td>
+              <tr class="alphabet-table__row alphabet-table__row--cat">
+                <td class="alphabet-table__data alphabet-table__data--catalog">Е</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog ">З</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">И</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">К</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Л</td>
               </tr>
-              <tr class="alphabet-table__row">
-                <td class="alphabet-table__data">М</td>
-                <td class="alphabet-table__data">Н</td>
-                <td class="alphabet-table__data">О</td>
-                <td class="alphabet-table__data">П</td>
-                <td class="alphabet-table__data">Р</td>
+              <tr class="alphabet-table__row alphabet-table__row--cat">
+                <td class="alphabet-table__data alphabet-table__data--catalog">М</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Н</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">О</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">П</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Р</td>
               </tr>
-              <tr class="alphabet-table__row">
-                <td class="alphabet-table__data">С</td>
-                <td class="alphabet-table__data">Т</td>
-                <td class="alphabet-table__data">У</td>
-                <td class="alphabet-table__data">Ф</td>
-                <td class="alphabet-table__data">Х</td>
+              <tr class="alphabet-table__row alphabet-table__row--cat">
+                <td class="alphabet-table__data alphabet-table__data--catalog">С</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Т</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">У</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Ф</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Х</td>
               </tr>
-              <tr class="alphabet-table__row">
-                <td class="alphabet-table__data">Ч</td>
-                <td class="alphabet-table__data">Ш</td>
-                <td class="alphabet-table__data">Э</td>
-                <td class="alphabet-table__data">Ю</td>
-                <td class="alphabet-table__data">Я</td>
+              <tr class="alphabet-table__row alphabet-table__row--cat">
+                <td class="alphabet-table__data alphabet-table__data--catalog">Ч</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Ш</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Э</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Ю</td>
+                <td class="alphabet-table__data alphabet-table__data--catalog">Я</td>
               </tr>
             </table>
           </div>
@@ -472,6 +481,9 @@
                   <a class="countries__country-link">Ливан</a>
                 </li>
                 <li class="countries__country-item">
+                  <a class="countries__country-link">Ливия</a>
+                </li>
+                <li class="countries__country-item">
                   <a class="countries__country-link">Литва</a>
                 </li>
                 <li class="countries__country-item">
@@ -512,6 +524,8 @@
                 </li>
                 <li class="countries__country-item">
                   <a class="countries__country-link">Марокко</a>
+                </li>
+                <li class="countries__country-item">
                 </li>
               </ul>
             </div>
@@ -807,19 +821,19 @@
         <section class="main__companion-filter companions-filter">
           <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="POST">
             <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
-            <fieldset class="companions-filter__container">
+            <fieldset class="companions-filter__container companions-filter__container--collapsed">
               <legend class="companions-filter__legend">Хобби</legend>
               <svg class="companions-filter__img" width="10px" height="8px">
                 <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
               <div class="companions-filter__inputs">
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sport"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="hobby-sport"
                   id="hobby-sport" checked />
                 <label for="hobby-sport" class="companions-filter__label">Спортзал</label>
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-hookah"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="hobby-hookah"
                   id="hobby-hookah" />
                 <label for="hobby-hookah" class="companions-filter__label">Кальян</label>
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-sofa"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog " type="checkbox" name="hobby-sofa"
                   id="hobby-sofa" />
                 <label for="hobby-sofa" class="companions-filter__label">Диван</label>
               </div>
@@ -830,40 +844,40 @@
                 <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
               <div class="companions-filter__inputs">
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rock"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="music-rock"
                   id="music-rock" checked />
                 <label for="music-rock" class="companions-filter__label">Тяжелый рок</label>
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-rap"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="music-rap"
                   id="music-rap" checked />
                 <label for="music-rap" class="companions-filter__label">Русский рэп</label>
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="music-dance"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="music-dance"
                   id="music-dance" />
                 <label for="music-dance" class="companions-filter__label">Евроденс</label>
               </div>
             </fieldset>
-            <fieldset class="companions-filter__container">
+            <fieldset class="companions-filter__container companions-filter__container--collapsed">
               <legend class="companions-filter__legend">Еда</legend>
               <svg class="companions-filter__img" width="10px" height="8px">
                 <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
               <div class="companions-filter__inputs">
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-meat"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="hobby-meat"
                   id="hobby-meat" checked />
                 <label for="hobby-meat" class="companions-filter__label">Мясоед</label>
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-pp"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="hobby-pp"
                   id="hobby-pp" />
                 <label for="hobby-pp" class="companions-filter__label">Сидит на ПП</label>
-                <input class="companions-filter__checkbox custom-checkbox" type="checkbox" name="hobby-vegan"
+                <input class="companions-filter__checkbox custom-checkbox custom-checkbox--catalog" type="checkbox" name="hobby-vegan"
                   id="hobby-vegan" />
                 <label for="hobby-vegan" class="companions-filter__label">Веган-сыроед</label>
               </div>
             </fieldset>
             <fieldset class="companions-filter__container">
-              <legend class="companions-filter__legend">Транспорт</legend>
+              <legend class="companions-filter__legend companions-filter__legend--movement">Транспорт</legend>
               <svg class="companions-filter__img" width="10px" height="8px">
                 <use xlink:href="img/sign.svg#catalog-expand-down"></use>
               </svg>
-              <div class="companions-filter__inputs movement-btn">
+              <div class="companions-filter__inputs companions-filter__inputs--movement movement-btn movement-btn--catalog">
                 <input name="plan" type="checkbox" class="movement-btn__input" id="plan" checked />
                 <label for="plan" class="movement-btn__label">
                   <svg class="movement-btn__img" viewBox="0 0 21 23" width="21px" height="21px">
@@ -912,10 +926,12 @@
               <div class="companion-list__img-container">
                 <a href="companion.html?id=1">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop-cat-1x.png, img/firsova-desktop-cat-2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/cat-firsova-tablet.png, img/cat-firsova-tablet-2x.png 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/firsova-desktop-cat-1x.png, img/firsova-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-firsova-tablet.png, img/cat-firsova-tablet-2x.png 2x">
                     <img class="companion-list__avatar" src="img/cat-firsova-mobile.png"
-                  srcset="img/cat-firsova-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                      srcset="img/cat-firsova-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
                   </picture>
                 </a>
               </div>
@@ -926,7 +942,7 @@
                 </svg>
               </div>
               <a href="companion.html?id=1" class="companion-list__user">
-                <span>Таня<br> Фирсова</span>
+                <span>Таня<br>&#32;Фирсова</span>
                 <span class="companion-list__status"></span>
               </a>
               <p class="companion-list__distance">1,5 М</p>
@@ -952,22 +968,22 @@
               </ul>
               <p class="companion-list__movements-title">Транспорт</p>
               <ul class="companion-list__movements movement-list">
-                <li class="movement-list__item movement-list__item--active movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--active movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#plan"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item  movement-list__item--circle">
+                <li class="movement-list__item  movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item  movement-list__item--circle">
+                <li class="movement-list__item  movement-list__item--catalog">
                   <svg class="movement-list__item-img " viewBox="0 0 25 24" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item  movement-list__item--circle">
+                <li class="movement-list__item  movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
@@ -986,12 +1002,14 @@
             <li class="companion-list__item">
               <div class="companion-list__img-container">
                 <a href="companion.html?id=2">
-                    <picture>
-                      <source media="(min-width: 1440px)" srcset="img/demin-desktop-cat-1x.png, img/demin-desktop-cat-2x.png 2x">
-                      <source media="(min-width: 768px)" srcset="img/cat-demin-tablet.png, img/cat-demin-tablet-2x.png 2x">
-                      <img class="companion-list__avatar" src="img/cat-demin-mobile.png"
-                    srcset="img/cat-demin-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
-                    </picture>
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="img/demin-desktop-cat-1x.png, img/demin-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-demin-tablet.png, img/cat-demin-tablet-2x.png 2x">
+                    <img class="companion-list__avatar" src="img/cat-demin-mobile.png"
+                      srcset="img/cat-demin-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                  </picture>
                 </a>
               </div>
               <div class="companion-list__like-container">
@@ -1000,7 +1018,7 @@
                 </svg>
               </div>
               <a href="companion.html?id=2" class="companion-list__user">
-                <span>Петя<br> Демин</span>
+                <span>Петя<br>&#32;Демин</span>
                 <span class="companion-list__status"></span>
               </a>
               <p class="companion-list__distance">1500</p>
@@ -1021,22 +1039,22 @@
               </ul>
               <p class="companion-list__movements-title">Транспорт</p>
               <ul class="companion-list__movements movement-list">
-                <li class="movement-list__item movement-list__item--active  movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--active  movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#plan"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--active  movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--active  movement-list__item--catalog">
                   <svg class="movement-list__item-img " viewBox="0 0 18 21" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle movement-list__item--active">
+                <li class="movement-list__item movement-list__item--catalog movement-list__item--active">
                   <svg class="movement-list__item-img" viewBox="0 0 21 24" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
@@ -1056,10 +1074,12 @@
               <div class="companion-list__img-container">
                 <a href="companion.html?id=3">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop-cat-1x.png, img/smolov-desktop-cat-2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/cat-smolov-tablet.png, img/cat-smolov-tablet-2x.png 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/smolov-desktop-cat-1x.png, img/smolov-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-smolov-tablet.png, img/cat-smolov-tablet-2x.png 2x">
                     <img class="companion-list__avatar" src="img/cat-smolov-mobile.png"
-                  srcset="img/cat-smolov-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                      srcset="img/cat-smolov-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
                   </picture>
                 </a>
               </div>
@@ -1069,10 +1089,10 @@
                 </svg>
               </div>
               <a href="companion.html?id=3" class="companion-list__user">
-                <span>Марк<br> Смолов</span>
+                <span>Марк<br>&#32;Смолов</span>
                 <span class="companion-list__status"></span>
               </a>
-              <p class="companion-list__distance">1500</p>
+              <p class="companion-list__distance">170</p>
               <div class="companion-list__online  companion-list__online--not"></div>
               <p class="companion-list__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
               <p class="companion-list__plans">Хочет посетить:</p>
@@ -1095,22 +1115,22 @@
               </ul>
               <p class="companion-list__movements-title">Транспорт</p>
               <ul class="companion-list__movements movement-list">
-                <li class="movement-list__item movement-list__item--active movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--active movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 21 23" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#plan"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 18 21" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle movement-list__item--active">
+                <li class="movement-list__item movement-list__item--catalog movement-list__item--active">
                   <svg class="movement-list__item-img" viewBox="0 0 25 24" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--catalog">
                   <svg class="movement-list__item-img" viewBox="0 0 23 21" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
@@ -1130,10 +1150,12 @@
               <div class="companion-list__img-container">
                 <a href="companion.html?id=4">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop-cat-1x.png, img/rogovaya-desktop-cat-2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/cat-rogovaya-tablet.png, img/cat-rogovaya-tablet-2x.png 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/rogovaya-desktop-cat-1x.png, img/rogovaya-desktop-cat-2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-rogovaya-tablet.png, img/cat-rogovaya-tablet-2x.png 2x">
                     <img class="companion-list__avatar" src="img/cat-rogovaya-mobile.png"
-                  srcset="img/cat-rogovaya-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
+                      srcset="img/cat-rogovaya-mobile-2x.png 2x" width="70" height="70" alt="Фото попутчика">
                   </picture>
                 </a>
               </div>
@@ -1143,7 +1165,7 @@
                 </svg>
               </div>
               <a class="companion-list__user" href="companion.html?id=4">
-                <span>Лариса<br> Роговая</span>
+                <span>Лариса<br>&#32;Роговая</span>
                 <span class="companion-list__status companion-list__status--online"></span>
               </a>
               <p class="companion-list__distance">23</p>
@@ -1164,23 +1186,23 @@
               </ul>
               <p class="companion-list__movements-title">Транспорт</p>
               <ul class="companion-list__movements movement-list">
-                <li class="movement-list__item movement-list__item--active movement-list__item--circle">
+                <li class="movement-list__item movement-list__item--active movement-list__item--catalog">
                   <svg class="movement-list__item-img" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#plan"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--active movement-list__item--circle ">
+                <li class="movement-list__item movement-list__item--active movement-list__item--catalog ">
                   <svg class="movement-list__item-img" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle">
-                  <svg class="movement-list__item-img"  width="21px" height="21px">
+                <li class="movement-list__item movement-list__item--catalog">
+                  <svg class="movement-list__item-img" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="movement-list__item movement-list__item--circle">
-                  <svg class="movement-list__item-img"  width="21px" height="21px">
+                <li class="movement-list__item movement-list__item--catalog">
+                  <svg class="movement-list__item-img" width="21px" height="21px">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
                 </li>
@@ -1206,16 +1228,16 @@
             <div class="pagination__list-container">
               <ul class="pagination___pages pages-list">
                 <li class="pages-list__item pages-list__item--current">
-                  <span>1</span>
+                  <a class="pages-list__item-link" href="page1.html">1</a>
                 </li>
                 <li class="pages-list__item">
-                  <span>2</span>
+                  <a class="pages-list__item-link" href="page2.html">2</a>
                 </li>
                 <li class="pages-list__item">
-                  <span>3</span>
+                  <a class="pages-list__item-link" href="page3.html">3</a>
                 </li>
                 <li class="pages-list__item">
-                  <span>4</span>
+                  <a class="pages-list__item-link" href="page4.html">4</a>
                 </li>
               </ul>
               <a class="pagination__button-back" href="catalog.html?back">
@@ -1256,14 +1278,14 @@
         </li>
         <li class="page-footer__socials-item socials-list__item">
           <a class="page-footer__socials-link  socials-list__link" href="#">
-            <svg class="socials-list__img-vk"  height="12" width="23">
+            <svg class="socials-list__img-vk" height="12" width="23">
               <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__socials-item socials-list__item">
           <a class="page-footer__socials-link  socials-list__link" href="#">
-            <svg class="socials-list__img-inst"  height="18" width="18">
+            <svg class="socials-list__img-inst" height="18" width="18">
               <use xlink:href="img/sprite.svg#insta"></use>
             </svg>
           </a>
@@ -1273,8 +1295,8 @@
         <span class="page-footer__created-by-text">Разработано</span>
       </div>
       <a class="page-footer__picture-container" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 33" width="27px" height="33px">
-          <use xlink:href="img/sprite.svg#logo"></use>
+        <svg class="page-footer__created-by-pic created-by" viewBox="0 0 27 34">
+          <use xlink:href="img/logo-html.svg#logo"></use>
         </svg>
       </a>
     </div>

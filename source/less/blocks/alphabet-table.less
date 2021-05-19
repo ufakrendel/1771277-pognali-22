@@ -1,8 +1,26 @@
 .alphabet-table {
   border-color: @basic-white;
 
+  &--catalog {
+    width: 100%;
+    margin-bottom: 10px;
+    .set-font(14px, 14px, 500);
+    background-color: @light-background;
+  }
+
   @media (min-width: @tablet-width) {
     width: 370px;
+
+    &--catalog {
+      width: unset;
+      background-color: @main-background-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--catalog {
+      display: none;
+    }
   }
 }
 
@@ -31,21 +49,36 @@
   border-collapse: collapse;
   width: 100%;
 
+  &--cat {
+    border-collapse: collapse;
+  }
+
+
   @media (min-width: @tablet-width) {
-    margin-top: 35px;
+    margin-top: 28px;
     margin-left: 30px;
     margin-bottom: 33px;
     margin-right: 80px;
     .set-font(20px, 20px, 500);
     width: 262px;
     height: 346px;
+
+    &--cat {
+      margin: 0;
+      margin-top: 40px;
+      margin-left: -40px;
+      width: 378px;
+      height: 410px;
+      background-color: @main-background-color;
+    }
   }
 
   @media (min-width: @desktop-width) {
     border-collapse: unset;
     border-spacing: 15px;
-    margin-top: 18px;
+    margin-top: 12px;
     margin-left: 10px;
+    margin-right: 70px;
     width: unset;
     height: unset;
   }
@@ -53,7 +86,7 @@
 
 .alphabet-table__data {
   color: @basic-blue-light;
-  height: 44px;
+  height: 40px;
   width: 40px;
   border: solid 1px @form-fieldset-color;
   vertical-align: middle;
@@ -64,37 +97,65 @@
     background-color: @form-background-color;
   }
 
+  &--catalog {
+    width: 43px;
+    height: 40px;
+  }
+
+  &--catalog-selected {
+    background-color: @basic-blue-light;
+    color: @basic-white;
+  }
+
   @media (min-width: @tablet-width) {
-    height: 69px;
+    height: 68px;
     width: 52px;
 
     &--selected {
       color: @basic-white;
       background-color: @basic-blue-light;
     }
+
+    &--catalog {
+      border: none;
+      .set-font(60px, 60px, 700);
+      color: @main-section-dark-bgcolor;
+      opacity: 0.3;
+    }
+
+    &--catalog-selected {
+      opacity: 1;
+      background-color: @main-background-color;
+    }
   }
 
-  @media (min-width: @tablet-width) {
-    height: 70px;
-    width: 60px;
+  @media (min-width: @desktop-width) {
+    height: 68px;
+    width: 58px;
     border-radius: 4px;
   }
 }
 
-.alphabet-table__close svg {
-  stroke: white;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: -47px;
-    left: 325px;
+.alphabet-table__close {
+  svg {
     stroke: white;
-    width: 17px;
-    height: 17px;
-    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -51px;
+    left: 330px;
+    width: 17px;
+    height: 17px;
+    opacity: 0.3;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     left: 684px;
     top: -44px;
   }

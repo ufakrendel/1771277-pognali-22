@@ -70,7 +70,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: calc(50% - 3px);
+    width: 96px;
     height: 46px;
   }
 }
@@ -124,15 +124,52 @@
     background-color: @basic-blue-light;
   }
 
-  @media (min-width: @desktop-width) {
-    margin-right: 110px;
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 4px;
+      content: "";
+      height: 3px;
+      width: 110px;
+      background-color: @basic-blue-light;
+      opacity: 0.2;
+    }
 
     &::after {
       position: absolute;
       left: 0;
       top: 4px;
       content: "";
-      height: 2px;
+      height: 3px;
+      width: 180px;
+      background-color: @basic-blue-light;
+    }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 4px;
+      content: "";
+      height: 3px;
+      width: 70px;
+      background-color: @basic-blue-light;
+      opacity: 0.2;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: "";
+      height: 3px;
       width: 130px;
       background-color: @basic-blue-light;
     }
@@ -146,11 +183,12 @@
 
   .level-group__high-range-btn {
     order: 2;
+    margin-left: 20px;
   }
 
   .level-group__low-range {
     order: 3;
-    margin-left: 120px;
+    margin-left: 60px;
   }
 
   .level-group__high-range {
@@ -165,6 +203,7 @@
 
   .level-group__high-range-btn {
     order: unset;
+    margin-left: -30px;
   }
 
   .level-group__high-range {

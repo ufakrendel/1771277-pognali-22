@@ -14,7 +14,8 @@
     });
 //catalog
     var countriesFilter = document.querySelector(".countries__content-container");
-    var toggleOpen = document.querySelector(".countries__toggle");
+    var countriesOpen = document.querySelector(".countries__expand-btn");
+    var countriesOpen2 = document.querySelector(".countries__show-all");
     var countryFiltersClose = document.querySelector(".countries__toggle-close");
     var countryFiltersCloseBtn = document.querySelector(".countries__collapse-btn");
 
@@ -22,8 +23,13 @@
     countriesFilter?.classList.remove("countries__content-container--nojs");
     countriesFilter?.classList.add("countries__content-container--collapse");
 
-    toggleOpen?.addEventListener("click", function () {
+    countriesOpen?.addEventListener("click", function () {
       countriesFilter?.classList.remove("countries__content-container--collapse")
+    });
+
+    countriesOpen2?.addEventListener("click", function (e) {
+      countriesFilter?.classList.remove("countries__content-container--collapse")
+      e.preventDefault();
     });
 
     countryFiltersClose?.addEventListener("click", function () {
