@@ -152,7 +152,7 @@
   }
 }
 
-.promo__navigation {
+.promo__contacts {
   position: absolute;
   z-index: 4;
   top: 406px;
@@ -172,12 +172,11 @@
     margin: 0;
     top: 0;
     left: 0;
-    //display: block;
     background-color: @light-background;
   }
 }
 
-.promo__navigation-container {
+.promo__contacts-container {
   .content-container();
   display: flex;
   flex-direction: row;
@@ -192,13 +191,7 @@
   }
 }
 
-.promo__navigation-logo,
-.promo__navigation-toggle,
-.promo__navigation-list {
-  display: none;
-}
-
-.promo__navigation-login-btn {
+.promo__contacts-login-btn {
   display: block;
   .align-center();
   .login-button(190px, 40px);
@@ -227,23 +220,5 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promo__navigation-logo,
-  .promo__navigation-list {
-    display: block;
-  }
-
-  .promo__navigation-list {
-    display: flex;
-    flex-direction: row;
-    margin-right: auto;
-    align-items: center;
-
-    .navigation-list__link {
-      color: @main-section-dark-bgcolor;
-    }
   }
 }
